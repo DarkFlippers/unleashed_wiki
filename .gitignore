@@ -5,3 +5,5 @@ docs/.vitepress/cache/
 scripts/screens/.build/
 .firmware
 /.vitepress/
+*.tar.gz
+*.zip
