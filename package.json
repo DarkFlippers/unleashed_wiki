@@ -1,0 +1,17 @@
+{
+  "name": "unleashed-wiki",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "UL_SITE_URL=${UL_SITE_URL:-https://wiki.unleashedflip.com} vitepress build docs",
+    "preview": "vitepress preview docs",
+    "images": "node scripts/localize-images.mjs",
+    "check": "node scripts/check-i18n.mjs",
+    "screens": "bash scripts/screens/build.sh"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.46"
+  }
+}

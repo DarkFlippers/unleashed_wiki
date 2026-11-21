@@ -1,0 +1,294 @@
+---
+title: Format de fichier NFC
+order: 90
+original: [https://github.com/DarkFlippers/unleashed-firmware/blob/dev/documentation/file_formats/NfcFileFormats.md, https://github.com/DarkFlippers/unleashed-firmware/tree/dev/lib/nfc]
+sources: [unleashed-docs, unleashed-src]
+---
+# Format de fichier NFC
+
+Les cartes enregistrées sont des fichiers **Flipper Format** en texte brut portant l'extension `.nfc`, dans
+`/ext/nfc/`. Vous pouvez les ouvrir et les modifier dans n'importe quel éditeur de texte, dans qFlipper ou dans
+qUnleashed. Fichiers associés :
+
+| Chemin | Contenu |
+|---|---|
+| `/ext/nfc/<nom>.nfc` | Carte enregistrée |
+| `/ext/nfc/<nom>.shd` | Fichier fantôme : état de la carte après qu'un lecteur a écrit sur la carte émulée |
+| `/ext/nfc/.cache/<UID>.keys` | Cache de clés MIFARE Classic (écrit à l'enregistrement) |
+| `/ext/nfc/.cache/<UID>.mfpkeys` | Cache de clés MIFARE Plus |
+| `/ext/nfc/.mfkey32.log` | Nonces de lecteur pour MFKey32 |
+| `/ext/nfc/.nested.log` | Nonces de carte issus des attaques nested |
+| `/ext/nfc/assets/mf_classic_dict.nfc` / `mf_classic_dict_user.nfc` | Dictionnaire MIFARE Classic système / utilisateur |
+| `/ext/nfc/assets/mf_classic_dict_<UID>.nfc` | Dictionnaire de candidates propre à une carte (CUID) |
+| `/ext/nfc/assets/mf_ultralight_c_dict.nfc` / `..._user.nfc` | Clés 3DES Ultralight C |
+| `/ext/nfc/assets/mf_ultralight_aes_dict.nfc` / `..._user.nfc` | Clés AES Ultralight |
+| `/ext/nfc/assets/mf_plus_dict.nfc` / `..._user.nfc` | Clés AES MIFARE Plus SL3 |
+| `/ext/nfc/assets/aid.nfc`, `country_code.nfc`, `currency_code.nfc` | Tables de correspondance EMV |
+
+## En-tête (commun à toutes les cartes)
+
+```text
+Filetype: Flipper NFC device
+Version: 4
+# Device type can be ISO14443-3A, ISO14443-3B, ISO14443-4A, NTAG/Ultralight, Mifare Classic, Mifare DESFire
+Device type: ISO14443-4A
+# UID is common for all formats
+UID: 04 48 6A 32 33 58 80
+-------------------------
+(Device-specific data)
+```
+
+L'en-tête contient le type d'appareil et l'UID ; les données propres au protocole suivent. Versions du format de
+fichier :
+
+1. Version initiale, obsolète.
+2. ATQA en LSB (p. ex. `4400` au lieu de `0044`).
+3. ATQA en MSB.
+4. Le type d'appareil « UID » remplacé par `ISO14443-3A` (version actuelle ; le firmware charge toujours les
+   fichiers à partir de la version 2).
+
+Valeurs de `Device type` utilisées par le firmware Unleashed : `ISO14443-3A`, `ISO14443-3B`, `ISO14443-4A`,
+`ISO14443-4B`, `ISO15693-3`, `FeliCa`, `NTAG/Ultralight`, `Mifare Classic`, `Mifare Plus`, `Mifare DESFire`, `SLIX`,
+`ST25TB`, `NTAG4xx`, `Type 4 Tag`, `EMV`, `Texkom`.
+
+## ISO14443-3A
+
+```text
+Device type: ISO14443-3A
+UID: 34 19 6D 41 14 56 E6
+# ISO14443-3A specific data
+ATQA: 00 44
+SAK: 00
+```
+
+L'UID fait 4 ou 7 octets, l'ATQA 2 octets, le SAK 1 octet.
+
+## ISO14443-3B
+
+```text
+Device type: ISO14443-3B
+UID: 30 1D B3 28
+# ISO14443-3B specific data
+Application data: 00 12 34 FF
+Protocol info: 11 81 E1
+```
+
+UID de 4 octets, données d'application de 4 octets, informations de protocole de 3 octets.
+
+## ISO14443-4A
+
+```text
+Device type: ISO14443-4A
+UID: 04 48 6A 32 33 58 80
+# ISO14443-3A specific data
+ATQA: 03 44
+SAK: 20
+# ISO14443-4A specific data
+ATS: 06 75 77 81 02 80
+```
+
+Ajoute l'Answer to Select (**ATS**), au moins 5 octets.
+
+## NTAG / Ultralight
+
+```text
+Device type: NTAG/Ultralight
+UID: 04 85 90 54 12 98 23
+# ISO14443-3A specific data
+ATQA: 00 44
+SAK: 00
+# NTAG/Ultralight specific data
+Data format version: 2
+NTAG/Ultralight type: NTAG216
+Signature: 1B 84 EB 70 BD 4C BD 1B 1D E4 98 0B 18 58 BD 7C 72 85 B4 E4 7B 38 8E 96 CF 88 6B EE A3 43 AD 90
+Mifare version: 00 04 04 02 01 00 13 03
+Counter 0: 0
+Tearing 0: 00
+Counter 1: 0
+Tearing 1: 00
+Counter 2: 0
+Tearing 2: 00
+Pages total: 231
+Pages read: 231
+Page 0: 04 85 92 9B
+Page 1: 8A A0 61 81
+Page 2: CA 48 0F 00
+...
+Page 226: 00 00 7F BD
+Page 227: 04 00 00 E2
+Page 228: 00 05 00 00
+Page 229: 00 00 00 00
+Page 230: 00 00 00 00
+Failed authentication attempts: 0
+```
+
+- `NTAG/Ultralight type` : l'une des valeurs Mifare Ultralight, Mifare Ultralight 11, Mifare Ultralight 21, NTAG203,
+  NTAG213, NTAG215, NTAG216, NTAG I2C 1K, NTAG I2C 2K, NTAG I2C Plus 1K, NTAG I2C Plus 2K (Unleashed utilise aussi
+  Mifare Ultralight C, Mifare Ultralight AES, NTAG210, NTAG212).
+- `Signature` : la réponse à `READ_SIG` ; `Mifare version` : la réponse à `GET_VERSION` (et non la version du
+  fichier). Voir la fiche technique NXP [MF0ULX1](https://www.nxp.com/docs/en/data-sheet/MF0ULX1.pdf), pages 31
+  et 21.
+- Les compteurs, les drapeaux de tearing et les pages sont l'état interne brut de la carte.
+- **Ultralight AES** ajoute une ligne `AES signature:` (48 octets). Ses pages de clé (`Page 48`–`51`) sont stockées
+  dans l'ordre de la mémoire du tag, voir [Ultralight AES](/fr/nfc/ultralight-aes).
+- Versions du format de données : 1 = le type est stocké dans `Device type` ; 2 = version actuelle, le type a son
+  propre champ.
+
+## MIFARE Classic
+
+```text
+Device type: Mifare Classic
+UID: BA E2 7C 9D
+# ISO14443-3A specific data
+ATQA: 00 02
+SAK: 18
+# Mifare Classic specific data
+Mifare Classic type: 4K
+Data format version: 2
+# Mifare Classic blocks, '??' means unknown data
+Block 0: BA E2 7C 9D B9 18 02 00 46 44 53 37 30 56 30 31
+Block 1: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Block 2: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Block 3: FF FF FF FF FF FF FF 07 80 69 FF FF FF FF FF FF
+...
+Block 255: FF FF FF FF FF FF FF 07 80 69 FF FF FF FF FF FF
+```
+
+- `Mifare Classic type` : `MINI`, `1K` ou `4K`.
+- Les blocs sont stockés sans regroupement par secteur. Les octets inconnus sont écrits `??` : c'est ainsi qu'un dump
+  partiel marque les secteurs non lus, et que vous pouvez voir quelles clés manquent.
+- Les trailers de secteur portent les clés trouvées : `Clé A | bits d'accès | Clé B`.
+- La version 1 du format de données (ancienne) utilisait des masques de bits `Key A map` / `Key B map` au lieu
+  de `??` :
+
+  ```text
+  Data format version: 1
+  # Key map is the bit mask indicating valid key in each sector
+  Key A map: 000000000000FFFF
+  Key B map: 000000000000FFFF
+  ```
+
+## MIFARE DESFire
+
+```text
+Device type: Mifare DESFire
+UID: 04 2F 19 0A CD 66 80
+# ISO14443-3A specific data
+ATQA: 03 44
+SAK: 20
+# ISO14443-4A specific data
+ATS: 06 75 77 81 02 80
+# Mifare DESFire specific data
+PICC Version: 04 01 01 12 00 1A 05 04 01 01 02 01 1A 05 04 2F 19 0A CD 66 80 CE ED D4 51 80 31 19
+PICC Free Memory: 7520
+PICC Change Key ID: 00
+PICC Config Changeable: true
+PICC Free Create Delete: true
+PICC Free Directory List: true
+PICC Key Changeable: true
+PICC Max Keys: 01
+PICC Key 0 Version: 00
+Application Count: 1
+Application IDs: 56 34 12
+Application 563412 Change Key ID: 00
+Application 563412 Config Changeable: true
+Application 563412 Free Create Delete: true
+Application 563412 Free Directory List: true
+Application 563412 Key Changeable: true
+Application 563412 Max Keys: 0E
+Application 563412 Key 0 Version: 00
+...
+Application 563412 Key 13 Version: 00
+Application 563412 File IDs: 01
+Application 563412 File 1 Type: 00
+Application 563412 File 1 Communication Settings: 00
+Application 563412 File 1 Access Rights: EE EE
+Application 563412 File 1 Size: 256
+Application 563412 File 1: 13 37 00 00 ... 00
+```
+
+Les données sont stockées par application et par fichier. La carte de l'exemple a été créée avec ces commandes
+Proxmark3 :
+
+```text
+hf mfdes createapp --aid 123456 --fid 2345 --dfname astra
+hf mfdes createfile --aid 123456 --fid 01 --isofid 0001 --size 000100
+hf mfdes write --aid 123456 --fid 01 -d 1337
+```
+
+## Autres types (Unleashed)
+
+Champs écrits par le firmware pour les types non couverts par le document amont :
+
+- **MIFARE Plus** : `Security Level`, `Card Type`, `Memory Size` ; les dumps SL3 ajoutent un
+  `Data format version`, les blocs, les clés et `Signature`.
+- **SLIX** : `Capabilities`, `Password Read`/`Write`/`Privacy`/`Destroy`/`EAS`, `Signature`, `Privacy Mode`,
+  `Protection Pointer`, `Protection Condition`, `Lock EAS`, `Lock PPL` (en plus des champs ISO15693-3 `DSFID`, `AFI`,
+  `IC Reference`, `Block Count`, `Block Size`, `Data Content`, `Security Status`, `Lock DSFID`, `Lock AFI`).
+- **Texkom** : `Texkom Type` et la trame brute `Frame` de 8 octets (`FF FF <type> <uid 4 octets> <crc>`).
+
+## Dictionnaires
+
+### Dictionnaire MIFARE Classic
+
+```text
+# Key dictionary from https://github.com/ikarus23/MifareClassicTool.git
+
+# More well known keys!
+# Standard keys
+FFFFFFFFFFFF
+A0A1A2A3A4A5
+D3F7D3F7D3F7
+000000000000
+
+# Keys from mfoc
+B0B1B2B3B4B5
+4D3A99C351DD
+1A982C7E459A
+AABBCCDDEEFF
+...
+```
+
+Une clé par ligne, sous forme de 12 caractères hexadécimaux. Les lignes commençant par `#` et les lignes vides sont
+ignorées. Les mêmes règles s'appliquent au dictionnaire utilisateur `mf_classic_dict_user.nfc`.
+
+### Dictionnaire MIFARE Ultralight C
+
+```text
+# Hexadecimal-Reversed Sample Key
+12E4143455F495649454D4B414542524
+# Byte-Reversed Sample Key (!NACUOYFIEMKAERB)
+214E4143554F594649454D4B41455242
+# Sample Key (BREAKMEIFYOUCAN!)
+425245414B4D454946594F5543414E21
+# Semnox Key (IEMKAERB!NACUOY )
+49454D4B41455242214E4143554F5900
+# Modified Semnox Key (IEMKAERB!NACUOYF)
+49454D4B41455242214E4143554F5946
+...
+```
+
+Une clé de 16 octets par ligne (32 caractères hexadécimaux), commentaires avec `#`. Les dictionnaires Ultralight AES
+et MIFARE Plus utilisent le même format (32 caractères hexadécimaux = clé AES-128).
+
+## Ressources EMV {#emv-resources}
+
+```text
+Filetype: Flipper EMV resources
+Version: 1
+# EMV currency code: currency name
+0997: USN
+0994: XSU
+0990: CLF
+0986: BRL
+0985: PLN
+0984: BOV
+...
+```
+
+Une liste de codes de devise EMV, de codes pays ou d'AID avec leurs noms : une valeur hexadécimale et un nom séparés
+par deux-points et une espace.
+
+## Voir aussi
+
+[Lire des cartes](/fr/nfc/read) · [MIFARE Classic](/fr/nfc/mifare-classic) · [Cartes bancaires (EMV)](/fr/nfc/emv)

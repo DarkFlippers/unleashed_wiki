@@ -1,0 +1,19 @@
+# Extra firmware sources (relative to FW_SRC) compiled into the renderer:
+# app-specific views that are drawn by the screen specs.
+applications/services/locale/locale.c
+applications/settings/power_settings_app/views/battery_info.c
+lib/toolbox/float_tools.c
+applications/main/subghz/views/receiver.c
+applications/main/subghz/views/subghz_read_raw.c
+applications/main/subghz/views/transmitter.c
+applications/main/nfc/views/detect_reader.c
+applications/main/nfc/views/dict_attack.c
+applications/main/lfrfid/views/lfrfid_view_read.c
+applications/main/gpio/views/gpio_usb_uart.c
+applications/main/bad_usb/views/bad_usb_view.c
+applications/services/desktop/views/desktop_view_debug.c
+applications/services/desktop/views/desktop_view_lock_menu.c
+applications/services/desktop/views/desktop_view_locked.c
+applications/services/desktop/views/desktop_view_pin_input.c
+applications/services/dolphin/helpers/dolphin_state.c
+applications/main/u2f/views/u2f_view.c
