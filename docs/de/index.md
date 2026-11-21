@@ -7,7 +7,7 @@ hero:
   image: { src: /logo.png, alt: Unleashed Wiki }
   actions:
     - { theme: brand, text: Erste Schritte, link: /de/start/ }
-    - { theme: alt, text: Unleashed installieren, link: /de/start/install }
+    - { theme: alt, text: Web Installer, link: https://web.unleashedflip.com }
 features:
   - { icon: 📡, title: Sub-GHz, details: "Frequenzanalysator, Read / Read RAW, Rolling Codes, Add manually, externer CC1101, Brute Force.", link: /de/subghz/ }
   - { icon: 💳, title: NFC, details: "MIFARE Classic-Schlüssel ermitteln, Nested- und Fudan-Backdoors, MFKey, Magic-Karten, NFC Magic 2.0.", link: /de/nfc/ }

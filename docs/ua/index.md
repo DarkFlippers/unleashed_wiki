@@ -7,7 +7,7 @@ hero:
   image: { src: /logo.png, alt: Unleashed Wiki }
   actions:
     - { theme: brand, text: Почати, link: /ua/start/ }
-    - { theme: alt, text: Встановити Unleashed, link: /ua/start/install }
+    - { theme: alt, text: Вебінсталятор, link: https://web.unleashedflip.com }
 features:
   - { icon: 📡, title: Sub-GHz, details: "Аналізатор частот, Read / Read RAW, динамічні коди, Add manually, зовнішній CC1101, брутфорс.", link: /ua/subghz/ }
   - { icon: 💳, title: NFC, details: "Відновлення ключів MIFARE Classic, Nested і бекдори Fudan, MFKey, magic-карти, NFC Magic 2.0.", link: /ua/nfc/ }
