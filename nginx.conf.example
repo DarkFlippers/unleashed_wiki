@@ -48,5 +48,5 @@ server {
 
     # Language detection runs in the browser, so no Accept-Language mapping is
     # needed. English is served from the root; other languages live under
-    # /ru/, /ua/, /de/, /fr/, /es/ and /it/.
+    # /ru/, /ua/, /de/, /fr/, /es/, /it/ and /hr/.
 }

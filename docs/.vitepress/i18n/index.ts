@@ -11,5 +11,6 @@ import es from './es'
 import de from './de'
 import fr from './fr'
 import ua from './ua'
-export const LOCALES = [en, ru, ua, de, fr, es, it]
+import hr from './hr'
+export const LOCALES = [en, ru, ua, de, fr, es, it, hr]
 export type { LocaleStrings } from './types'
