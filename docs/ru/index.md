@@ -3,7 +3,7 @@ layout: home
 hero:
   name: Unleashed Wiki
   text: Flipper Zero без ограничений.
-  tagline: Пошаговые инструкции по всем функциям прошивки Unleashed и стандартного Flipper Zero в одном месте.
+  tagline: Пошаговые инструкции по всем функциям прошивки Unleashed для Flipper Zero в одном месте.
   image: { src: /logo.png, alt: Unleashed Wiki }
   actions:
     - { theme: brand, text: Начать, link: /ru/start/ }

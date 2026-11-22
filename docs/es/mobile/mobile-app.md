@@ -43,9 +43,9 @@ del Flipper, vuelve a emparejarlo; consulta [Problemas de conexión](#connection
 
 ## Instalar Unleashed desde el móvil
 
-::: warning Primera instalación
-Si es tu primer firmware personalizado, actualiza primero a la última versión **oficial** y asegúrate de que la
-tarjeta SD está puesta. ¿Ya tienes Unleashed? Instala la versión nueva encima.
+::: tip Antes de empezar
+Asegúrate de que la tarjeta SD está puesta. Puedes instalar Unleashed directamente sobre el firmware de serie o sobre
+una versión anterior de Unleashed.
 :::
 
 ### iOS

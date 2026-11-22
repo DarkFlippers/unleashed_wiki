@@ -32,24 +32,12 @@ and even the "internal" storage (see [microSD card](/start/sd-card)). The card i
 A branded **16–32 GB** card is plenty. Cards up to 256 GB work, but large cards take longer to mount. Cheap no-name
 cards can make the device slow or unstable.
 
-## 3. Update the official firmware (first install only)
-
-The Unleashed install guide asks you to **update to the latest official release first** if you are installing
-Unleashed for the first time. This brings the bootloader, radio stack and internal data up to date.
-
-- **qFlipper** (Windows/macOS/Linux): connect via USB, open the **Advanced controls** tab, set the **Update Channel**
-  to **Release** and click **Update**.
-- **Flipper Mobile App** (iOS/Android): turn on Bluetooth on the Flipper (**Main Menu → Settings → Bluetooth**),
-  pair with the app, then tap **Update**. This takes about 10 minutes.
-
-More on qFlipper and the mobile app: [qFlipper](/mobile/qflipper), [Mobile app](/mobile/mobile-app).
-
-## 4. Install Unleashed
+## 3. Install Unleashed
 
 Use the **[Unleashed Web Installer](https://web.unleashedflip.com)**. It is the easiest method. All methods are
 described in [Installing Unleashed](/start/install).
 
-## 5. Basic setup
+## 4. Basic setup
 
 After installing, open **Main Menu → Settings** and check:
 

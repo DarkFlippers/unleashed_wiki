@@ -42,8 +42,7 @@ Connect the Flipper with the SD card inserted over USB and start qFlipper.
 
 ## Installing Unleashed with qFlipper
 
-1. If this is your first custom firmware, update to the latest **official** release first. Make sure the SD card is
-   inserted.
+1. Make sure a **microSD card** is inserted.
 2. Download `flipper-z-f7-update-(version).tgz` from the
    [Unleashed releases](https://github.com/DarkFlippers/unleashed-firmware/releases/latest) (pick the build letter you
    want, see [build variants](/apps/catalog#build-variants)).

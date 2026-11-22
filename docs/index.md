@@ -3,7 +3,7 @@ layout: home
 hero:
   name: Unleashed Wiki
   text: Flipper Zero, without limits.
-  tagline: Step-by-step guides for every Unleashed Firmware feature and every stock Flipper Zero function, in one place.
+  tagline: Step-by-step guides for every Unleashed Firmware feature on Flipper Zero, in one place.
   image: { src: /logo.png, alt: Unleashed Wiki }
   actions:
     - { theme: brand, text: Get started, link: /start/ }

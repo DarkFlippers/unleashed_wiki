@@ -3,7 +3,7 @@ layout: home
 hero:
   name: Unleashed Wiki
   text: Flipper Zero, entfesselt.
-  tagline: Schritt-für-Schritt-Anleitungen zu jeder Funktion der Unleashed-Firmware und zu jeder Funktion des Flipper Zero – alles an einem Ort.
+  tagline: Schritt-für-Schritt-Anleitungen zu allen Funktionen der Unleashed-Firmware für den Flipper Zero – alles an einem Ort.
   image: { src: /logo.png, alt: Unleashed Wiki }
   actions:
     - { theme: brand, text: Erste Schritte, link: /de/start/ }

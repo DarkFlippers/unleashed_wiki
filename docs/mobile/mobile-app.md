@@ -40,9 +40,9 @@ the app stops connecting after you install Unleashed or change the Flipper's nam
 
 ## Installing Unleashed from the phone
 
-::: warning First install
-If this is your first custom firmware, update to the latest **official** release first, and make sure the SD card is
-inserted. Already on Unleashed? Install the new version on top.
+::: tip Before you start
+Make sure the SD card is inserted. You can install Unleashed directly over stock firmware or over an older Unleashed
+version.
 :::
 
 ### iOS

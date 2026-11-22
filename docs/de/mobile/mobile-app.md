@@ -42,10 +42,9 @@ Flippers geändert hast, koppel sie neu, siehe [Verbindungsprobleme](#connection
 
 ## Unleashed vom Telefon installieren
 
-::: warning Erste Installation
-Wenn das deine erste Custom-Firmware ist, aktualisiere zuerst auf den neuesten **offiziellen** Release und achte
-darauf, dass die SD-Karte eingesteckt ist. Du nutzt schon Unleashed? Dann installiere die neue Version einfach
-darüber.
+::: tip Vorbereitung
+Achte darauf, dass die SD-Karte eingesteckt ist. Du kannst Unleashed direkt über die Stock-Firmware oder eine ältere
+Unleashed-Version installieren.
 :::
 
 ### iOS

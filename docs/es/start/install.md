@@ -10,9 +10,7 @@ Hay varias formas de instalar el firmware Unleashed. Todas instalan el mismo paq
 el firmware, el actualizador y todos los recursos (aplicaciones, bibliotecas de IR, ajustes de Sub-GHz, etc.).
 
 ::: tip Antes de empezar
-- **Solo en la primera instalación:** actualiza primero a la **última versión oficial**
-  ([Primer arranque](/es/start/first-start)).
-- **Si ya tienes Unleashed:** no instales nada por el medio. Instala la versión nueva encima de la actual.
+- **Sin actualizaciones intermedias:** instala Unleashed directamente sobre el firmware de serie o sobre una versión anterior de Unleashed.
 - Asegúrate de que hay una **tarjeta microSD insertada**. La actualización se descomprime en la tarjeta, y las
   aplicaciones viven allí.
 - Carga la batería. Una actualización completa tarda varios minutos.

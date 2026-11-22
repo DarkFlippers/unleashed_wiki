@@ -3,7 +3,7 @@ layout: home
 hero:
   name: Unleashed Wiki
   text: Flipper Zero, senza catene.
-  tagline: Guide passo a passo per ogni funzione del firmware Unleashed e per ogni funzione originale del Flipper Zero, raccolte in un unico posto.
+  tagline: Guide passo a passo per tutte le funzioni del firmware Unleashed su Flipper Zero, in un unico posto.
   image: { src: /logo.png, alt: Unleashed Wiki }
   actions:
     - { theme: brand, text: Inizia qui, link: /it/start/ }

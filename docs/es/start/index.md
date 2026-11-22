@@ -52,7 +52,7 @@ código abierto. No existen versiones de pago, «premium» ni de código cerrado
 | Build | Qué es | Dónde conseguirlo |
 |---|---|---|
 | **Release** (estable) | Versiones probadas, recomendadas para el uso diario | [Web Installer](https://web.unleashedflip.com), [GitHub Releases](https://github.com/DarkFlippers/unleashed-firmware/releases), Telegram [@unleashed_fw](https://t.me/unleashed_fw) |
-| **Dev** (inestable) | Se compila automáticamente con cada commit nuevo en la rama `dev` | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), canal de Discord `unleashed-development` |
+| **Dev** (pruebas) | Compilaciones automáticas de la rama `dev` para probar nuevas funciones | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), canal de Discord `unleashed-development` |
 
 Cada build dev nuevo sustituye al anterior en la web; los builds dev antiguos solo sobreviven como archivos en el
 canal de Telegram. Los builds dev reciben las novedades primero, pero **pueden contener fallos**. Si encuentras uno,
@@ -71,7 +71,7 @@ aplicaciones de la comunidad). Los detalles están en
 ## Páginas de esta sección
 
 **Primeros pasos**
-- [Primer arranque](/es/start/first-start): encender, insertar una tarjeta microSD, la primera actualización
+- [Primer arranque](/es/start/first-start): encender, insertar una tarjeta microSD, instalar Unleashed
 - [Instalar Unleashed](/es/start/install): Web Installer, qFlipper, aplicaciones móviles, actualización sin conexión desde la tarjeta SD
 - [Actualizar](/es/start/updating): mantenerse al día, release frente a dev, qué sobrevive a una actualización
 - [Qué añade Unleashed](/es/start/unleashed-features): todas las funciones de Unleashed comparadas con el firmware de serie

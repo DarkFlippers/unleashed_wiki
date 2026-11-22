@@ -48,7 +48,7 @@ Flipper Zero — карманный мультитул для изучения �
 | Сборка | Что это | Где взять |
 |---|---|---|
 | **Release** (стабильная) | Проверенные релизы, рекомендуются для повседневного использования | [Web Installer](https://web.unleashedflip.com), [GitHub Releases](https://github.com/DarkFlippers/unleashed-firmware/releases), Telegram [@unleashed_fw](https://t.me/unleashed_fw) |
-| **Dev** (нестабильная) | Собирается автоматически из каждого нового коммита в ветке `dev` | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), канал `unleashed-development` в Discord |
+| **Dev** (тестовая) | Автоматические сборки из ветки `dev` для тестирования новых функций | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), канал `unleashed-development` в Discord |
 
 Новая dev-сборка заменяет предыдущую на сайте. Старые остаются только файлами в Telegram-канале. В dev-сборках новые
 функции появляются первыми, но **в них могут быть баги**. Нашли баг — сообщите в
@@ -67,7 +67,7 @@ Flipper Zero — карманный мультитул для изучения �
 ## Страницы раздела
 
 **Первые шаги**
-- [Первый запуск](/ru/start/first-start) — включение, microSD-карта, первое обновление
+- [Первый запуск](/ru/start/first-start) — включение, microSD-карта, установка Unleashed
 - [Установка Unleashed](/ru/start/install) — Web Installer, qFlipper, мобильные приложения, офлайн-обновление с карты
 - [Обновление](/ru/start/updating) — как обновляться, релиз или dev, что сохраняется
 - [Возможности Unleashed](/ru/start/unleashed-features) — всё, что Unleashed добавляет к стоковой прошивке

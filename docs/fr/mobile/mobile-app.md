@@ -42,9 +42,9 @@ changement de nom du Flipper, refaites l'appairage, voir [Problèmes de connexio
 
 ## Installer Unleashed depuis le téléphone
 
-::: warning Première installation
-S'il s'agit de votre premier firmware personnalisé, commencez par passer à la dernière version **officielle**, et
-vérifiez que la carte SD est insérée. Déjà sous Unleashed ? Installez la nouvelle version par-dessus.
+::: tip Avant de commencer
+Vérifiez que la carte SD est insérée. Vous pouvez installer Unleashed directement par-dessus le firmware d'origine ou
+une ancienne version d'Unleashed.
 :::
 
 ### iOS

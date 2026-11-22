@@ -35,25 +35,12 @@ las aplicaciones que vienen con el firmware e incluso el almacenamiento «intern
 Una tarjeta de marca de **16–32 GB** es más que suficiente. Funcionan tarjetas de hasta 256 GB, pero las grandes
 tardan más en montarse. Las tarjetas baratas sin marca pueden hacer que el dispositivo vaya lento o inestable.
 
-## 3. Actualiza el firmware oficial (solo en la primera instalación)
-
-La guía de instalación de Unleashed te pide que **actualices primero a la última versión oficial** si vas a
-instalar Unleashed por primera vez. Así se ponen al día el bootloader, la pila de radio y los datos internos.
-
-- **qFlipper** (Windows/macOS/Linux): conéctalo por USB, abre la pestaña **Advanced controls**, pon el
-  **Update Channel** en **Release** y pulsa **Update**.
-- **Flipper Mobile App** (iOS/Android): activa el Bluetooth en el Flipper (**Main Menu → Settings → Bluetooth**),
-  emparéjalo con la aplicación y toca **Update**. Tarda unos 10 minutos.
-
-Más sobre qFlipper y la aplicación móvil: [qFlipper](/es/mobile/qflipper),
-[Aplicación móvil](/es/mobile/mobile-app).
-
-## 4. Instala Unleashed
+## 3. Instala Unleashed
 
 Usa el **[Unleashed Web Installer](https://web.unleashedflip.com)**. Es el método más sencillo. Todos los métodos
 están descritos en [Instalar Unleashed](/es/start/install).
 
-## 5. Configuración básica
+## 4. Configuración básica
 
 Después de instalarlo, abre **Main Menu → Settings** y revisa:
 

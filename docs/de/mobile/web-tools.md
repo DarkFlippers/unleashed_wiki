@@ -19,7 +19,7 @@ des Flippers belegt. Das ist der häufigste Grund dafür, dass „Chrome den Fli
 | Werkzeug | Adresse | Was es macht |
 |---|---|---|
 | Unleashed Web Installer | [web.unleashedflip.com](https://web.unleashedflip.com) | Unleashed per USB installieren oder aktualisieren (Release oder Dev) |
-| Dev-Builds | [dev.unleashedflip.com](https://dev.unleashedflip.com) | automatische Builds aus dem dev-Branch (instabil) |
+| Dev-Builds | [dev.unleashedflip.com](https://dev.unleashedflip.com) | automatische Test-Builds aus dem dev-Branch mit neuen Funktionen |
 | Sub-GHz & Coordinates Map | [map.unleashedflip.com](https://map.unleashedflip.com) | Sub-GHz-Wardriving-Dateien und beliebige andere Dateien mit Koordinaten auf einer Karte anzeigen |
 | Wi-Fi Wardriving Map | [wdmap.unleashedflip.com](https://wdmap.unleashedflip.com) | mehrere Captures im WiGLE-Format (ESP32 Marauder und andere) zusammenführen und anzeigen |
 | ESP32 Web Flasher | [espflasher.unleashedflip.com](https://espflasher.unleashedflip.com) | gängige ESP32-Module aus dem Browser flashen |
@@ -28,8 +28,7 @@ des Flippers belegt. Das ist der häufigste Grund dafür, dass „Chrome den Fli
 
 Der empfohlene Weg, Unleashed zu installieren.
 
-1. Nur bei der ersten Installation: Aktualisiere zuerst auf die neueste **offizielle** Firmware. Achte darauf, dass
-   die **microSD-Karte** eingesteckt ist.
+1. Achte darauf, dass eine **microSD-Karte** eingesteckt ist.
 2. Schließe qFlipper. Verbinde den Flipper mit einem USB-Kabel, das Daten überträgt.
 3. Öffne [web.unleashedflip.com](https://web.unleashedflip.com) in einem Chromium-Browser.
 4. Drücke **Connect** und wähle deinen Flipper im Dialog des Browsers aus.

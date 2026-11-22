@@ -10,8 +10,7 @@ Every method below installs the same update package: the firmware, the updater a
 Sub-GHz settings and so on).
 
 ::: tip Before you start
-- **First install only:** update to the **latest official release** first ([First start](/start/first-start)).
-- **Already on Unleashed:** do not install anything in between. Install the new version over the current one.
+- **No intermediate updates needed:** install Unleashed directly over stock firmware or over an older Unleashed version.
 - Make sure a **microSD card is inserted**. The update is unpacked to the card, and the apps live there.
 - Charge the battery. A full update takes several minutes.
 :::

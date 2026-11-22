@@ -51,7 +51,7 @@ dich.
 | Build | Was es ist | Woher |
 |---|---|---|
 | **Release** (stabil) | Getestete Releases, empfohlen für den täglichen Einsatz | [Web Installer](https://web.unleashedflip.com), [GitHub Releases](https://github.com/DarkFlippers/unleashed-firmware/releases), Telegram [@unleashed_fw](https://t.me/unleashed_fw) |
-| **Dev** (instabil) | Wird automatisch aus jedem neuen Commit im Branch `dev` gebaut | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), Discord-Kanal `unleashed-development` |
+| **Dev** (Testversion) | Automatische Builds aus dem Branch `dev` zum Testen neuer Funktionen | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), Discord-Kanal `unleashed-development` |
 
 Ein neuer Dev-Build ersetzt den vorherigen auf der Website; ältere Dev-Builds bleiben nur als Dateien im
 Telegram-Kanal erhalten. Dev-Builds erhalten neue Funktionen zuerst, **können aber Fehler enthalten**. Wenn du einen
@@ -69,7 +69,7 @@ Community-Apps). Details unter [Unleashed installieren](/de/start/install#which-
 ## Seiten in diesem Abschnitt
 
 **Erste Schritte**
-- [Erster Start](/de/start/first-start) — einschalten, microSD-Karte einlegen, erstes Update
+- [Erster Start](/de/start/first-start) — einschalten, microSD-Karte einlegen, Unleashed installieren
 - [Unleashed installieren](/de/start/install) — Web Installer, qFlipper, Mobil-Apps, Offline-Update von der Karte
 - [Aktualisieren](/de/start/updating) — aktuell bleiben, Release oder Dev, was ein Update übersteht
 - [Was Unleashed hinzufügt](/de/start/unleashed-features) — alle Unleashed-Funktionen im Vergleich zur Stock-Firmware

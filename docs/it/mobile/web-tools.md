@@ -20,7 +20,7 @@ seriale del Flipper. È il motivo più comune per cui "Chrome non vede il Flippe
 | Strumento | Indirizzo | Cosa fa |
 |---|---|---|
 | Unleashed Web Installer | [web.unleashedflip.com](https://web.unleashedflip.com) | installa o aggiorna Unleashed (Release o Dev) via USB |
-| Build dev | [dev.unleashedflip.com](https://dev.unleashedflip.com) | build automatiche dal branch dev (instabili) |
+| Build dev | [dev.unleashedflip.com](https://dev.unleashedflip.com) | build di test automatiche dal branch dev con le nuove funzioni |
 | Mappa Sub-GHz e coordinate | [map.unleashedflip.com](https://map.unleashedflip.com) | mostra su una mappa i file di wardriving Sub-GHz e qualsiasi altro file con coordinate |
 | Mappa di wardriving Wi-Fi | [wdmap.unleashedflip.com](https://wdmap.unleashedflip.com) | unisce e mostra più acquisizioni in formato WiGLE (ESP32 Marauder e altri) |
 | ESP32 Web Flasher | [espflasher.unleashedflip.com](https://espflasher.unleashedflip.com) | programma i moduli ESP32 più diffusi dal browser |
@@ -29,8 +29,7 @@ seriale del Flipper. È il motivo più comune per cui "Chrome non vede il Flippe
 
 Il modo consigliato per installare Unleashed.
 
-1. Solo alla prima installazione: aggiorna prima all'ultimo firmware **ufficiale**. Assicurati che la **scheda
-   microSD** sia inserita.
+1. Assicurati che la **scheda microSD** sia inserita.
 2. Chiudi qFlipper. Collega il Flipper con un cavo USB che trasporti dati.
 3. Apri [web.unleashedflip.com](https://web.unleashedflip.com) in un browser Chromium.
 4. Premi **Connect** e scegli il tuo Flipper nella finestra del browser.

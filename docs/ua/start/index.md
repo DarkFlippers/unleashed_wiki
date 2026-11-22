@@ -49,7 +49,7 @@ Flipper Zero — кишеньковий мультитул для дослідж
 | Збірка | Що це | Де взяти |
 |---|---|---|
 | **Release** (стабільна) | Перевірені релізи, рекомендовані для щоденного використання | [Web Installer](https://web.unleashedflip.com), [GitHub Releases](https://github.com/DarkFlippers/unleashed-firmware/releases), Telegram [@unleashed_fw](https://t.me/unleashed_fw) |
-| **Dev** (нестабільна) | Збирається автоматично з кожного нового коміту в гілці `dev` | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), канал `unleashed-development` у Discord |
+| **Dev** (тестова) | Автоматичні збірки з гілки `dev` для тестування нових функцій | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), канал `unleashed-development` у Discord |
 
 Нова dev-збірка заміняє попередню на сайті; старі dev-збірки залишаються лише файлами в Telegram-каналі. У dev-збірках
 нові можливості з’являються першими, але **в них можуть бути баги**. Знайшли баг — повідомте про нього в
@@ -68,7 +68,7 @@ Flipper Zero — кишеньковий мультитул для дослідж
 ## Сторінки розділу
 
 **Перші кроки**
-- [Перший запуск](/ua/start/first-start) — увімкнення, картка microSD, перше оновлення
+- [Перший запуск](/ua/start/first-start) — увімкнення, картка microSD, встановлення Unleashed
 - [Встановлення Unleashed](/ua/start/install) — Web Installer, qFlipper, мобільні застосунки, офлайн-оновлення з картки
 - [Оновлення](/ua/start/updating) — як тримати прошивку актуальною, реліз чи dev, що зберігається після оновлення
 - [Можливості Unleashed](/ua/start/unleashed-features) — усе, що Unleashed додає до стокової прошивки

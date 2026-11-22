@@ -49,7 +49,7 @@ Non esistono versioni a pagamento, "premium" o closed source. Chi te ne offre un
 | Build | Che cos'è | Dove si trova |
 |---|---|---|
 | **Release** (stabile) | Release testate, consigliate per l'uso quotidiano | [Web Installer](https://web.unleashedflip.com), [GitHub Releases](https://github.com/DarkFlippers/unleashed-firmware/releases), Telegram [@unleashed_fw](https://t.me/unleashed_fw) |
-| **Dev** (instabile) | Compilata automaticamente a ogni nuovo commit sul branch `dev` | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), canale Discord `unleashed-development` |
+| **Dev** (test) | Build automatiche dal branch `dev` per provare le nuove funzioni | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), canale Discord `unleashed-development` |
 
 Ogni nuova build dev sostituisce la precedente sul sito; le build dev vecchie sopravvivono solo come file nel canale
 Telegram. Le build dev ricevono le novità per prime, ma **possono contenere bug**. Se ne trovi uno, segnalalo su
@@ -67,7 +67,7 @@ community). I dettagli sono in [Installare Unleashed](/it/start/install#which-fi
 ## Pagine di questa sezione
 
 **Primi passi**
-- [Primo avvio](/it/start/first-start): accensione, inserimento della microSD, primo aggiornamento
+- [Primo avvio](/it/start/first-start): accensione, inserimento della microSD, installazione di Unleashed
 - [Installare Unleashed](/it/start/install): Web Installer, qFlipper, app mobili, aggiornamento offline dalla scheda SD
 - [Aggiornare](/it/start/updating): restare aggiornati, release o dev, cosa sopravvive a un aggiornamento
 - [Cosa aggiunge Unleashed](/it/start/unleashed-features): tutte le funzioni di Unleashed a confronto con il firmware stock

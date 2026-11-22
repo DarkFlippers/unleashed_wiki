@@ -20,7 +20,7 @@ ocupado el puerto serie del Flipper. Es el motivo más habitual de que «Chrome 
 | Herramienta | Dirección | Qué hace |
 |---|---|---|
 | Unleashed Web Installer | [web.unleashedflip.com](https://web.unleashedflip.com) | instala o actualiza Unleashed (Release o Dev) por USB |
-| Builds dev | [dev.unleashedflip.com](https://dev.unleashedflip.com) | compilaciones automáticas de la rama dev (inestables) |
+| Builds dev | [dev.unleashedflip.com](https://dev.unleashedflip.com) | compilaciones de prueba automáticas de la rama dev con nuevas funciones |
 | Sub-GHz & Coordinates Map | [map.unleashedflip.com](https://map.unleashedflip.com) | muestra en un mapa los archivos de wardriving Sub-GHz y cualquier otro archivo con coordenadas |
 | Wi-Fi Wardriving Map | [wdmap.unleashedflip.com](https://wdmap.unleashedflip.com) | combina y muestra varias capturas en formato WiGLE (ESP32 Marauder y otros) |
 | ESP32 Web Flasher | [espflasher.unleashedflip.com](https://espflasher.unleashedflip.com) | flashea los módulos ESP32 más habituales desde el navegador |
@@ -29,8 +29,7 @@ ocupado el puerto serie del Flipper. Es el motivo más habitual de que «Chrome 
 
 La forma recomendada de instalar Unleashed.
 
-1. Solo en la primera instalación: actualiza antes al firmware **oficial** más reciente. Asegúrate de que la
-   **tarjeta microSD** está puesta.
+1. Asegúrate de que hay una **tarjeta microSD** puesta.
 2. Cierra qFlipper. Conecta el Flipper con un cable USB de datos.
 3. Abre [web.unleashedflip.com](https://web.unleashedflip.com) en un navegador basado en Chromium.
 4. Pulsa **Connect** y elige tu Flipper en la ventana emergente del navegador.

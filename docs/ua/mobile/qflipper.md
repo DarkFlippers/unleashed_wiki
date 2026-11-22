@@ -44,8 +44,7 @@ chmod +x qFlipper-x86_64.AppImage
 
 ## Встановлення Unleashed через qFlipper
 
-1. Якщо це ваша перша кастомна прошивка, спочатку оновіться до найновішого **офіційного** релізу. Переконайтеся,
-   що SD-картка вставлена.
+1. Переконайтеся, що **SD-картка** вставлена.
 2. Завантажте `flipper-z-f7-update-(version).tgz` зі сторінки
    [релізів Unleashed](https://github.com/DarkFlippers/unleashed-firmware/releases/latest) (виберіть потрібну
    літеру збірки, див. [варіанти збірок](/ua/apps/catalog#build-variants)).

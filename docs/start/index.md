@@ -48,7 +48,7 @@ There are no paid, "premium" or closed-source versions. Anyone who offers you on
 | Build | What it is | Where to get it |
 |---|---|---|
 | **Release** (stable) | Tested releases, recommended for everyday use | [Web Installer](https://web.unleashedflip.com), [GitHub Releases](https://github.com/DarkFlippers/unleashed-firmware/releases), Telegram [@unleashed_fw](https://t.me/unleashed_fw) |
-| **Dev** (unstable) | Built automatically from every new commit on the `dev` branch | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), Discord channel `unleashed-development` |
+| **Dev** (testing) | Automatic builds from the `dev` branch for testing new features | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), Discord channel `unleashed-development` |
 
 A new dev build replaces the previous one on the web site; old dev builds survive only as files in the Telegram
 channel. Dev builds get new features first but **may contain bugs**. If you find one, report it on
@@ -66,7 +66,7 @@ See [Installing Unleashed](/start/install#which-file-to-download) for details.
 ## Pages in this section
 
 **First steps**
-- [First start](/start/first-start): power on, insert a microSD card, first update
+- [First start](/start/first-start): power on, insert a microSD card, install Unleashed
 - [Installing Unleashed](/start/install): Web Installer, qFlipper, mobile apps, offline update from the SD card
 - [Updating](/start/updating): staying current, release vs dev, what survives an update
 - [What Unleashed adds](/start/unleashed-features): every Unleashed feature compared with stock firmware

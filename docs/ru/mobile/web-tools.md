@@ -19,7 +19,7 @@ sources: [unleashed-readme, unleashed-docs, flipper-docs]
 | Инструмент | Адрес | Что делает |
 |---|---|---|
 | Unleashed Web Installer | [web.unleashedflip.com](https://web.unleashedflip.com) | установка и обновление Unleashed (Release или Dev) по USB |
-| Dev-сборки | [dev.unleashedflip.com](https://dev.unleashedflip.com) | автоматические сборки из ветки dev (нестабильные) |
+| Dev-сборки | [dev.unleashedflip.com](https://dev.unleashedflip.com) | автоматические тестовые сборки из ветки dev с новыми функциями |
 | Sub-GHz & Coordinates Map | [map.unleashedflip.com](https://map.unleashedflip.com) | показ на карте файлов Sub-GHz вардрайвинга и любых других файлов с координатами |
 | Wi-Fi Wardriving Map | [wdmap.unleashedflip.com](https://wdmap.unleashedflip.com) | объединение и показ нескольких захватов в формате WiGLE (ESP32 Marauder и другие) |
 | ESP32 Web Flasher | [espflasher.unleashedflip.com](https://espflasher.unleashedflip.com) | прошивка популярных модулей ESP32 из браузера |
@@ -28,8 +28,7 @@ sources: [unleashed-readme, unleashed-docs, flipper-docs]
 
 Рекомендуемый способ установки Unleashed.
 
-1. Только при первой установке: сначала обновитесь до последней **официальной** прошивки. Проверьте, что
-   **microSD-карта** вставлена.
+1. Проверьте, что **microSD-карта** вставлена.
 2. Закройте qFlipper. Подключите Флиппер USB-кабелем с передачей данных.
 3. Откройте [web.unleashedflip.com](https://web.unleashedflip.com) в браузере на Chromium.
 4. Нажмите **Connect** и выберите свой Флиппер во всплывающем окне браузера.

@@ -20,7 +20,7 @@ sources: [unleashed-readme, unleashed-docs, flipper-docs]
 | Інструмент | Адреса | Що робить |
 |---|---|---|
 | Вебінсталятор Unleashed | [web.unleashedflip.com](https://web.unleashedflip.com) | встановлює або оновлює Unleashed (Release чи Dev) через USB |
-| Dev-збірки | [dev.unleashedflip.com](https://dev.unleashedflip.com) | автоматичні збірки з гілки dev (нестабільні) |
+| Dev-збірки | [dev.unleashedflip.com](https://dev.unleashedflip.com) | автоматичні тестові збірки з гілки dev із новими функціями |
 | Карта Sub-GHz і координат | [map.unleashedflip.com](https://map.unleashedflip.com) | показує на карті файли Sub-GHz-вардрайвінгу та будь-які інші файли з координатами |
 | Карта Wi-Fi-вардрайвінгу | [wdmap.unleashedflip.com](https://wdmap.unleashedflip.com) | об'єднує й відображає кілька записів у форматі WiGLE (ESP32 Marauder та інші) |
 | Вебпрошивальник ESP32 | [espflasher.unleashedflip.com](https://espflasher.unleashedflip.com) | прошиває популярні модулі ESP32 із браузера |
@@ -29,8 +29,7 @@ sources: [unleashed-readme, unleashed-docs, flipper-docs]
 
 Рекомендований спосіб встановлення Unleashed.
 
-1. Лише для першого встановлення: спочатку оновіться до найновішої **офіційної** прошивки. Переконайтеся, що
-   **картка microSD** вставлена.
+1. Переконайтеся, що **картка microSD** вставлена.
 2. Закрийте qFlipper. Підключіть Flipper USB-кабелем із підтримкою передавання даних.
 3. Відкрийте [web.unleashedflip.com](https://web.unleashedflip.com) у браузері на Chromium.
 4. Натисніть **Connect** і виберіть свій Flipper у вікні браузера.

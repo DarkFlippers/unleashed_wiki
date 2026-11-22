@@ -42,9 +42,9 @@ rifai l'accoppiamento: vedi [Problemi di connessione](#connection-problems).
 
 ## Installare Unleashed dal telefono
 
-::: warning Prima installazione
-Se è il tuo primo firmware personalizzato, aggiorna prima all'ultima release **ufficiale** e assicurati che la scheda
-SD sia inserita. Sei già su Unleashed? Installa la nuova versione sopra quella attuale.
+::: tip Prima di iniziare
+Assicurati che la scheda SD sia inserita. Puoi installare Unleashed direttamente sopra il firmware stock o una versione
+precedente di Unleashed.
 :::
 
 ### iOS

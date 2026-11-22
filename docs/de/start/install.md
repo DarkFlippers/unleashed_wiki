@@ -10,9 +10,7 @@ Es gibt mehrere Wege, Unleashed Firmware zu installieren. Alle installieren dass
 den Updater und sämtliche Assets enthält (Apps, IR-Bibliotheken, Sub-GHz-Einstellungen und so weiter).
 
 ::: tip Vorbereitung
-- **Nur bei der Erstinstallation:** zuerst auf das **aktuelle offizielle Release** aktualisieren
-  ([Erster Start](/de/start/first-start)).
-- **Schon auf Unleashed:** nichts dazwischen installieren. Die neue Version kommt direkt über die aktuelle.
+- **Keine Zwischen-Updates nötig:** Installiere Unleashed direkt über die Stock-Firmware oder eine ältere Unleashed-Version.
 - Achte darauf, dass eine **microSD-Karte eingelegt ist**. Das Update wird auf die Karte entpackt, und dort liegen
   auch die Apps.
 - Lade den Akku. Ein komplettes Update dauert mehrere Minuten.

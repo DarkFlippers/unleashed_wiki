@@ -33,25 +33,12 @@ dispositivo.
 Una scheda di marca da **16–32 GB** è più che sufficiente. Funzionano anche schede fino a 256 GB, ma quelle grandi
 richiedono più tempo per il montaggio. Le schede no-name economiche possono rendere il dispositivo lento o instabile.
 
-## 3. Aggiornare il firmware ufficiale (solo alla prima installazione)
-
-La guida all'installazione di Unleashed chiede di **aggiornare prima all'ultima release ufficiale** se stai
-installando Unleashed per la prima volta. In questo modo bootloader, radio stack e dati interni vengono portati
-all'ultima versione.
-
-- **qFlipper** (Windows/macOS/Linux): collega il dispositivo via USB, apri la scheda **Advanced controls**, imposta
-  **Update Channel** su **Release** e clicca **Update**.
-- **Flipper Mobile App** (iOS/Android): attiva il Bluetooth sul Flipper (**Main Menu → Settings → Bluetooth**),
-  accoppia il dispositivo con l'app, poi tocca **Update**. Ci vogliono circa 10 minuti.
-
-Altre informazioni su qFlipper e sull'app mobile: [qFlipper](/it/mobile/qflipper), [App mobile](/it/mobile/mobile-app).
-
-## 4. Installare Unleashed
+## 3. Installare Unleashed
 
 Usa l'**[Unleashed Web Installer](https://web.unleashedflip.com)**: è il metodo più semplice. Tutti i metodi sono
 descritti in [Installare Unleashed](/it/start/install).
 
-## 5. Configurazione di base
+## 4. Configurazione di base
 
 Dopo l'installazione apri **Main Menu → Settings** e controlla:
 

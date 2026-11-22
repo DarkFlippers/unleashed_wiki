@@ -20,7 +20,7 @@ Flipper. C'est la raison la plus fréquente du « Chrome ne voit pas le Flipper 
 | Outil | Adresse | Ce qu'il fait |
 |---|---|---|
 | Unleashed Web Installer | [web.unleashedflip.com](https://web.unleashedflip.com) | installer ou mettre à jour Unleashed (Release ou Dev) en USB |
-| Dev builds | [dev.unleashedflip.com](https://dev.unleashedflip.com) | builds automatiques de la branche dev (instables) |
+| Dev builds | [dev.unleashedflip.com](https://dev.unleashedflip.com) | builds de test automatiques de la branche dev avec les nouvelles fonctions |
 | Sub-GHz & Coordinates Map | [map.unleashedflip.com](https://map.unleashedflip.com) | afficher sur une carte les fichiers de wardriving Sub-GHz et tout autre fichier contenant des coordonnées |
 | Wi-Fi Wardriving Map | [wdmap.unleashedflip.com](https://wdmap.unleashedflip.com) | combiner et afficher plusieurs captures au format WiGLE (ESP32 Marauder et autres) |
 | ESP32 Web Flasher | [espflasher.unleashedflip.com](https://espflasher.unleashedflip.com) | flasher les modules ESP32 courants depuis le navigateur |
@@ -29,8 +29,7 @@ Flipper. C'est la raison la plus fréquente du « Chrome ne voit pas le Flipper 
 
 La méthode recommandée pour installer Unleashed.
 
-1. Première installation uniquement : mettez d'abord à jour vers le dernier firmware **officiel**. Assurez-vous que la
-   **carte microSD** est insérée.
+1. Assurez-vous qu'une **carte microSD** est insérée.
 2. Fermez qFlipper. Connectez le Flipper avec un câble USB de données.
 3. Ouvrez [web.unleashedflip.com](https://web.unleashedflip.com) dans un navigateur Chromium.
 4. Appuyez sur **Connect** et choisissez votre Flipper dans la fenêtre du navigateur.

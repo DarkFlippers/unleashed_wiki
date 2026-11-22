@@ -34,25 +34,12 @@ Une carte de marque de **16 à 32 Go** suffit largement. Les cartes jusqu'à 256
 capacités mettent plus de temps à être montées. Les cartes bon marché sans marque peuvent rendre l'appareil lent ou
 instable.
 
-## 3. Mettre à jour le firmware officiel (première installation uniquement)
-
-Le guide d'installation d'Unleashed demande de **commencer par passer à la dernière version officielle** si vous
-installez Unleashed pour la première fois. Cela met à jour le bootloader, la pile radio et les données internes.
-
-- **qFlipper** (Windows/macOS/Linux) : connectez l'appareil en USB, ouvrez l'onglet **Advanced controls**, réglez
-  **Update Channel** sur **Release** et cliquez sur **Update**.
-- **Flipper Mobile App** (iOS/Android) : activez le Bluetooth sur le Flipper (**Main Menu → Settings → Bluetooth**),
-  appairez l'appareil avec l'application, puis appuyez sur **Update**. L'opération prend une dizaine de minutes.
-
-Pour en savoir plus sur qFlipper et l'application mobile : [qFlipper](/fr/mobile/qflipper),
-[Application mobile](/fr/mobile/mobile-app).
-
-## 4. Installer Unleashed
+## 3. Installer Unleashed
 
 Utilisez l'**[Unleashed Web Installer](https://web.unleashedflip.com)** : c'est la méthode la plus simple. Toutes les
 méthodes sont décrites dans [Installer Unleashed](/fr/start/install).
 
-## 5. Réglages de base
+## 4. Réglages de base
 
 Après l'installation, ouvrez **Main Menu → Settings** et vérifiez :
 

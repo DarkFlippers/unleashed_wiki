@@ -55,7 +55,7 @@ source. Il n'existe aucune version payante, « premium » ou à code fermé. Qui
 | Build | De quoi il s'agit | Où l'obtenir |
 |---|---|---|
 | **Release** (stable) | Versions testées, recommandées pour un usage quotidien | [Web Installer](https://web.unleashedflip.com), [GitHub Releases](https://github.com/DarkFlippers/unleashed-firmware/releases), Telegram [@unleashed_fw](https://t.me/unleashed_fw) |
-| **Dev** (instable) | Compilé automatiquement à chaque nouveau commit sur la branche `dev` | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), canal Discord `unleashed-development` |
+| **Dev** (test) | Compilations automatiques de la branche `dev` pour tester les nouvelles fonctions | [dev.unleashedflip.com](https://dev.unleashedflip.com), Telegram [@kotnehleb](https://t.me/kotnehleb), canal Discord `unleashed-development` |
 
 Un nouveau build dev remplace le précédent sur le site web ; les anciens builds dev ne subsistent que sous forme de
 fichiers dans le canal Telegram. Les builds dev reçoivent les nouveautés en premier mais **peuvent contenir des bugs**.
@@ -75,7 +75,7 @@ base) et `c` (sans applications communautaires). Les détails figurent dans
 ## Pages de cette section
 
 **Premiers pas**
-- [Premier démarrage](/fr/start/first-start) : allumage, insertion d'une carte microSD, première mise à jour
+- [Premier démarrage](/fr/start/first-start) : allumage, insertion d'une carte microSD, installation d'Unleashed
 - [Installer Unleashed](/fr/start/install) : Web Installer, qFlipper, applications mobiles, mise à jour hors ligne
   depuis la carte SD
 - [Mise à jour](/fr/start/updating) : rester à jour, release ou dev, ce qui est conservé
