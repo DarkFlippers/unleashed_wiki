@@ -51,15 +51,15 @@ quando ne viene caricata una nuova. Segnala i bug su
 
 ## Cosa sopravvive a un aggiornamento
 
-- **I tuoi file sulla scheda microSD**: chiavi, card, telecomandi e script salvati non vengono toccati.
+- **I tuoi file sulla scheda microSD**: chiavi, card, telecomandi e script salvati rimangono intatti.
 - **Il tuo nome personalizzato**: è salvato sulla scheda in `/ext/dolphin/name.settings`
   ([Nome personalizzato del Flipper](/it/start/custom-name)).
 - **Le impostazioni**: di solito vengono conservate. **Eccezione:** quando una release cambia la struttura di un file
   di impostazioni, quel file viene riportato ai valori predefiniti una volta. Succede solo in release specifiche. Se
   dopo un aggiornamento le impostazioni del desktop (PIN, preferiti…) si azzerano, reimpostale e controlla il
   changelog.
-- Le **app integrate** in `/ext/apps/` vengono sostituite con le versioni del nuovo firmware. I pacchetti di app non
-  possono mai sovrascriverle o riportarle a una versione precedente.
+- Le **app integrate** in `/ext/apps/` vengono sostituite solo con le versioni del nuovo firmware. I pacchetti di app
+  aggiuntive non possono mai sovrascriverle o riportarle a una versione precedente.
 
 ## Controllare la propria versione
 

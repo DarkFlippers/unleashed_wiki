@@ -23,7 +23,7 @@ Press and hold <kbd>BACK</kbd> for about 3 seconds. The desktop appears, with yo
 ## 2. Insert a microSD card
 
 A microSD card is **required**. The card holds keys, cards, remotes, databases, the apps that come with the firmware,
-and even the "internal" storage (see [microSD card](/start/sd-card)). The card is not included with the device.
+and even the "internal" storage (see [microSD card](/start/sd-card)). A microSD card is not included in the box and must be purchased separately.
 
 1. Find the slot at the bottom of the Flipper.
 2. Hold the card **with the pins facing up** and push it in until it clicks.

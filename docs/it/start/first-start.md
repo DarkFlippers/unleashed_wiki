@@ -23,8 +23,8 @@ Tieni premuto <kbd>BACK</kbd> per circa 3 secondi. Compare il desktop, con il tu
 ## 2. Inserire una scheda microSD
 
 La scheda microSD è **indispensabile**. Contiene chiavi, card, telecomandi, database, le app che arrivano con il
-firmware e anche la memoria "interna" (vedi [Scheda microSD](/it/start/sd-card)). La scheda non è inclusa con il
-dispositivo.
+firmware e anche la memoria "interna" (vedi [Scheda microSD](/it/start/sd-card)). La scheda non è inclusa nella confezione standard e va acquistata
+separatamente.
 
 1. Individua lo slot sul lato inferiore del Flipper.
 2. Tieni la scheda **con i contatti rivolti verso l'alto** e spingila dentro fino allo scatto.

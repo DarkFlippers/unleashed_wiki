@@ -53,15 +53,15 @@ dès qu'un nouveau est mis en ligne. Signalez les bugs sur
 
 ## Ce qui est conservé lors d'une mise à jour
 
-- **Vos fichiers sur la carte microSD** : les clés, cartes, télécommandes et scripts enregistrés ne sont pas touchés.
+- **Vos fichiers sur la carte microSD** : les clés, cartes, télécommandes et scripts enregistrés restent intacts.
 - **Votre nom personnalisé** : stocké sur la carte dans `/ext/dolphin/name.settings`
   ([Nom personnalisé du Flipper](/fr/start/custom-name)).
 - **Les réglages** : conservés en général. **Exception :** lorsqu'une version modifie la structure d'un fichier de
   réglages, ce fichier est réinitialisé une fois aux valeurs par défaut. Cela n'arrive que sur certaines versions. Si
   vos réglages de bureau (code PIN, favoris…) sont réinitialisés après une mise à jour, refaites-les et consultez le
   changelog.
-- **Les applications intégrées** dans `/ext/apps/` sont remplacées par les versions du nouveau firmware. Les packs
-  d'applications ne peuvent jamais les écraser ni les faire revenir à une version antérieure.
+- **Les applications intégrées** dans `/ext/apps/` sont remplacées uniquement par les versions du nouveau firmware. Les
+  packs d'applications supplémentaires ne peuvent jamais les écraser ni les faire revenir à une version antérieure.
 
 ## Vérifier sa version
 

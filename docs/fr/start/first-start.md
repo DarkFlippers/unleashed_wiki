@@ -24,7 +24,7 @@ Maintenez <kbd>BACK</kbd> enfoncé pendant environ 3 secondes. Le bureau appara�
 
 Une carte microSD est **indispensable**. Elle contient les clés, les cartes, les télécommandes, les bases de données,
 les applications livrées avec le firmware, et même le stockage « interne » (voir [Carte microSD](/fr/start/sd-card)).
-La carte n'est pas fournie avec l'appareil.
+La carte n'est pas incluse dans le coffret d'origine et doit être achetée séparément.
 
 1. Repérez le logement situé en bas du Flipper.
 2. Tenez la carte **contacts vers le haut** et poussez-la jusqu'au clic.

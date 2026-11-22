@@ -62,8 +62,8 @@ fichiers dans le canal Telegram. Les builds dev reçoivent les nouveautés en pr
 Si vous en trouvez un, signalez-le sur
 [GitHub issues](https://github.com/DarkFlippers/unleashed-firmware/issues).
 
-Chaque version existe en trois variantes : `e` (base + applications supplémentaires), sans suffixe (applications de
-base) et `c` (sans applications communautaires). Les détails figurent dans
+Chaque version existe en trois variantes : `E` (base + applications supplémentaires), sans suffixe (applications de
+base) et `C` (sans applications communautaires). Les détails figurent dans
 [Installer Unleashed](/fr/start/install#which-file-to-download).
 
 ## Canaux communautaires

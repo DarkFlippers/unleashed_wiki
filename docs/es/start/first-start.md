@@ -26,7 +26,7 @@ Mantén pulsado <kbd>BACK</kbd> unos 3 segundos. Aparece el escritorio, con tu d
 
 La tarjeta microSD es **obligatoria**. En ella se guardan las llaves, las tarjetas, los mandos, las bases de datos,
 las aplicaciones que vienen con el firmware e incluso el almacenamiento «interno» (véase
-[Tarjeta microSD](/es/start/sd-card)). La tarjeta no viene incluida con el dispositivo.
+[Tarjeta microSD](/es/start/sd-card)). La tarjeta no viene incluida en el paquete de serie y hay que comprarla aparte.
 
 1. Busca la ranura en la parte inferior del Flipper.
 2. Sujeta la tarjeta **con los contactos hacia arriba** y empújala hasta que haga clic.

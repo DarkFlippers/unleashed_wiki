@@ -7,37 +7,36 @@ sources: [unleashed-readme, unleashed-src]
 # Cosa aggiunge Unleashed
 
 Unleashed è costruito sul firmware ufficiale (OFW) e rimane **del tutto compatibile con le sue API e le sue app**.
-Tutto quello che fa il firmware stock continua a funzionare. Questa pagina elenca ciò che Unleashed aggiunge o
-modifica, raggruppato per area, con i link alle pagine della wiki che trattano ogni funzione in dettaglio.
+Tutto quello che fa il firmware stock continua a funzionare. Qui sotto sono elencate le modifiche e le aggiunte rispetto al firmware ufficiale (OFW), raggruppate per area,
+con i link alle pagine della wiki che trattano ogni funzione in dettaglio.
 
 ## Sub-GHz: libreria radio e hardware
 
 - **Restrizioni regionali sulla trasmissione rimosse.** Ogni frequenza supportata dal chip CC1101 può trasmettere
   senza passaggi aggiuntivi.
-- **Frequenze aggiuntive** nell'elenco predefinito (per esempio 317.0 e 336.1 MHz, aggiunte di recente) e un elenco di
-  frequenze modificabile dall'utente: [Frequenze e preset](/it/subghz/frequencies).
+- **Frequenze aggiuntive** nell'elenco predefinito e un elenco di frequenze modificabile dall'utente: [Frequenze e preset](/it/subghz/frequencies).
 - **Range di frequenza esteso opzionale**, oltre le specifiche del chip. Può danneggiare l'hardware:
   [Impostazioni pericolose](/it/start/dangerous-settings).
-- **Molti protocolli nuovi** e la possibilità di **salvare e inviare numerosi sistemi a rolling code**:
+- **Ampia raccolta di protocolli aggiuntivi**, con la possibilità di **salvare e inviare numerosi sistemi a rolling code**:
   [Sistemi supportati](/it/subghz/supported-systems), [Rolling code](/it/subghz/rolling-codes),
   [KeeLoq](/it/subghz/keeloq).
 - Supporto per il **modulo CC1101 esterno** su SPI hardware, con controllo di amplificatore e LED:
   [CC1101 esterno](/it/subghz/external-cc1101).
-- **Modalità contatore** per i rolling code, per evitare la desincronizzazione:
+- **Modalità speciali del contatore** per i rolling code, per evitare la desincronizzazione:
   [Modalità contatore](/it/subghz/counter-mode).
 
 ## Sub-GHz: app principale
 
 - **Le ultime impostazioni usate vengono ricordate** (frequenza, modulazione…).
-- **Miglioramenti al Frequency Analyzer**. L'analizzatore in sé è del firmware ufficiale; in Unleashed <kbd>OK</kbd>
-  invia la frequenza rilevata a Read e una pressione lunga di <kbd>OK</kbd> porta direttamente a Read: [Frequency Analyzer](/it/subghz/frequency-analyzer).
+- **Miglioramenti al Frequency Analyzer**: le funzioni di base sono le stesse del firmware ufficiale; in più, in
+  Unleashed <kbd>OK</kbd> invia la frequenza rilevata a Read e una pressione lunga di <kbd>OK</kbd> porta direttamente a Read: [Frequency Analyzer](/it/subghz/frequency-analyzer).
 - **Miglioramenti a Read**: mostra quando è stato ricevuto ogni segnale. Tieni premuto <kbd>→</kbd> nell'elenco per
   eliminare un segnale. I protocolli multi-sistema mostrano il nome del sistema decodificato (CAME, Nice FloR-S,
   FAAC SLH, KeeLoq): [Read](/it/subghz/read).
 - **Nomi dei protocolli nei nomi dei file**: con `Radio Settings → Protocol Names = ON` i file salvati prendono il
   nome da un timestamp più il protocollo.
 - **Pulsanti personalizzati** per KeeLoq, Alutech AT4N, Nice Flor S, Somfy Telis, Security+ 2.0, CAME Atomo, BelKorn
-  e altri. Usa i tasti freccia per inviare il codice di un altro pulsante:
+  e altri. Usa i tasti freccia del pad direzionale per inviare il codice di un altro pulsante:
   [Usare il Flipper come telecomando](/it/subghz/remote).
 - **`Add manually` esteso**: una voce per ogni sistema, selettore di banda, modalità avanzata con TE, guard time e
   altri campi. Crea telecomandi FAAC SLH, BFT Mitto, Somfy Telis, Nice Flor S, CAME Atomo e altri e accoppiali con un
@@ -71,7 +70,7 @@ modifica, raggruppato per area, con i link alle pagine della wiki che trattano o
 - **Molti parser di card aggiuntivi** (card per i trasporti e card cittadine: Troika, Umarsh, Zolotaya Korona, Kazan,
   Metromoney, Moscow Social Card e altre): [Card supportate](/it/nfc/supported-cards).
 - **NFC Magic 2.0** per le card magic, Ultralight comprese: [NFC Magic](/it/nfc/nfc-magic).
-- **App T5577**: legge, modifica e scrive i blocchi, cancella o azzera la password, sniffa una password:
+- **App T5577**: legge, modifica e scrive i blocchi, cancella o azzera la password, sniffer di password (`Sniff Password`):
   [App T5577](/it/rfid/t5577-app).
 - Formato di visualizzazione **EM4100 DEZ 8**: [Leggere RFID](/it/rfid/read).
 - **Fuzzer RFID e iButton**: [RFID Fuzzer](/it/rfid/fuzzer), [iButton Fuzzer](/it/ibutton/fuzzer).
@@ -79,11 +78,11 @@ modifica, raggruppato per area, con i link alle pagine della wiki che trattano o
 ## Infrarossi
 
 - Il telecomando universale per le TV è stato ricostruito per coprire **tutti i pulsanti**.
-- **Telecomandi universali per proiettori, ventilatori, condizionatori e audio** (soundbar…), tenuti aggiornati dal
-  team.
+- **Ampia raccolta di telecomandi universali per proiettori, ventilatori, condizionatori e audio** (soundbar…),
+  aggiornata, verificata e ampliata regolarmente dal team.
 - Protocollo **RCA** e supporto per i moduli IR esterni (rilevati automaticamente):
   [Telecomandi universali](/it/infrared/universal-remotes).
-- Come realizzare acquisizioni valide per il database dei telecomandi universali:
+- Come realizzare acquisizioni valide da includere nel database dei telecomandi universali:
   [Acquisizioni IR](/it/infrared/captures).
 
 ## Bad USB e USB/Bluetooth
@@ -100,7 +99,7 @@ modifica, raggruppato per area, con i link alle pagine della wiki che trattano o
   Inv. %, Retro 3, Retro 5, Bar %): [Desktop](/it/start/desktop).
 - **Blocco tenendo premuto <kbd>↑</kbd>** sul desktop: con il PIN se ne è impostato uno, altrimenti blocco normale.
 - **Più giochi in Dummy Mode**: ogni freccia (pressione breve e lunga) e <kbd>OK</kbd> possono avviare la propria app.
-- Supporto per la **mod di retroilluminazione RGB** in **LCD and Notifications → RGB Mod Settings** (solo per i Flipper
+- Supporto per la **[mod di retroilluminazione RGB](https://github.com/quen0n/flipperzero-firmware-rgb#readme)** in **LCD and Notifications → RGB Mod Settings** (solo per i Flipper
   modificati a livello hardware).
 - **Cursore nell'inserimento di testo** e un **mini-editor per l'inserimento dei byte** (premi <kbd>↑</kbd> più volte
   finché non compare l'editor dei nibble).

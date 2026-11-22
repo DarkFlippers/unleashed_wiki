@@ -25,7 +25,7 @@ Halte <kbd>BACK</kbd> etwa 3 Sekunden gedrückt. Der Desktop erscheint, mit dem 
 
 Eine microSD-Karte ist **zwingend erforderlich**. Auf der Karte liegen Schlüssel, Karten, Handsender, Datenbanken, die
 mit der Firmware gelieferten Apps und sogar der „interne“ Speicher (siehe [microSD-Karte](/de/start/sd-card)). Die
-Karte gehört nicht zum Lieferumfang.
+Karte gehört nicht zum Lieferumfang und muss separat gekauft werden.
 
 1. Der Steckplatz befindet sich an der Unterseite des Flippers.
 2. Halte die Karte **mit den Kontakten nach oben** und schiebe sie hinein, bis sie einrastet.

@@ -54,7 +54,7 @@ A new dev build replaces the previous one on the web site; old dev builds surviv
 channel. Dev builds get new features first but **may contain bugs**. If you find one, report it on
 [GitHub issues](https://github.com/DarkFlippers/unleashed-firmware/issues).
 
-Each release comes in three variants: `e` (base + extra apps), no suffix (base apps) and `c` (no community apps).
+Each release comes in three variants: `E` (base + extra apps), no suffix (base apps) and `C` (no community apps).
 See [Installing Unleashed](/start/install#which-file-to-download) for details.
 
 ## Community channels

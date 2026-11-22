@@ -7,31 +7,30 @@ sources: [unleashed-readme, unleashed-src]
 # What Unleashed adds
 
 Unleashed is built on the official firmware (OFW) and stays **fully compatible with its API and apps**. Everything the
-stock firmware does still works. Below is what Unleashed adds or changes, grouped by area.
+stock firmware does still works. Below are the changes and additions compared to the official firmware (OFW), grouped by area.
 
 ## Sub-GHz: radio library and hardware
 
 - **Regional TX restrictions removed.** Every frequency the CC1101 chip supports can transmit with no extra steps.
-- **Extra frequencies** in the default list (for example 317.0 and 336.1 MHz were added recently), and a user-editable
-  frequency list: [Frequencies and presets](/subghz/frequencies).
+- **Extra frequencies** in the default list and a user-editable frequency list: [Frequencies and presets](/subghz/frequencies).
 - **Optional extended frequency range** beyond the chip specification. It can damage the hardware:
   [Dangerous settings](/start/dangerous-settings).
-- **Many new protocols**, and the ability to **save and send many rolling-code systems**:
+- **Large set of additional protocols**, with the ability to **save and send many rolling-code systems**:
   [Supported systems](/subghz/supported-systems), [Rolling codes](/subghz/rolling-codes), [KeeLoq](/subghz/keeloq).
 - **External CC1101 module** support over hardware SPI, with amplifier/LED control: [External CC1101](/subghz/external-cc1101).
-- **Counter modes** for rolling codes to avoid desync: [Counter mode](/subghz/counter-mode).
+- **Special counter modes** for rolling codes to avoid desync: [Counter mode](/subghz/counter-mode).
 
 ## Sub-GHz: main app
 
 - **Last used settings are remembered** (frequency, modulation…).
-- **Frequency Analyzer improvements**. The analyzer is the official firmware's; Unleashed makes <kbd>OK</kbd> send
-  the detected frequency to Read, and long <kbd>OK</kbd> jump straight to Read: [Frequency Analyzer](/subghz/frequency-analyzer).
+- **Frequency Analyzer improvements**: core functionality matches the official firmware, plus Unleashed lets <kbd>OK</kbd>
+  send the detected frequency to Read and long <kbd>OK</kbd> jump straight to Read: [Frequency Analyzer](/subghz/frequency-analyzer).
 - **Read improvements**: shows when each signal was received. Hold <kbd>→</kbd> in the list to delete a signal.
   Multi-system protocols show the decoded system name (CAME, Nice FloR-S, FAAC SLH, KeeLoq): [Read](/subghz/read).
 - **Protocol names in file names**: `Radio Settings → Protocol Names = ON` names saved files with a timestamp plus the
   protocol.
 - **Custom buttons** for KeeLoq, Alutech AT4N, Nice Flor S, Somfy Telis, Security+ 2.0, CAME Atomo, BelKorn and others.
-  Use the arrow keys to send another button code: [Using as a remote](/subghz/remote).
+  Use the D-pad arrow buttons to send another button code: [Using as a remote](/subghz/remote).
 - **Extended `Add manually`**: one entry per system, band picker, advanced mode with TE, guard time and other fields.
   Create FAAC SLH, BFT Mitto, Somfy Telis, Nice Flor S, CAME Atomo and other remotes and pair them with a receiver:
   [Add manually](/subghz/add-manually), [Programming a new remote](/subghz/remote-prog).
@@ -61,16 +60,17 @@ stock firmware does still works. Below is what Unleashed adds or changes, groupe
 - **Many extra card parsers** (transport and city cards: Troika, Umarsh, Zolotaya Korona, Kazan, Metromoney, Moscow
   Social Card and more): [Supported cards](/nfc/supported-cards).
 - **NFC Magic 2.0** for magic cards, including Ultralight: [NFC Magic](/nfc/nfc-magic).
-- **T5577 app**: read, edit and write blocks, wipe or clear the password, sniff a password: [T5577 app](/rfid/t5577-app).
+- **T5577 app**: read, edit and write blocks, wipe or clear the password, password sniffer (`Sniff Password`): [T5577 app](/rfid/t5577-app).
 - **EM4100 DEZ 8** display format: [Reading RFID](/rfid/read).
 - **RFID and iButton fuzzers**: [RFID Fuzzer](/rfid/fuzzer), [iButton Fuzzer](/ibutton/fuzzer).
 
 ## Infrared
 
 - The TV universal remote is rebuilt to cover **all buttons**.
-- **Universal remotes for projectors, fans, air conditioners and audio** (soundbars…), kept up to date by the team.
+- **Large collection of universal remotes for projectors, fans, air conditioners and audio** (soundbars…), regularly
+  updated, verified and expanded by the team.
 - **RCA** protocol and external IR module support (auto-detected): [Universal remotes](/infrared/universal-remotes).
-- How to make good captures for the universal remote database: [IR captures](/infrared/captures).
+- How to make good captures for inclusion in the universal remote database: [IR captures](/infrared/captures).
 
 ## Bad USB and USB/Bluetooth
 
@@ -84,7 +84,7 @@ stock firmware does still works. Below is what Unleashed adds or changes, groupe
   Retro 3, Retro 5, Bar %): [Desktop](/start/desktop).
 - **Lock by holding <kbd>↑</kbd>** on the desktop: with the PIN if one is set, a regular lock otherwise.
 - **More games in Dummy Mode**: each arrow (short and long press) and <kbd>OK</kbd> can launch its own app.
-- **RGB backlight mod** support in **LCD and Notifications → RGB Mod Settings** (only for hardware-modded Flippers).
+- **[RGB backlight mod](https://github.com/quen0n/flipperzero-firmware-rgb#readme)** support in **LCD and Notifications → RGB Mod Settings** (only for hardware-modded Flippers).
 - **Text input cursor**, and a **byte input mini-editor** (press <kbd>↑</kbd> repeatedly until the nibble editor appears).
 - **Archive** with extra tabs (SubRem for Sub-GHz Remote maps, Phone for the SIM800 phonebook).
 

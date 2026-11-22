@@ -59,8 +59,8 @@ der vorherige von der Website. Fehler kannst du über
   Einstellungsdatei, wird diese Datei einmalig auf die Standardwerte zurückgesetzt. Das passiert nur in bestimmten
   Releases. Wenn deine Desktop-Einstellungen (PIN, Favoriten …) nach einem Update zurückgesetzt sind, stelle sie
   erneut ein und sieh ins Changelog.
-- **Eingebaute Apps** in `/ext/apps/` werden durch die Versionen aus der neuen Firmware ersetzt. App-Pakete können sie
-  nie überschreiben oder auf einen älteren Stand zurücksetzen.
+- **Eingebaute Apps** in `/ext/apps/` werden nur durch die Versionen aus der neuen Firmware ersetzt. Zusätzliche
+  App-Pakete können sie nie überschreiben oder auf einen älteren Stand zurücksetzen.
 
 ## Version prüfen
 

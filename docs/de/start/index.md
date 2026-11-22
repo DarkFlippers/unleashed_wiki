@@ -57,7 +57,7 @@ Ein neuer Dev-Build ersetzt den vorherigen auf der Website; ältere Dev-Builds b
 Telegram-Kanal erhalten. Dev-Builds erhalten neue Funktionen zuerst, **können aber Fehler enthalten**. Wenn du einen
 findest, melde ihn über [GitHub issues](https://github.com/DarkFlippers/unleashed-firmware/issues).
 
-Jedes Release erscheint in drei Varianten: `e` (Base- plus Extra-Apps), ohne Suffix (Base-Apps) und `c` (ohne
+Jedes Release erscheint in drei Varianten: `E` (Base- plus Extra-Apps), ohne Suffix (Base-Apps) und `C` (ohne
 Community-Apps). Details unter [Unleashed installieren](/de/start/install#which-file-to-download).
 
 ## Community-Kanäle

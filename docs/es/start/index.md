@@ -58,7 +58,7 @@ Cada build dev nuevo sustituye al anterior en la web; los builds dev antiguos so
 canal de Telegram. Los builds dev reciben las novedades primero, pero **pueden contener fallos**. Si encuentras uno,
 comunícalo en las [issues de GitHub](https://github.com/DarkFlippers/unleashed-firmware/issues).
 
-Cada release llega en tres variantes: `e` (base + aplicaciones extra), sin sufijo (aplicaciones base) y `c` (sin
+Cada release llega en tres variantes: `E` (base + aplicaciones extra), sin sufijo (aplicaciones base) y `C` (sin
 aplicaciones de la comunidad). Los detalles están en
 [Instalar Unleashed](/es/start/install#which-file-to-download).
 

@@ -49,13 +49,13 @@ one is uploaded. Report bugs on [GitHub issues](https://github.com/DarkFlippers/
 
 ## What survives an update
 
-- **Your files on the microSD card**: saved keys, cards, remotes and scripts are not touched.
+- **Your files on the microSD card**: saved keys, cards, remotes and scripts remain untouched.
 - **Your custom name**: stored on the card in `/ext/dolphin/name.settings` ([Custom Flipper name](/start/custom-name)).
 - **Settings**: usually kept. **Exception:** when a release changes the layout of a settings file, that file is reset to
   defaults once. This happens only in specific releases. If your desktop settings (PIN, favourites…) reset after an
   update, set them again and check the changelog.
-- **Built-in apps** in `/ext/apps/` are replaced with the versions from the new firmware. App packs can never overwrite
-  or downgrade them.
+- **Built-in apps** in `/ext/apps/` are replaced only by the versions from the new firmware. Extra app packs can never
+  overwrite or downgrade them.
 
 ## Checking your version
 

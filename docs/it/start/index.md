@@ -55,7 +55,7 @@ Ogni nuova build dev sostituisce la precedente sul sito; le build dev vecchie so
 Telegram. Le build dev ricevono le novità per prime, ma **possono contenere bug**. Se ne trovi uno, segnalalo su
 [GitHub issues](https://github.com/DarkFlippers/unleashed-firmware/issues).
 
-Ogni release esce in tre varianti: `e` (base più app extra), senza suffisso (app base) e `c` (senza app della
+Ogni release esce in tre varianti: `E` (base più app extra), senza suffisso (app base) e `C` (senza app della
 community). I dettagli sono in [Installare Unleashed](/it/start/install#which-file-to-download).
 
 ## Canali della community
