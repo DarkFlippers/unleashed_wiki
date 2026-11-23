@@ -13,8 +13,8 @@ Aufnahme lässt sich abspielen, speichern, später dekodieren oder bearbeiten. N
 - du ein Signal zur Analyse mitschneiden oder den Entwicklern ein neues Protokoll melden willst;
 - du ein exaktes Wiederabspielen eines statischen Signals brauchst, dessen Protokoll der Flipper nicht kennt.
 
-Die Aufnahme erfolgt trotzdem mit der gewählten **Frequenz und Modulation** — der Flipper ist kein SDR. Eine falsche
-Modulation liefert dir eine Aufnahme von Rauschen.
+Die Aufnahme erfolgt mit der gewählten **Frequenz und Modulation** — der Flipper ist kein SDR. Mit falscher Frequenz
+oder Modulation nimmst du nur Rauschen auf.
 
 ::: warning Rolling Codes
 Das RAW-Wiederabspielen einer Rolling-Code-Fernbedienung ist genau wie ein Klon: Es treibt den Empfängerzähler
@@ -73,7 +73,7 @@ sie auf `-----` (vollständige Aufnahme).
    - `Rename`, `Delete`.
 
 ::: tip Unleashed
-`More → Decode` und `More → Edit` sind Ergänzungen von Unleashed. Mit `Edit` findest du das echte Signal in einer
+`More → Decode` und `More → Edit` sind Zusatzfunktionen von Unleashed. Mit `Edit` findest du das echte Signal in einer
 verrauschten Aufnahme, kürzt es, fügst Dateien zusammen und dekodierst nur einen Ausschnitt.
 :::
 
@@ -82,17 +82,19 @@ Spiel und die Karte ist langsam, kann das Senden vor dem Ende der Datei abbreche
 
 ## Eine Fernbedienung für eine Protokollanfrage aufnehmen
 
-So gehen die Unleashed-Entwickler vor, wenn du Unterstützung für ein neues Protokoll möchtest:
+Um dieses Vorgehen bitten die Unleashed-Entwickler, wenn Proben eines unbekannten Signals zur Analyse und Aufnahme in die Liste unterstützter Protokolle gesammelt werden:
 
 1. Finde die Frequenz mit dem Analyzer. Probiere in Read `AM650`, `FM238`, `FM476`, `FM12K` — wenn nichts
    dekodiert wird, mach weiter.
 2. Setze in Read RAW diese Frequenz und **`RSSI Threshold: -----`**.
 3. Mache **eine RAW-Aufnahme pro Modulation**: `AM650`, `FM238`, `FM476`, `FM12K`.
-4. Für jede: **REC** drücken, dann eine Taste der Fernbedienung **5-mal für 1–2 s gehalten** drücken, dann
+4. Für jede Aufnahme: **REC** drücken, dann eine Taste der Fernbedienung **5-mal für 1–2 s gehalten** drücken, dann
    **5-mal für etwa 5 s gehalten**. Stoppen und speichern.
 5. Hat die Fernbedienung mehrere Tasten, nimm jede Taste genauso auf. Benenne jede Datei nach der Taste.
-6. Kopiere die Dateien auf einen PC, packe sie in ein ZIP und eröffne ein Issue im Firmware-Repository. Füge gute
-   Fotos der Fernbedienung hinzu (wenn möglich auch von innen), dazu Modell und Hersteller.
+6. Kopiere die Dateien auf einen PC, packe sie in ein Archiv und eröffne ein Issue im
+   [Firmware-Repository](https://github.com/DarkFlippers/unleashed-firmware/issues) oder schicke deine Anfrage über
+   einen anderen Kanal ans Team ([Offizielle Links](/de/community/links) — Telegram-Chats, [Discord](https://discord.unleashedflip.com)).
+   Füge gute Fotos der Fernbedienung hinzu (wenn möglich auch von innen), dazu Modell und Hersteller.
 
 ## Fehlersuche
 

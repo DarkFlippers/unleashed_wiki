@@ -55,7 +55,7 @@ Spremljeni signali nalaze se u `Main Menu → Sub-GHz → Saved` (pogledajte [u 
 | držanje <kbd>→</kbd> | Brisanje odabranog signala s popisa |
 | <kbd>Back</kbd> | Napuštanje opcije Read. Ako postoje nespremljeni signali, pojavljuje se **Exit to Sub-GHz Menu?** — `Exit` / `Stay` |
 
-Popis prima do 128 signala (manje za velike BinRAW snimke, ovisno o slobodnoj memoriji).
+Ovisno o veličini primljenih podataka, popis može primiti do 128 signala.
 
 ## Postavke (Config) {#config}
 
@@ -92,8 +92,11 @@ pronađenu analizatorom — signali poslani tijekom prebacivanja frekvencije biv
 Otvorite signal (s popisa Read ili iz `Saved → <datoteka> → Emulate`). Zaslon odašiljanja prikazuje podatke ključa,
 frekvenciju, modulaciju i `R: Int` / `R: Ext` (koji će radio slati).
 
-- **Držite** <kbd>OK</kbd> (**Send**) — Flipper odašilje **samo dok je tipka pritisnuta**. Brzi dodir može poslati
-  nepotpun kôd; držite 1–2 s (CAME Atomo zahtijeva najmanje 2 s).
+- **Pritisnite** <kbd>OK</kbd> (**Send**) — jedan pritisak odašilje potpun paket signala (obično s 1–3 ponavljanja radi
+  pouzdanosti). **Držanje** tipke pritisnute neprekidno ponavlja odašiljanje dok je ne pustite (korisno na većoj
+  udaljenosti ili uz jače smetnje). Kod protokola s promjenjivim kodom držanje tipke **ne** povećava brojač (pogledajte
+  i [Načini brojača](/hr/subghz/counter-mode)) — signal se ponavlja s istim brojačem sve dok tipku ne pustite i ponovno
+  pritisnete.
 - <kbd>Back</kbd> — izlaz.
 
 ### Prilagođene tipke (Unleashed)
@@ -138,7 +141,7 @@ ključ, a ponovno uparivanje često zahtijeva servisne alate. Koristite Flipper 
 
 ## Rješavanje problema
 
-- **Ništa se ne pojavljuje** — pogrešna frekvencija ili modulacija. Upotrijebite analizator, isprobajte `AM650`, zatim `FM238`/`FM476`/`FM12K`.
+- **Ništa se ne pojavljuje** — pogrešna frekvencija ili modulacija. Upotrijebite analizator i isprobajte različite modulacije (`AM650`/`FM238`/`FM476`/`FM12K`).
   Provjerite ne skriva li protokol neki od filtara `Ignore …`.
 - **Signal je primljen, ali nije dekodiran** — protokol je nepoznat: uključite `Bin RAW` (statični daljinski upravljači) ili snimite pomoću
   [Read RAW](/hr/subghz/read-raw). Isprobajte i aplikaciju [Remote Analyzer](/hr/subghz/remote-analyzer).

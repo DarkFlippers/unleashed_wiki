@@ -13,8 +13,8 @@ peut être rejoué, sauvegardé, décodé plus tard ou édité. Utilisez-le quan
 - vous voulez capturer un signal pour l'analyser ou signaler un nouveau protocole aux développeurs ;
 - vous avez besoin de rejouer à l'identique un signal statique dont le Flipper ne connaît pas le protocole.
 
-L'enregistrement se fait malgré tout avec la **fréquence et la modulation** sélectionnées — le Flipper n'est pas un
-SDR. Une mauvaise modulation ne vous donne qu'un enregistrement de bruit.
+L'enregistrement s'effectue avec la **fréquence et la modulation** sélectionnées — le Flipper n'est pas un SDR. Avec
+une mauvaise fréquence ou modulation, vous n'enregistrerez que du bruit.
 
 ::: warning Codes tournants
 Rejouer en RAW une télécommande à code tournant revient exactement à un clone : cela fait avancer le compteur du
@@ -73,7 +73,7 @@ développeurs, laissez-le sur `-----` (enregistrement complet).
    - `Rename`, `Delete`.
 
 ::: tip Unleashed
-`More → Decode` et `More → Edit` sont des ajouts d'Unleashed. Avec `Edit`, vous pouvez retrouver le vrai signal dans
+`More → Decode` et `More → Edit` sont des fonctionnalités supplémentaires d'Unleashed. Avec `Edit`, vous pouvez retrouver le vrai signal dans
 une capture bruitée, le rogner, fusionner des fichiers et ne décoder qu'une sélection.
 :::
 
@@ -83,19 +83,21 @@ une bonne carte.
 
 ## Enregistrer une télécommande pour une demande de protocole
 
-Voici la procédure que les développeurs d'Unleashed demandent lorsque vous souhaitez la prise en charge d'un nouveau
-protocole :
+Voici la procédure demandée par les développeurs d'Unleashed pour collecter des échantillons d'un signal inconnu en
+vue de le décoder et de l'ajouter à la liste des protocoles pris en charge :
 
 1. Trouvez la fréquence avec l'analyseur. Dans Read, essayez `AM650`, `FM238`, `FM476`, `FM12K` — si rien ne se
    décode, continuez.
 2. Dans Read RAW, réglez cette fréquence et **`RSSI Threshold: -----`**.
 3. Faites **un RAW par modulation** : `AM650`, `FM238`, `FM476`, `FM12K`.
-4. Pour chacun : appuyez sur **REC**, puis appuyez sur un bouton de la télécommande **5 fois en le maintenant 1–2 s**,
+4. Pour chaque enregistrement : appuyez sur **REC**, puis appuyez sur un bouton de la télécommande **5 fois en le maintenant 1–2 s**,
    puis **5 fois en le maintenant environ 5 s**. Arrêtez et enregistrez.
 5. Si la télécommande a plusieurs boutons, enregistrez chaque bouton de la même façon. Nommez chaque fichier d'après
    le bouton.
-6. Copiez les fichiers sur un ordinateur, compressez-les et ouvrez une issue dans le dépôt du firmware. Ajoutez de
-   bonnes photos de la télécommande (de l'intérieur aussi, si possible), le modèle et le constructeur.
+6. Copiez les fichiers sur un ordinateur, compressez-les dans une archive et ouvrez une issue dans le
+   [dépôt du firmware](https://github.com/DarkFlippers/unleashed-firmware/issues), ou transmettez votre demande à
+   l'équipe via tout autre canal disponible ([Liens officiels](/fr/community/links) — chats Telegram, [Discord](https://discord.unleashedflip.com)).
+   Ajoutez de bonnes photos de la télécommande (de l'intérieur aussi, si possible), le modèle et le constructeur.
 
 ## Dépannage
 

@@ -24,9 +24,10 @@ signals from far away. With a very low trigger the analyzer just reports random 
 own noise instead of your remote. To actually *receive* signals use [Read](/subghz/read) and
 [Read RAW](/subghz/read-raw).
 
-::: warning
-Using the analyzer with an external module is not recommended: external modules are more sensitive and pick up much
-more noise.
+::: warning External modules
+In the Extended (`E`) version of Unleashed you can use Frequency Analyzer with external modules by launching it from
+the file/apps menu under `Apps → Sub-GHz` (instead of the main Sub-GHz menu). Keep in mind that external modules are
+much more sensitive to noise and interference, which can easily be mistaken for a real signal.
 :::
 
 ## Screen

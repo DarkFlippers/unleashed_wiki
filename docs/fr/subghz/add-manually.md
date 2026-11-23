@@ -219,8 +219,8 @@ fléchée sur le Flipper. Procédures pas à pas par constructeur :
 - **Le récepteur ne réagit pas du tout** — mauvaise bande. Lisez d'abord votre télécommande d'origine
   (`Sub-GHz → Read`) et choisissez la même fréquence et la même modulation. DoorHan existe en 315 et 433.92 MHz ;
   FAAC, Genius, Erreka en 433.92 et 868.35.
-- **Le récepteur réagit mais n'enregistre jamais la télécommande** — vous avez manqué la fenêtre d'apprentissage ou
-  vous avez tapé au lieu de maintenir. Le Flipper n'émet que tant que la touche est maintenue.
+- **Le récepteur réagit mais n'enregistre jamais la télécommande** — vous avez manqué la fenêtre d'apprentissage ou, pour
+  une autre raison (par exemple des interférences), le récepteur n'a pas reçu un signal correct du Flipper.
 - **La nouvelle télécommande Erreka/BFT est refusée** — certaines installations partagent un même Seed entre toutes
   les télécommandes ; récupérez-le ([Seed Capturer](/fr/subghz/seed-capturer)) et utilisez
   Add Manually [Advanced]. Voir [KeeLoq](/fr/subghz/keeloq).

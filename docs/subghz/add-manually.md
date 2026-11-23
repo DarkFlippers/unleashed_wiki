@@ -209,8 +209,8 @@ sent with a single arrow key on the Flipper. Step-by-step procedures per manufac
   `/ext/subghz/assets/` are missing or outdated. Reinstall/update the firmware with the SD card inserted.
 - **Receiver doesn't react at all** — wrong band. Read your original remote first (`Sub-GHz → Read`) and pick the
   same frequency and modulation. DoorHan exists on 315 and 433.92 MHz; FAAC, Genius, Erreka on 433.92 and 868.35.
-- **Receiver reacts but never stores the remote** — you missed the learning window or tapped instead of holding.
-  Flipper transmits only while the key is held.
+- **Receiver reacts but never stores the remote** — you missed the learning window, or for another reason (for example,
+  interference) the receiver did not get a clean signal from the Flipper.
 - **Erreka/BFT new remote refused** — some installations share one Seed across all remotes; recover it
   ([Seed Capturer](/subghz/seed-capturer)) and use Add Manually [Advanced]. See [KeeLoq](/subghz/keeloq).
 - **Nice O-Code remote ignored** — a factory receiver has no installer code; use `Nice One` or `Nice FloR-S` there.

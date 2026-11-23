@@ -217,8 +217,8 @@ Vorgehen Schritt für Schritt je Hersteller:
 - **Der Empfänger reagiert überhaupt nicht** — falsches Band. Lies erst deine Originalfernbedienung
   (`Sub-GHz → Read`) und wähle dieselbe Frequenz und Modulation. DoorHan gibt es auf 315 und 433.92 MHz; FAAC,
   Genius, Erreka auf 433.92 und 868.35.
-- **Der Empfänger reagiert, speichert die Fernbedienung aber nie** — du hast das Lernfenster verpasst oder nur
-  getippt statt gehalten. Der Flipper sendet nur, solange die Taste gehalten wird.
+- **Der Empfänger reagiert, speichert die Fernbedienung aber nie** — das Lernfenster wurde verpasst oder der Empfänger
+  hat aus einem anderen Grund (zum Beispiel durch Störungen) kein sauberes Signal vom Flipper erhalten.
 - **Neue Erreka-/BFT-Fernbedienung wird abgewiesen** — manche Anlagen teilen einen Seed über alle
   Fernbedienungen; rechne ihn zurück ([Seed Capturer](/de/subghz/seed-capturer)) und nimm Add Manually [Advanced].
   Siehe [KeeLoq](/de/subghz/keeloq).

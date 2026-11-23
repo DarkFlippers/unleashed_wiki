@@ -24,9 +24,10 @@ signala iz daljine. Uz vrlo nizak okidač analizator samo javlja nasumične smet
 vlastiti šum umjesto vašeg daljinskog upravljača. Za stvarno *primanje* signala koristite [Read](/hr/subghz/read) i
 [Read RAW](/hr/subghz/read-raw).
 
-::: warning
-Korištenje analizatora s vanjskim modulom nije preporučljivo: vanjski moduli su osjetljiviji i hvataju puno
-više šuma.
+::: warning Vanjski moduli
+U proširenoj verziji Unleasheda (`E`) moguće je koristiti Frequency Analyzer s vanjskim modulima pokretanjem aplikacije
+iz `Apps → Sub-GHz` (umjesto iz glavnog izbornika Sub-GHz). Imajte na umu da s vanjskim modulom znatno raste osjetljivost
+na šum i smetnje, koje se lako mogu pogrešno protumačiti kao koristan signal.
 :::
 
 ## Zaslon

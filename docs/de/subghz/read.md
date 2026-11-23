@@ -57,7 +57,7 @@ Gespeicherte Signale findest du unter `Main Menu → Sub-GHz → Saved` (siehe [
 | <kbd>→</kbd> halten | Das ausgewählte Signal aus der Liste löschen |
 | <kbd>Back</kbd> | Read verlassen. Gibt es ungespeicherte Signale, erscheint **Exit to Sub-GHz Menu?** — `Exit` / `Stay` |
 
-Die Liste fasst bis zu 128 Signale (weniger bei großen BinRAW-Aufnahmen, je nach freiem Speicher).
+Je nach Größe der empfangenen Daten fasst die Liste bis zu 128 Signale.
 
 ## Config {#config}
 
@@ -95,8 +95,11 @@ während eines Frequenzwechsels gesendet werden, gehen verloren.
 Öffne das Signal (aus der Read-Liste oder über `Saved → <Datei> → Emulate`). Der Sendebildschirm zeigt die
 Schlüsseldaten, Frequenz, Modulation und `R: Int` / `R: Ext` (welches Funkmodul sendet).
 
-- <kbd>OK</kbd> (**Send**) **halten** — der Flipper sendet **nur, solange die Taste gehalten wird**. Ein kurzer
-  Tipp kann einen unvollständigen Code senden; halte 1–2 s (CAME Atomo braucht mindestens 2 s).
+- <kbd>OK</kbd> (**Send**) **drücken** — ein einzelner Tastendruck sendet ein vollständiges Signalpaket (in der Regel
+  mit 1–3 Wiederholungen für Zuverlässigkeit). **Gedrückthalten** wiederholt das Senden fortlaufend, bis die Taste
+  losgelassen wird (hilfreich bei größerer Entfernung oder starken Störungen). Bei Rolling-Code-Protokollen erhöht das
+  Gedrückthalten den Zähler **nicht** (siehe auch [Zählermodus](/de/subghz/counter-mode)) — das Signal wird mit
+  demselben Zähler wiederholt, bis du loslässt und erneut drückst.
 - <kbd>Back</kbd> — verlassen.
 
 ### Eigene Tasten (Unleashed)
@@ -143,8 +146,8 @@ den Flipper nur mit deiner eigenen Technik und für legale Forschung.
 
 ## Fehlersuche
 
-- **Es erscheint nichts** — falsche Frequenz oder Modulation. Nimm den Analyzer, probiere `AM650`, dann
-  `FM238`/`FM476`/`FM12K`. Prüfe, ob ein `Ignore …`-Filter das Protokoll ausblendet.
+- **Es erscheint nichts** — falsche Frequenz oder Modulation. Nutze den Analyzer und probiere verschiedene Modulationen
+  (`AM650`/`FM238`/`FM476`/`FM12K`). Prüfe, ob ein `Ignore …`-Filter das Protokoll ausblendet.
 - **Signal empfangen, aber nicht dekodiert** — das Protokoll ist unbekannt: schalte `Bin RAW` ein (statische
   Fernbedienungen) oder nimm es mit [Read RAW](/de/subghz/read-raw) auf. Probiere auch die App
   [Remote Analyzer](/de/subghz/remote-analyzer).

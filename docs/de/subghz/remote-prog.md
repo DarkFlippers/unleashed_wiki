@@ -44,7 +44,7 @@ Welche Pfeiltaste welche Taste sendet, hängt vom Protokoll ab. Eine *versteckte
 
 Die App [Sub-GHz Remote](/de/subghz/remote) sendet genau dieselben Tasten: jeder Slot einer Map hat eine Einstellung `Button` (`Default`, `Up`, `Down`, `Left`, `Right`), eine versteckte Taste kann also auf einer eigenen Taste liegen.
 
-**Halte die Taste gedrückt.** Der Flipper sendet nur, solange eine Taste gehalten wird. Ein kurzer Tipp sendet oft einen unvollständigen Code. Halte sie 1–3 Sekunden, sofern ein Schritt nichts anderes sagt.
+**Halte <kbd>OK</kbd> 1–3 Sekunden gedrückt**, sofern ein Schritt nichts anderes sagt.
 
 **Das Timing ist entscheidend.** Die meisten Empfänger öffnen ein Programmierfenster von 5, 10 oder 30 Sekunden. Lies das ganze Vorgehen durch, bevor du anfängst.
 

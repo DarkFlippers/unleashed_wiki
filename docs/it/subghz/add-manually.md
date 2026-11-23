@@ -213,8 +213,8 @@ passo per ogni produttore: **[Il Flipper come nuovo telecomando](/it/subghz/remo
 - **Il ricevitore non reagisce affatto** — banda sbagliata. Leggi prima il tuo telecomando originale
   (`Sub-GHz → Read`) e scegli la stessa frequenza e modulazione. DoorHan esiste a 315 e 433.92 MHz; FAAC, Genius,
   Erreka a 433.92 e 868.35.
-- **Il ricevitore reagisce ma non memorizza mai il telecomando** — hai mancato la finestra di apprendimento oppure hai
-  dato un tocco invece di tenere premuto. Il Flipper trasmette solo mentre il tasto è premuto.
+- **Il ricevitore reagisce ma non memorizza mai il telecomando** — hai mancato la finestra di apprendimento oppure, per
+  un altro motivo (per esempio interferenze), il ricevitore non ha ricevuto un segnale corretto dal Flipper.
 - **Il nuovo telecomando Erreka/BFT viene rifiutato** — alcune installazioni condividono un solo Seed tra tutti i
   telecomandi; recuperalo ([Seed Capturer](/it/subghz/seed-capturer)) e usa Add Manually [Advanced]. Vedi
   [KeeLoq](/it/subghz/keeloq).

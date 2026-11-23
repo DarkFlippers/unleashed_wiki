@@ -59,7 +59,7 @@ Les signaux enregistrés se trouvent dans `Main Menu → Sub-GHz → Saved` (voi
 | maintien de <kbd>→</kbd> | Supprimer le signal sélectionné de la liste |
 | <kbd>Back</kbd> | Quitter Read. S'il reste des signaux non enregistrés, vous obtenez **Exit to Sub-GHz Menu?** — `Exit` / `Stay` |
 
-La liste contient jusqu'à 128 signaux (moins en présence de grosses captures BinRAW, selon la mémoire libre).
+Selon la taille des données reçues, la liste peut contenir jusqu'à 128 signaux.
 
 ## Config
 
@@ -96,8 +96,11 @@ une **fréquence fixe** trouvée avec l'analyseur : les signaux émis pendant un
 Ouvrez le signal (depuis la liste Read ou depuis `Saved → <fichier> → Emulate`). L'écran d'émission affiche les
 données de la clé, la fréquence, la modulation et `R: Int` / `R: Ext` (quelle radio va émettre).
 
-- **Maintenez** <kbd>OK</kbd> (**Send**) — le Flipper n'émet **que pendant que le bouton est maintenu**. Une
-  pression brève peut envoyer un code incomplet ; maintenez 1–2 s (CAME Atomo demande au moins 2 s).
+- **Appuyez sur** <kbd>OK</kbd> (**Send**) — un appui simple envoie un paquet de signal complet (en général avec 1 à 3
+  répétitions pour la fiabilité). **Maintenir** le bouton enfoncé répète l'émission en continu jusqu'au relâchement
+  (utile à distance ou en présence d'interférences). Pour les protocoles à code tournant, maintenir le bouton
+  n'incrémente **pas** le compteur (voir aussi [Mode compteur](/fr/subghz/counter-mode)) — le signal est réémis avec
+  le même compteur tant que le bouton n'est pas relâché puis pressé à nouveau.
 - <kbd>Back</kbd> — quitter.
 
 ### Boutons personnalisés (Unleashed)
@@ -145,8 +148,8 @@ concessionnaire. N'utilisez le Flipper qu'avec votre propre matériel et pour de
 
 ## Dépannage
 
-- **Rien n'apparaît** — mauvaise fréquence ou mauvaise modulation. Utilisez l'analyseur, essayez `AM650`, puis
-  `FM238`/`FM476`/`FM12K`. Vérifiez qu'un filtre `Ignore …` ne masque pas le protocole.
+- **Rien n'apparaît** — mauvaise fréquence ou mauvaise modulation. Utilisez l'analyseur et essayez différentes
+  modulations (`AM650`/`FM238`/`FM476`/`FM12K`). Vérifiez qu'un filtre `Ignore …` ne masque pas le protocole.
 - **Signal reçu mais non décodé** — le protocole est inconnu : activez `Bin RAW` (télécommandes à code fixe) ou
   enregistrez avec [Read RAW](/fr/subghz/read-raw). Essayez aussi l'application
   [Remote Analyzer](/fr/subghz/remote-analyzer).

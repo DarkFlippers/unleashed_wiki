@@ -13,8 +13,8 @@ registrazione può essere riprodotta, salvata, decodificata in seguito o modific
 - vuoi acquisire un segnale per analizzarlo o per segnalare un nuovo protocollo agli sviluppatori;
 - ti serve la riproduzione esatta di un segnale statico il cui protocollo il Flipper non conosce.
 
-La registrazione viene comunque effettuata con la **frequenza e la modulazione** selezionate — il Flipper non è un SDR.
-Una modulazione sbagliata ti dà una registrazione di rumore.
+La registrazione viene effettuata con la **frequenza e la modulazione** selezionate — il Flipper non è un SDR. Con una
+frequenza o modulazione sbagliata registrerai solo rumore.
 
 ::: warning Codici rolling
 Riprodurre in RAW un telecomando a codice rolling equivale a un clone: fa avanzare il contatore del ricevitore e può
@@ -73,7 +73,7 @@ l'altra: i file sono molto più piccoli e puliti. Per le acquisizioni da inviare
    - `Rename`, `Delete`.
 
 ::: tip Unleashed
-`More → Decode` e `More → Edit` sono aggiunte di Unleashed. Con `Edit` puoi trovare il segnale reale in
+`More → Decode` e `More → Edit` sono funzionalità aggiuntive di Unleashed. Con `Edit` puoi trovare il segnale reale in
 un'acquisizione rumorosa, tagliarlo, unire file e decodificare solo una selezione.
 :::
 
@@ -83,17 +83,19 @@ scheda di buona qualità.
 
 ## Registrare un telecomando per richiedere un protocollo
 
-È la procedura che gli sviluppatori di Unleashed chiedono quando vuoi il supporto di un nuovo protocollo:
+È la procedura richiesta dagli sviluppatori di Unleashed quando serve raccogliere campioni di un segnale sconosciuto per decodificarlo e aggiungerlo ai protocolli supportati:
 
 1. Trova la frequenza con l'analizzatore. In Read prova `AM650`, `FM238`, `FM476`, `FM12K` — se nulla viene
    decodificato, continua.
 2. In Read RAW imposta quella frequenza e **`RSSI Threshold: -----`**.
 3. Crea **un RAW per ciascuna modulazione**: `AM650`, `FM238`, `FM476`, `FM12K`.
-4. Per ognuna: premi **REC**, poi premi un tasto del telecomando **5 volte tenendolo premuto 1–2 s**, poi **5 volte
+4. Per ogni registrazione: premi **REC**, poi premi un tasto del telecomando **5 volte tenendolo premuto 1–2 s**, poi **5 volte
    tenendolo premuto ~5 s**. Ferma e salva.
 5. Se il telecomando ha più tasti, registra ogni tasto nello stesso modo. Dai a ogni file il nome del tasto.
-6. Copia i file su un PC, comprimili in uno zip e apri una issue nel repository del firmware. Aggiungi buone foto del
-   telecomando (anche all'interno, se possibile), modello e produttore.
+6. Copia i file su un PC, comprimili in un archivio e apri una issue nel
+   [repository del firmware](https://github.com/DarkFlippers/unleashed-firmware/issues), oppure invia la richiesta al
+   team tramite qualsiasi canale disponibile ([Link ufficiali](/it/community/links) — chat Telegram, [Discord](https://discord.unleashedflip.com)).
+   Aggiungi buone foto del telecomando (anche all'interno, se possibile), modello e produttore.
 
 ## Risoluzione dei problemi
 

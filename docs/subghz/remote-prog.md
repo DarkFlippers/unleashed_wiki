@@ -44,7 +44,7 @@ Which arrow sends which button depends on the protocol. A *hidden* or *programmi
 
 The [Sub-GHz Remote](/subghz/remote) app sends those same buttons: every slot in a map has a `Button` setting (`Default`, `Up`, `Down`, `Left`, `Right`), so a hidden button can sit on a key of its own.
 
-**Hold the key down.** The Flipper transmits only while a key is held. A quick tap often sends an incomplete code. Hold it for 1–3 seconds unless a step says otherwise.
+**Hold <kbd>OK</kbd> for 1–3 seconds** unless a step says otherwise.
 
 **Timing matters.** Most receivers open a programming window of 5, 10 or 30 seconds. Read the whole procedure before you start.
 

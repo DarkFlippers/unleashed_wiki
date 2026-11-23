@@ -40,7 +40,7 @@ counter, and how to set one by editing the file on a PC instead, is on
 [Counter modes](/subghz/counter-mode#modes-by-protocol).
 
 ::: warning Confirming a counter or button edit transmits
-`Edit Counter` and `Edit Button` write the file by running the transmit path: the firmware starts a send with the
+`Edit Counter` and `Edit Button` write the new values to the file using the signal transmission mechanism: the firmware starts a send with the
 new value and stops it immediately, and the file is rewritten when that send stops. The radio is keyed for an
 instant, so do this away from the receiver you don't want to operate.
 

@@ -6,7 +6,7 @@ sources: [unleashed-src, unleashed-readme]
 ---
 # Sub-GHz RAW Edit
 
-**Sub-GHz RAW Edit** (par Lechnio, v1.9) est un petit éditeur de forme d'onde fonctionnant sur l'appareil, destiné aux captures RAW `.sub`. Un enregistrement [Read RAW](/fr/subghz/read-raw) contient généralement plusieurs secondes de bruit autour de la courte salve qui vous intéresse. Avec RAW Edit, vous localisez le vrai signal, vous le marquez et vous n'enregistrez que cette portion — et vous pouvez aussi fusionner plusieurs fichiers, en découper des morceaux et décoder une sélection avec les décodeurs Sub-GHz du firmware.
+**Sub-GHz RAW Edit** (par Lechnio) est un petit éditeur de forme d'onde fonctionnant sur l'appareil, destiné aux captures RAW `.sub`. Un enregistrement [Read RAW](/fr/subghz/read-raw) contient généralement plusieurs secondes de bruit autour de la courte salve qui vous intéresse. Avec RAW Edit, vous localisez le vrai signal, vous le marquez et vous n'enregistrez que cette portion — et vous pouvez aussi fusionner plusieurs fichiers, en découper des morceaux et décoder une sélection avec les décodeurs Sub-GHz du firmware.
 
 ::: tip Unleashed
 RAW Edit est livré avec Unleashed en tant qu'application système, et l'application Sub-GHz l'ouvre directement : `Sub-GHz → Read RAW` (ou `Saved`) → ouvrir un fichier RAW → <kbd>→</kbd> `More` → `Edit`. L'entrée `Edit` n'apparaît que si RAW Edit est installé. En quittant l'éditeur, vous revenez dans Sub-GHz.

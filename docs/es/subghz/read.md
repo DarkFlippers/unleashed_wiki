@@ -57,7 +57,7 @@ Las señales guardadas están en `Main Menu → Sub-GHz → Saved` (véase [más
 | mantener <kbd>→</kbd> | Borrar de la lista la señal seleccionada |
 | <kbd>Back</kbd> | Salir de Read. Si hay señales sin guardar aparece **Exit to Sub-GHz Menu?** — `Exit` / `Stay` |
 
-La lista admite hasta 128 señales (menos con capturas BinRAW grandes, según la memoria libre).
+Según el tamaño de los datos recibidos, la lista puede almacenar hasta 128 señales.
 
 ## Config {#config}
 
@@ -95,8 +95,11 @@ frecuencia se pierden.
 Abre la señal (desde la lista de Read o desde `Saved → <fichero> → Emulate`). La pantalla de transmisión muestra los
 datos de la clave, la frecuencia, la modulación y `R: Int` / `R: Ext` (qué radio va a transmitir).
 
-- **Mantén** <kbd>OK</kbd> (**Send**): el Flipper transmite **solo mientras el botón esté pulsado**. Un toque rápido
-  puede enviar un código incompleto; mantenlo 1–2 s (CAME Atomo necesita al menos 2 s).
+- **Pulsa** <kbd>OK</kbd> (**Send**): una pulsación sencilla envía un paquete completo de señal (normalmente con 1–3
+  repeticiones para mayor fiabilidad). **Mantener** el botón pulsado repite la transmisión de forma continua hasta
+  soltarlo (útil a mayor distancia o con fuertes interferencias). En los protocolos de código rodante, mantener el botón
+  **no** incrementa el contador (véase también [Modo de contador](/es/subghz/counter-mode)): la señal se repite con el
+  mismo contador hasta que sueltas y vuelves a pulsar.
 - <kbd>Back</kbd>: salir.
 
 ### Botones personalizados (Unleashed)
@@ -144,8 +147,8 @@ dejarlo en lista negra, y volver a emparejarlo suele requerir herramientas de co
 
 ## Resolución de problemas
 
-- **No aparece nada**: frecuencia o modulación equivocadas. Usa el analizador, prueba `AM650` y después
-  `FM238`/`FM476`/`FM12K`. Comprueba que ningún filtro `Ignore …` esté ocultando el protocolo.
+- **No aparece nada**: frecuencia o modulación equivocadas. Usa el analizador y prueba distintas modulaciones
+  (`AM650`/`FM238`/`FM476`/`FM12K`). Comprueba que ningún filtro `Ignore …` esté ocultando el protocolo.
 - **La señal se recibe pero no se decodifica**: el protocolo es desconocido; activa `Bin RAW` (mandos estáticos) o
   grábala con [Read RAW](/es/subghz/read-raw). Prueba también la aplicación
   [Remote Analyzer](/es/subghz/remote-analyzer).

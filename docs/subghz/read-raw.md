@@ -13,8 +13,8 @@ played back, saved, decoded later, or edited. Use it when:
 - you want to capture a signal for analysis or to report a new protocol to the developers;
 - you need an exact replay of a static signal whose protocol the Flipper doesn't know.
 
-The recording is still made with the selected **frequency and modulation** — the Flipper is not an SDR. A wrong
-modulation gives you a recording of noise.
+Recording uses the selected **frequency and modulation** — the Flipper is not an SDR. With the wrong frequency or
+modulation you will record only noise.
 
 ::: warning Rolling codes
 A RAW replay of a rolling-code remote is just like a clone: it pushes the receiver counter and can desynchronise
@@ -70,7 +70,7 @@ are much smaller and cleaner. For captures you send to developers, keep it at `-
    - `Rename`, `Delete`.
 
 ::: tip Unleashed
-`More → Decode` and `More → Edit` are Unleashed additions. With `Edit` you can find the real signal in a noisy
+`More → Decode` and `More → Edit` are extra Unleashed features. With `Edit` you can find the real signal in a noisy
 capture, trim it, merge files and decode just a selection.
 :::
 
@@ -79,17 +79,19 @@ card is slow, transmission can stop before the end of the file — use a good ca
 
 ## Recording a remote for a protocol request
 
-This is the procedure the Unleashed developers ask for when you want a new protocol supported:
+Unleashed developers ask for this procedure when collecting samples of an unknown signal to decode it and add it to the supported protocols list:
 
 1. Find the frequency with the analyzer. In Read try `AM650`, `FM238`, `FM476`, `FM12K` — if nothing decodes,
    continue.
 2. In Read RAW set that frequency and **`RSSI Threshold: -----`**.
 3. Make **one RAW per modulation**: `AM650`, `FM238`, `FM476`, `FM12K`.
-4. For each: press **REC**, then press one remote button **5 times holding it 1–2 s**, then **5 times holding it
+4. For each recording: press **REC**, then press one remote button **5 times holding it 1–2 s**, then **5 times holding it
    ~5 s**. Stop and save.
 5. If the remote has several buttons, record each button the same way. Name every file after the button.
-6. Copy the files to a PC, zip them and open an issue in the firmware repository. Add good photos of the remote
-   (inside too, if possible), model and manufacturer.
+6. Copy the files to a PC, pack them into an archive and open an issue in the
+   [firmware repository](https://github.com/DarkFlippers/unleashed-firmware/issues), or send your request to the team
+   through any available channel ([Official links](/community/links) — Telegram chats, [Discord](https://discord.unleashedflip.com)).
+   Attach clear photos of the remote (inside too, if possible), model and manufacturer.
 
 ## Troubleshooting
 

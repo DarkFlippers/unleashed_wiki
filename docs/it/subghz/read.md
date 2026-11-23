@@ -57,7 +57,7 @@ I segnali salvati si trovano in `Main Menu → Sub-GHz → Saved` (vedi [sotto](
 | <kbd>→</kbd> tenuto premuto | Eliminare il segnale selezionato dall'elenco |
 | <kbd>Back</kbd> | Uscire da Read. Se ci sono segnali non salvati compare **Exit to Sub-GHz Menu?** — `Exit` / `Stay` |
 
-L'elenco contiene fino a 128 segnali (meno con acquisizioni BinRAW grandi, a seconda della memoria libera).
+A seconda delle dimensioni dei dati ricevuti, l'elenco può contenere fino a 128 segnali.
 
 ## Config {#config}
 
@@ -94,8 +94,11 @@ Con `Hopping` attivo, il ricevitore resta su una frequenza solo quando il segnal
 Apri il segnale (dall'elenco di Read oppure da `Saved → <file> → Emulate`). La schermata di trasmissione mostra i dati
 della chiave, la frequenza, la modulazione e `R: Int` / `R: Ext` (quale radio trasmetterà).
 
-- **Tieni premuto** <kbd>OK</kbd> (**Send**) — il Flipper trasmette **solo mentre il tasto è premuto**. Un tocco rapido
-  può inviare un codice incompleto; tieni premuto 1–2 s (CAME Atomo richiede almeno 2 s).
+- **Premi** <kbd>OK</kbd> (**Send**) — una singola pressione trasmette un pacchetto completo di segnale (di norma con
+  1–3 ripetizioni per affidabilità). **Tenere premuto** il tasto ripete continuamente la trasmissione finché non viene
+  rilasciato (utile a maggiore distanza o con forti interferenze). Nei protocolli a codice rolling, tenere premuto il
+  tasto **non** incrementa il contatore (vedi anche [Modalità contatore](/it/subghz/counter-mode)): il segnale viene
+  ripetuto con lo stesso contatore finché non rilasci e premi di nuovo.
 - <kbd>Back</kbd> — uscire.
 
 ### Tasti personalizzati (Unleashed)
@@ -142,8 +145,8 @@ con apparecchiature di tua proprietà e per ricerca lecita.
 
 ## Risoluzione dei problemi
 
-- **Non compare nulla** — frequenza o modulazione sbagliate. Usa l'analizzatore, prova `AM650`, poi
-  `FM238`/`FM476`/`FM12K`. Verifica che un filtro `Ignore …` non stia nascondendo il protocollo.
+- **Non compare nulla** — frequenza o modulazione sbagliate. Usa l'analizzatore e prova diverse modulazioni
+  (`AM650`/`FM238`/`FM476`/`FM12K`). Verifica che un filtro `Ignore …` non stia nascondendo il protocollo.
 - **Segnale ricevuto ma non decodificato** — il protocollo è sconosciuto: attiva `Bin RAW` (telecomandi statici) o
   registra con [Read RAW](/it/subghz/read-raw). Prova anche l'app [Remote Analyzer](/it/subghz/remote-analyzer).
 - **KeeLoq mostra produttore `Unknown`** — la chiave del produttore non è nel database, oppure il telecomando richiede

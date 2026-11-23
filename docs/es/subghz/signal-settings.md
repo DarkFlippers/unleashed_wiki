@@ -40,7 +40,7 @@ le hacen al contador, y cómo fijar uno editando el fichero en un PC en su lugar
 [Modos de contador](/es/subghz/counter-mode#modes-by-protocol).
 
 ::: warning Confirmar una edición de contador o de botón transmite
-`Edit Counter` y `Edit Button` escriben el fichero ejecutando la ruta de transmisión: el firmware inicia un envío
+`Edit Counter` y `Edit Button` escriben los nuevos valores en el fichero usando el mecanismo de transmisión de señal: el firmware inicia un envío
 con el valor nuevo y lo detiene de inmediato, y el fichero se reescribe cuando ese envío se detiene. La radio se
 activa un instante, así que hazlo lejos del receptor que no quieras accionar.
 

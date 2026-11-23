@@ -6,7 +6,7 @@ sources: [unleashed-src, unleashed-readme]
 ---
 # Sub-GHz RAW Edit
 
-**Sub-GHz RAW Edit** (autor Lechnio, v1.9) mali je uređivač valnog oblika na samom uređaju za RAW `.sub` snimke. Snimka iz [Read RAW](/hr/subghz/read-raw) obično sadrži sekunde šuma oko kratkog impulsa koji vas zanima. Pomoću alata RAW Edit pronalazite stvarni signal, označujete ga i spremate samo taj dio.
+**Sub-GHz RAW Edit** (autor Lechnio) mali je uređivač valnog oblika na samom uređaju za RAW `.sub` snimke. Snimka iz [Read RAW](/hr/subghz/read-raw) obično sadrži sekunde šuma oko kratkog impulsa koji vas zanima. Pomoću alata RAW Edit pronalazite stvarni signal, označujete ga i spremate samo taj dio.
 
 ::: tip Unleashed
 RAW Edit dolazi s firmverom Unleashed kao sistemska aplikacija, a aplikacija Sub-GHz otvara ga izravno: `Sub-GHz → Read RAW` (ili `Saved`) → otvorite RAW datoteku → <kbd>→</kbd> `More` → `Edit`. Stavka `Edit` prikazuje se samo kada je RAW Edit instaliran. Kada izađete iz uređivača, vraćate se u Sub-GHz.

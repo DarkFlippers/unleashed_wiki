@@ -44,7 +44,7 @@ Quale freccia invii quale tasto dipende dal protocollo. Un tasto *nascosto* o di
 
 L'app [Sub-GHz Remote](/it/subghz/remote) invia quegli stessi tasti: ogni slot di una mappa ha un'impostazione `Button` (`Default`, `Up`, `Down`, `Left`, `Right`), così un tasto nascosto può stare su un tasto tutto suo.
 
-**Tieni premuto il tasto.** Il Flipper trasmette solo mentre un tasto è premuto. Un tocco rapido invia spesso un codice incompleto. Tienilo premuto per 1–3 secondi, se un passaggio non dice diversamente.
+**Tieni premuto <kbd>OK</kbd> per 1–3 secondi**, se un passaggio non dice diversamente.
 
 **La tempistica conta.** La maggior parte dei ricevitori apre una finestra di programmazione di 5, 10 o 30 secondi. Leggi tutta la procedura prima di iniziare.
 

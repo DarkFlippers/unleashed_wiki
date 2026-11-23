@@ -41,7 +41,7 @@ compteur font eux-mêmes au compteur, et comment en définir un en modifiant plu
 trouve sur [Modes de compteur](/fr/subghz/counter-mode#modes-by-protocol).
 
 ::: warning Valider une modification du compteur ou du bouton déclenche une émission
-`Edit Counter` et `Edit Button` écrivent le fichier en passant par le chemin d'émission : le firmware démarre un
+`Edit Counter` et `Edit Button` écrivent les nouvelles valeurs dans le fichier en utilisant le mécanisme d'émission du signal : le firmware démarre un
 envoi avec la nouvelle valeur et l'arrête aussitôt, et le fichier est réécrit à l'arrêt de cet envoi. La radio émet
 pendant un instant : faites-le donc loin du récepteur que vous ne voulez pas actionner.
 

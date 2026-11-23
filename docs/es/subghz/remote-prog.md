@@ -44,7 +44,7 @@ Qué flecha envía qué botón depende del protocolo. Un botón *oculto* o de *p
 
 La aplicación [Sub-GHz Remote](/es/subghz/remote) envía esos mismos botones: cada ranura de un mapa tiene un ajuste `Button` (`Default`, `Up`, `Down`, `Left`, `Right`), así que un botón oculto puede ocupar una tecla para él solo.
 
-**Mantén la tecla pulsada.** El Flipper transmite solo mientras se mantiene una tecla. Un toque rápido a menudo envía un código incompleto. Mantenla 1–3 segundos, salvo que un paso diga lo contrario.
+**Mantén <kbd>OK</kbd> pulsado durante 1–3 segundos**, salvo que un paso diga lo contrario.
 
 **La sincronización importa.** La mayoría de los receptores abren una ventana de programación de 5, 10 o 30 segundos. Lee todo el procedimiento antes de empezar.
 

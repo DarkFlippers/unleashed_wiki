@@ -34,7 +34,7 @@ To je stavka u izborniku spremljenog signala, a ne stavka u glavnom izborniku Su
 Vrijednost koju svaka stavka trenutno sadrži prikazana je u njezinom retku, u heksadekadskom zapisu. Što sami načini brojača rade brojaču i kako ga umjesto toga postaviti uređivanjem datoteke na računalu, opisano je na stranici [Načini brojača](/hr/subghz/counter-mode#modes-by-protocol).
 
 ::: warning Potvrda uređivanja brojača ili tipke pokreće odašiljanje
-`Edit Counter` i `Edit Button` zapisuju datoteku pokretanjem putanje odašiljanja: firmver započinje slanje s novom vrijednošću i odmah ga zaustavlja, a datoteka se ponovno zapisuje kada to slanje stane. Radio se aktivira na djelić sekunde, pa to radite podalje od prijemnika kojim ne želite upravljati.
+`Edit Counter` i `Edit Button` zapisuju nove vrijednosti u datoteku koristeći mehanizam odašiljanja signala: firmver započinje slanje s novom vrijednošću i odmah ga zaustavlja, a datoteka se ponovno zapisuje kada to slanje stane. Radio se aktivira na djelić sekunde, pa to radite podalje od prijemnika kojim ne želite upravljati.
 
 Brojač koji upišete sprema se točno onako kako je upisan — za to jedno ponovno spremanje način brojača i korak [Counter Incr.](/hr/subghz/settings) se preskaču. Uređivanje tipke umjesto toga postavlja korak na 0 za ponovno spremanje, tako da promjena tipke ostavlja brojač ondje gdje je bio.
 

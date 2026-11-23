@@ -24,9 +24,10 @@ rumore, non per catturare segnali da lontano. Con un trigger molto basso l'anali
 casuali e il rumore prodotto dal Flipper stesso invece del tuo telecomando. Per *ricevere* davvero i segnali usa
 [Read](/it/subghz/read) e [Read RAW](/it/subghz/read-raw).
 
-::: warning
-Usare l'analizzatore con un modulo esterno non è consigliato: i moduli esterni sono più sensibili e captano molto
-più rumore.
+::: warning Moduli esterni
+Nella versione estesa di Unleashed (`E`) è possibile usare il Frequency Analyzer con i moduli esterni avviando l'app
+da `Apps → Sub-GHz` (invece che dal menu principale Sub-GHz). Tieni presente che con un modulo esterno aumenta molto
+la sensibilità a rumore e interferenze, che possono essere facilmente scambiati per un segnale utile.
 :::
 
 ## La schermata

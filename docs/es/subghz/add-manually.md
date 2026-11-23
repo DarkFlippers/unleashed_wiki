@@ -216,8 +216,8 @@ por fabricante: **[Usar el Flipper como mando nuevo](/es/subghz/remote-prog)**.
 - **El receptor no reacciona en absoluto**: banda incorrecta. Lee primero tu mando original (`Sub-GHz → Read`) y
   elige la misma frecuencia y modulación. DoorHan existe en 315 y 433.92 MHz; FAAC, Genius y Erreka en 433.92 y
   868.35.
-- **El receptor reacciona pero nunca almacena el mando**: has perdido la ventana de aprendizaje, o has dado un
-  toque en lugar de mantener pulsado. El Flipper transmite solo mientras se mantiene la tecla.
+- **El receptor reacciona pero nunca almacena el mando**: has perdido la ventana de aprendizaje o, por otro motivo (por
+  ejemplo, interferencias), el receptor no recibió una señal correcta del Flipper.
 - **Se rechaza el mando nuevo de Erreka/BFT**: algunas instalaciones comparten una misma semilla entre todos los
   mandos; recupérala ([Seed Capturer](/es/subghz/seed-capturer)) y usa Add Manually [Advanced]. Véase
   [KeeLoq](/es/subghz/keeloq).

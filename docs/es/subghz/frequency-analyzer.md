@@ -25,9 +25,10 @@ filtrar ruido, no para captar señales lejanas. Con un disparador muy bajo, el a
 interferencias aleatorias y del propio ruido del Flipper en lugar de tu mando. Para *recibir* señales de verdad usa
 [Read](/es/subghz/read) y [Read RAW](/es/subghz/read-raw).
 
-::: warning
-No se recomienda usar el analizador con un módulo externo: los módulos externos son más sensibles y recogen mucho
-más ruido.
+::: warning Módulos externos
+En la versión ampliada de Unleashed (`E`) se puede usar el Frequency Analyzer con módulos externos abriendo la
+aplicación desde `Apps → Sub-GHz` (en lugar del menú principal de Sub-GHz). Ten en cuenta que con un módulo externo
+aumenta mucho la sensibilidad al ruido y a las interferencias, que pueden confundirse fácilmente con una señal útil.
 :::
 
 ## Pantalla

@@ -55,6 +55,11 @@
 .vp-doc h2 { border-top-color: var(--vp-c-divider); }
 .vp-doc h2::before { content: '▍'; color: var(--ul-red); margin-right: 4px; }
 .vp-doc a { text-decoration-color: rgba(255,59,63,.45); }
+.vp-doc table { scrollbar-width: thin; scrollbar-color: rgba(255, 59, 63, .55) #18181b; padding-bottom: 6px; }
+.vp-doc table::-webkit-scrollbar { height: 10px; }
+.vp-doc table::-webkit-scrollbar-track { background: #18181b; border-radius: 5px; }
+.vp-doc table::-webkit-scrollbar-thumb { background: rgba(255, 59, 63, .55); border-radius: 5px; border: 2px solid #18181b; }
+.vp-doc table::-webkit-scrollbar-thumb:hover { background: var(--ul-red-2); }
 .vp-doc table th { background: #18181b; }
 .vp-doc kbd, .vp-doc .key { display:inline-block; padding: 1px 7px; border: 1px solid #3a3a40; border-bottom-width: 3px; border-radius: 6px; background:#17171a; font-size:.85em; font-family: var(--vp-font-family-mono); }
 .vp-doc img { border-radius: 8px; }

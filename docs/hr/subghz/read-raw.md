@@ -13,8 +13,8 @@ reproducirati, spremiti, naknadno dekodirati ili urediti. Upotrijebite ga kada:
 - želite snimiti signal radi analize ili prijave novog protokola razvojnim programerima;
 - trebate točnu ponovnu reprodukciju statičkog signala čiji protokol Flipper ne poznaje.
 
-Snimanje se i dalje obavlja na odabranoj **frekvenciji i modulaciji** — Flipper nije SDR. Pogrešna
-modulacija daje snimku šuma.
+Snimanje se obavlja s odabranom **frekvencijom i modulacijom** — Flipper nije SDR. S pogrešnom frekvencijom ili
+modulacijom snimit ćete samo šum.
 
 ::: warning Promjenjivi kodovi (rolling codes)
 RAW reprodukcija daljinskog upravljača s promjenjivim kodom djeluje isto kao klon: pomiče brojač prijamnika i može desinkronizirati
@@ -70,7 +70,7 @@ su znatno manje i čišće. Za snimke koje šaljete razvojnim programerima ostav
    - `Rename`, `Delete`.
 
 ::: tip Unleashed
-`More → Decode` i `More → Edit` dodaci su firmvera Unleashed. Pomoću `Edit` možete pronaći stvarni signal u šumovitoj
+`More → Decode` i `More → Edit` dodatne su funkcionalnosti firmvera Unleashed. Pomoću `Edit` možete pronaći stvarni signal u šumovitoj
 snimci, skratiti je, spojiti datoteke i dekodirati samo odabrani dio.
 :::
 
@@ -79,17 +79,19 @@ kartica je spora, prijenos se može zaustaviti prije kraja datoteke — koristit
 
 ## Snimanje daljinskog upravljača za zahtjev za podršku protokola
 
-Ovo je postupak koji razvojni programeri firmvera Unleashed traže kada želite podršku za novi protokol:
+Ovaj postupak traže razvojni programeri firmvera Unleashed kada je potrebno prikupiti uzorke nepoznatog signala radi dekodiranja i dodavanja na popis podržanih protokola:
 
 1. Pronađite frekvenciju pomoću analizatora. U načinu Read isprobajte `AM650`, `FM238`, `FM476`, `FM12K` — ako se ništa ne dekodira,
    nastavite.
 2. U Read RAW postavite tu frekvenciju i **`RSSI Threshold: -----`**.
 3. Napravite **po jedan RAW za svaku modulaciju**: `AM650`, `FM238`, `FM476`, `FM12K`.
-4. Za svaku: pritisnite **REC**, zatim pritisnite jednu tipku daljinskog upravljača **5 puta držeći je 1–2 s**, pa **5 puta držeći je
+4. Za svaku snimku: pritisnite **REC**, zatim pritisnite jednu tipku daljinskog upravljača **5 puta držeći je 1–2 s**, pa **5 puta držeći je
    ~5 s**. Zaustavite i spremite.
 5. Ako daljinski ima više tipki, snimite svaku tipku na isti način. Svaku datoteku nazovite prema tipki.
-6. Kopirajte datoteke na računalo, zapakirajte ih u ZIP arhivu i otvorite issue u repozitoriju firmvera. Priložite kvalitetne fotografije daljinskog upravljača
-   (po mogućnosti i unutrašnjosti), model i proizvođača.
+6. Kopirajte datoteke na računalo, zapakirajte ih u arhivu i otvorite issue u
+   [repozitoriju firmvera](https://github.com/DarkFlippers/unleashed-firmware/issues) ili pošaljite zahtjev timu bilo
+   kojim dostupnim kanalom ([Službene poveznice](/hr/community/links) — Telegram razgovori, [Discord](https://discord.unleashedflip.com)).
+   Priložite kvalitetne fotografije daljinskog upravljača (po mogućnosti i unutrašnjosti), model i proizvođača.
 
 ## Rješavanje problema
 

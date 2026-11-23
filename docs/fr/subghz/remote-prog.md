@@ -44,7 +44,7 @@ L'association entre flèche et bouton dépend du protocole. Un bouton *caché* o
 
 L'application [Sub-GHz Remote](/fr/subghz/remote) émet ces mêmes boutons : chaque emplacement d'une carte possède un réglage `Button` (`Default`, `Up`, `Down`, `Left`, `Right`), un bouton caché peut donc occuper une touche à lui seul.
 
-**Maintenez la touche enfoncée.** Le Flipper n'émet que tant qu'une touche est maintenue. Un appui rapide émet souvent un code incomplet. Maintenez-la 1 à 3 secondes, sauf si une étape indique autre chose.
+**Maintenez <kbd>OK</kbd> pendant 1 à 3 secondes**, sauf si une étape indique autre chose.
 
 **Le minutage compte.** La plupart des récepteurs ouvrent une fenêtre de programmation de 5, 10 ou 30 secondes. Lisez toute la procédure avant de commencer.
 

@@ -25,9 +25,11 @@ existent pour filtrer le bruit, pas pour capter des signaux lointains. Avec un s
 contente de signaler des interférences aléatoires et le bruit propre du Flipper au lieu de votre télécommande. Pour
 réellement *recevoir* des signaux, utilisez [Read](/fr/subghz/read) et [Read RAW](/fr/subghz/read-raw).
 
-::: warning
-L'utilisation de l'analyseur avec un module externe n'est pas recommandée : les modules externes sont plus sensibles
-et captent beaucoup plus de bruit.
+::: warning Modules externes
+Dans la version étendue d'Unleashed (`E`), il est possible d'utiliser le Frequency Analyzer avec des modules externes
+en lançant l'application depuis `Apps → Sub-GHz` (au lieu du menu principal Sub-GHz). Gardez à l'esprit qu'un module
+externe augmente fortement la sensibilité au bruit et aux interférences, qui peuvent facilement être pris à tort pour
+un signal utile.
 :::
 
 ## L'écran

@@ -40,7 +40,7 @@ contatore al contatore, e come impostarne una modificando il file su un PC, sono
 [Modalità contatore](/it/subghz/counter-mode#modes-by-protocol).
 
 ::: warning Confermare una modifica del contatore o del tasto trasmette
-`Edit Counter` e `Edit Button` scrivono il file passando per il percorso di trasmissione: il firmware avvia un invio
+`Edit Counter` e `Edit Button` scrivono i nuovi valori nel file usando il meccanismo di trasmissione del segnale: il firmware avvia un invio
 con il nuovo valore e lo ferma immediatamente, e il file viene riscritto quando quell'invio si ferma. La radio resta
 attiva per un istante, quindi fallo lontano dal ricevitore che non vuoi azionare.
 

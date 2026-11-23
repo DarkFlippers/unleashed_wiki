@@ -55,7 +55,7 @@ Saved signals are in `Main Menu → Sub-GHz → Saved` (see [below](#saved-signa
 | hold <kbd>→</kbd> | Delete the selected signal from the list |
 | <kbd>Back</kbd> | Leave Read. If there are unsaved signals you get **Exit to Sub-GHz Menu?** — `Exit` / `Stay` |
 
-The list holds up to 128 signals (less for large BinRAW captures, depending on free memory).
+Depending on the size of the received data, the list can hold up to 128 signals.
 
 ## Config
 
@@ -92,8 +92,11 @@ found with the analyzer — signals sent during a frequency switch are missed.
 Open the signal (from the Read list or from `Saved → <file> → Emulate`). The transmit screen shows the key data,
 frequency, modulation and `R: Int` / `R: Ext` (which radio will send).
 
-- **Hold** <kbd>OK</kbd> (**Send**) — the Flipper transmits **only while the button is held**. A quick tap can send
-  an incomplete code; hold 1–2 s (CAME Atomo needs at least 2 s).
+- **Press** <kbd>OK</kbd> (**Send**) — a single press transmits a full signal packet (typically with 1–3 repeats for
+  reliability). **Holding** <kbd>OK</kbd> repeats the transmission continuously until you release it (useful at longer
+  range or with heavy interference). For rolling-code protocols, holding the button does **not** increment the counter
+  (see also [Counter mode](/subghz/counter-mode)) — the signal repeats with the same counter until you release and
+  press again.
 - <kbd>Back</kbd> — leave.
 
 ### Custom buttons (Unleashed)
@@ -138,7 +141,7 @@ key, and re-pairing often needs dealer tools. Use the Flipper only with your own
 
 ## Troubleshooting
 
-- **Nothing appears** — wrong frequency or modulation. Use the analyzer, try `AM650`, then `FM238`/`FM476`/`FM12K`.
+- **Nothing appears** — wrong frequency or modulation. Use the Frequency Analyzer and try different modulations (`AM650`/`FM238`/`FM476`/`FM12K`).
   Check that an `Ignore …` filter isn't hiding the protocol.
 - **Signal received but not decoded** — the protocol is unknown: turn `Bin RAW` on (static remotes) or record with
   [Read RAW](/subghz/read-raw). Also try the [Remote Analyzer](/subghz/remote-analyzer) app.

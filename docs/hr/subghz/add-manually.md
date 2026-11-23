@@ -209,8 +209,8 @@ gumba za učenje na prijamniku ili s već postojećeg ispravnog daljinskog uprav
   `/ext/subghz/assets/` nedostaju ili su zastarjele. Ponovno instalirajte/ažurirajte firmver s umetnutom SD karticom.
 - **Prijamnik uopće ne reagira** — pogrešan pojas. Prvo očitajte izvorni daljinski upravljač (`Sub-GHz → Read`) i odaberite
   istu frekvenciju i modulaciju. DoorHan postoji na 315 i 433,92 MHz; FAAC, Genius, Erreka na 433,92 i 868,35.
-- **Prijamnik reagira, ali nikada ne pohrani daljinski upravljač** — propustili ste vremenski prozor za učenje ili ste samo kratko pritisnuli umjesto da držite gumb.
-  Flipper odašilje samo dok je tipka pritisnuta.
+- **Prijamnik reagira, ali nikada ne pohrani daljinski upravljač** — propustili ste vremenski prozor za učenje ili iz
+  nekog drugog razloga (npr. smetnje) prijamnik nije primio ispravan signal s Flippera.
 - **Novi daljinski upravljač za Erreka/BFT je odbijen** — neke instalacije dijele jedan Seed na svim daljinskim upravljačima; oporavite ga
   ([Seed Capturer](/hr/subghz/seed-capturer)) i koristite Add Manually [Advanced]. Pogledajte [KeeLoq](/hr/subghz/keeloq).
 - **Nice O-Code daljinski upravljač se ignorira** — tvornički prijamnik nema instalaterski kôd; u tom slučaju koristite `Nice One` ili `Nice FloR-S`.

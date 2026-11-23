@@ -6,7 +6,7 @@ sources: [unleashed-src, unleashed-readme]
 ---
 # Sub-GHz RAW Edit
 
-**Sub-GHz RAW Edit** (von Lechnio, v1.9) ist ein kleiner Kurveneditor für RAW-`.sub`-Aufnahmen direkt auf dem Gerät. Eine [Read RAW](/de/subghz/read-raw)-Aufnahme enthält meist sekundenlanges Rauschen rund um den kurzen Burst, der dich interessiert. Mit RAW Edit findest du das echte Signal, markierst es und speicherst nur diesen Teil — und du kannst mehrere Dateien zusammenfügen, Stücke herausschneiden und eine Auswahl mit den Sub-GHz-Dekodern der Firmware dekodieren.
+**Sub-GHz RAW Edit** (von Lechnio) ist ein kleiner Kurveneditor für RAW-`.sub`-Aufnahmen direkt auf dem Gerät. Eine [Read RAW](/de/subghz/read-raw)-Aufnahme enthält meist sekundenlanges Rauschen rund um den kurzen Burst, der dich interessiert. Mit RAW Edit findest du das echte Signal, markierst es und speicherst nur diesen Teil — und du kannst mehrere Dateien zusammenfügen, Stücke herausschneiden und eine Auswahl mit den Sub-GHz-Dekodern der Firmware dekodieren.
 
 ::: tip Unleashed
 RAW Edit wird mit Unleashed als Systemapp ausgeliefert, und die Sub-GHz-App öffnet sie direkt: `Sub-GHz → Read RAW` (oder `Saved`) → eine RAW-Datei öffnen → <kbd>→</kbd> `More` → `Edit`. Der Punkt `Edit` erscheint nur, wenn RAW Edit installiert ist. Verlässt du den Editor, landest du wieder in Sub-GHz.

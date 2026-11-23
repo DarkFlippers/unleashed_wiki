@@ -44,7 +44,7 @@ Koja strelica šalje koji gumb ovisi o protokolu. *Skriveni* ili *programski* gu
 
 Aplikacija [Sub-GHz Remote](/hr/subghz/remote) šalje iste te gumbe: svako mjesto u mapi ima postavku `Button` (`Default`, `Up`, `Down`, `Left`, `Right`), pa skriveni gumb može imati vlastitu tipku.
 
-**Držite tipku pritisnutu.** Flipper odašilje samo dok je tipka pritisnuta. Brzi kratki pritisak često pošalje nepotpun kôd. Držite je 1–3 sekunde osim ako korak ne navodi drukčije.
+**Držite tipku <kbd>OK</kbd> 1–3 sekunde**, osim ako korak ne navodi drukčije.
 
 **Vrijeme je važno.** Većina prijamnika otvara prozor programiranja u trajanju od 5, 10 ili 30 sekundi. Pročitajte cijeli postupak prije nego što započnete.
 

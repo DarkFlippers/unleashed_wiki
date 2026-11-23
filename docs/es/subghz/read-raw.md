@@ -13,8 +13,8 @@ puede reproducir, guardar, decodificar más tarde o editar. Úsalo cuando:
 - quieras capturar una señal para analizarla o para comunicar un protocolo nuevo a los desarrolladores;
 - necesites reproducir con exactitud una señal estática cuyo protocolo el Flipper no conoce.
 
-La grabación se sigue haciendo con la **frecuencia y la modulación** seleccionadas: el Flipper no es un SDR. Una
-modulación equivocada te da una grabación de ruido.
+La grabación se realiza con la **frecuencia y la modulación** seleccionadas: el Flipper no es un SDR. Con una
+frecuencia o modulación equivocada solo grabarás ruido.
 
 ::: warning Códigos rodantes
 Reproducir en RAW un mando de código rodante es exactamente igual que clonarlo: adelanta el contador del receptor y
@@ -73,7 +73,7 @@ ficheros son mucho más pequeños y limpios. Para capturas que vayas a enviar a 
    - `Rename`, `Delete`.
 
 ::: tip Unleashed
-`More → Decode` y `More → Edit` son aportaciones de Unleashed. Con `Edit` puedes localizar la señal real en una
+`More → Decode` y `More → Edit` son funciones adicionales de Unleashed. Con `Edit` puedes localizar la señal real en una
 captura ruidosa, recortarla, unir ficheros y decodificar solo una selección.
 :::
 
@@ -83,17 +83,19 @@ fichero: usa una tarjeta buena.
 
 ## Grabar un mando para solicitar un protocolo
 
-Este es el procedimiento que piden los desarrolladores de Unleashed cuando quieres que se admita un protocolo nuevo:
+Este es el procedimiento que piden los desarrolladores de Unleashed cuando hace falta recoger muestras de una señal desconocida para decodificarla y añadirla a la lista de protocolos compatibles:
 
 1. Localiza la frecuencia con el analizador. En Read prueba `AM650`, `FM238`, `FM476`, `FM12K`; si no se decodifica
    nada, continúa.
 2. En Read RAW fija esa frecuencia y **`RSSI Threshold: -----`**.
 3. Haz **un RAW por modulación**: `AM650`, `FM238`, `FM476`, `FM12K`.
-4. Para cada uno: pulsa **REC**, después pulsa un botón del mando **5 veces manteniéndolo 1–2 s** y luego **5 veces
+4. Para cada grabación: pulsa **REC**, después pulsa un botón del mando **5 veces manteniéndolo 1–2 s** y luego **5 veces
    manteniéndolo unos 5 s**. Detén y guarda.
 5. Si el mando tiene varios botones, graba cada botón de la misma forma. Nombra cada fichero según el botón.
-6. Copia los ficheros a un PC, comprímelos en un zip y abre una issue en el repositorio del firmware. Añade buenas
-   fotos del mando (también por dentro, si es posible), el modelo y el fabricante.
+6. Copia los ficheros a un PC, comprímelos en un archivo y abre una issue en el
+   [repositorio del firmware](https://github.com/DarkFlippers/unleashed-firmware/issues), o envía tu solicitud al
+   equipo por cualquier canal disponible ([Enlaces oficiales](/es/community/links) — chats de Telegram, [Discord](https://discord.unleashedflip.com)).
+   Añade buenas fotos del mando (también por dentro, si es posible), el modelo y el fabricante.
 
 ## Resolución de problemas
 

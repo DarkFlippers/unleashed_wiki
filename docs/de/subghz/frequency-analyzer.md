@@ -25,9 +25,10 @@ sind da, um Rauschen zu filtern, nicht um Signale aus der Ferne einzufangen. Mit
 der Analyzer nur zufällige Störungen und das Eigenrauschen des Flippers statt deiner Fernbedienung. Um Signale
 tatsächlich zu *empfangen*, nimm [Read](/de/subghz/read) und [Read RAW](/de/subghz/read-raw).
 
-::: warning
-Der Analyzer mit einem externen Modul ist nicht empfehlenswert: externe Module sind empfindlicher und fangen viel
-mehr Rauschen auf.
+::: warning Externe Module
+In der erweiterten Unleashed-Version (`E`) lässt sich der Frequency Analyzer auch mit externen Modulen nutzen — starte
+die App dazu unter `Apps → Sub-GHz` (statt über das Sub-GHz-Hauptmenü). Beachte dabei, dass externe Module deutlich
+empfindlicher für Rauschen und Störungen sind, die leicht fälschlich für ein Nutzsignal gehalten werden können.
 :::
 
 ## Der Bildschirm

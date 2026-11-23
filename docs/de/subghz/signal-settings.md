@@ -42,7 +42,7 @@ machen und wie du einen davon stattdessen durch Bearbeiten der Datei am PC setzt
 [Zählermodi](/de/subghz/counter-mode#modes-by-protocol).
 
 ::: warning Eine bestätigte Zähler- oder Tastenänderung sendet
-`Edit Counter` und `Edit Button` schreiben die Datei über den Sendeweg: die Firmware startet einen Sendevorgang mit
+`Edit Counter` und `Edit Button` schreiben die neuen Werte über den Signalsendemechanismus in die Datei: die Firmware startet einen Sendevorgang mit
 dem neuen Wert und stoppt ihn sofort, und beim Stoppen wird die Datei neu geschrieben. Der Sender ist dabei einen
 Augenblick aktiv — mach das also abseits des Empfängers, den du nicht bedienen willst.
 
