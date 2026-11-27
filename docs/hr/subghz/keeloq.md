@@ -74,7 +74,7 @@ Za dekodiranje KeeLoq signala Flipper mora poznavati proizvođački ključ. Unle
 | `/ext/subghz/assets/keeloq_mfcodes_user` | **vaši vlastiti** ključevi, čisti tekst (stvorite je iz `keeloq_mfcodes_user.example`) |
 
 Kada se signal dekodira, isprobava se svaki ključ; pri uspjehu naziv se prikazuje kao `KL: DoorHan`, `KL: Nice_Smilo` itd.
-Ako nijedan ključ ne odgovara, signal se prikazuje kao **`KL: Unknown`**: može se spremiti, ali se ne može slati niti koristiti
+Daljinski upravljači za half-rate KeeLoq također prikazuju stvarni naziv proizvođača (umjesto `Crypt Key`), uz oznaku `KL HR` na popisu očitanih signala i `66b HR` u podacima o signalu. Ako nijedan ključ ne odgovara, signal se prikazuje kao **`KL: Unknown`**: može se spremiti, ali se ne može slati niti koristiti
 za generiranje sljedećeg kôda. CLI naredbe `subghz` koje dekodiraju signale pri pokretanju ispisuju `Load_keystore keeloq_mfcodes OK` i
 `Load_keystore keeloq_mfcodes_user OK` / `Absent` — brz način za provjeru učitavaju li se baze ključeva.
 

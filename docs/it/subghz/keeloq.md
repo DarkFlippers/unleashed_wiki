@@ -77,7 +77,9 @@ keystore **cifrato** sulla scheda SD:
 | `/ext/subghz/assets/keeloq_mfcodes_user` | le **tue** chiavi, in chiaro (crealo da `keeloq_mfcodes_user.example`) |
 
 Quando un segnale viene decodificato, vengono provate tutte le chiavi; in caso di successo il nome compare come
-`KL: DoorHan`, `KL: Nice_Smilo` ecc. Se nessuna chiave corrisponde, il segnale viene mostrato come **`KL: Unknown`**:
+`KL: DoorHan`, `KL: Nice_Smilo` ecc. Anche i telecomandi KeeLoq half-rate mostrano il nome reale del produttore (invece
+di `Crypt Key`), contrassegnati come `KL HR` nell'elenco di lettura e `66b HR` nelle informazioni del segnale. Se nessuna
+chiave corrisponde, il segnale viene mostrato come **`KL: Unknown`**:
 può essere salvato, ma non inviato né usato per generare il codice successivo. I comandi CLI `subghz` che decodificano
 segnali stampano all'avvio `Load_keystore keeloq_mfcodes OK` e `Load_keystore keeloq_mfcodes_user OK` / `Absent` — un
 modo rapido per verificare che i keystore vengano caricati.

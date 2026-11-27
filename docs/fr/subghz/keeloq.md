@@ -79,10 +79,12 @@ clés **chiffré** sur la carte SD :
 | `/ext/subghz/assets/keeloq_mfcodes_user` | **vos propres** clés, en clair (créez-le depuis `keeloq_mfcodes_user.example`) |
 
 Lors du décodage d'un signal, toutes les clés sont essayées ; en cas de succès, le nom apparaît sous la forme
-`KL: DoorHan`, `KL: Nice_Smilo`, etc. Si aucune clé ne convient, le signal s'affiche comme **`KL: Unknown`** : il
-peut être enregistré, mais pas émis ni utilisé pour générer le code suivant. Les commandes CLI `subghz` qui décodent
-des signaux affichent `Load_keystore keeloq_mfcodes OK` et `Load_keystore keeloq_mfcodes_user OK` / `Absent` à leur
-démarrage — un moyen rapide de vérifier le chargement des magasins de clés.
+`KL: DoorHan`, `KL: Nice_Smilo`, etc. Les télécommandes KeeLoq demi-débit (half-rate) affichent également leur vrai
+nom de constructeur (au lieu de `Crypt Key`), avec la mention `KL HR` dans la liste de lecture et `66b HR` dans les
+infos du signal. Si aucune clé ne convient, le signal s'affiche comme **`KL: Unknown`** : il peut être enregistré,
+mais pas émis ni utilisé pour générer le code suivant. Les commandes CLI `subghz` qui décodent des signaux affichent
+`Load_keystore keeloq_mfcodes OK` et `Load_keystore keeloq_mfcodes_user OK` / `Absent` à leur démarrage — un moyen
+rapide de vérifier le chargement des magasins de clés.
 
 ### Format du fichier de clés utilisateur
 

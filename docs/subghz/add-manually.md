@@ -81,7 +81,7 @@ you get depends on the protocol family:
 | `KL: FAAC FIX`, `KL: Monarch`, `KL:Phantom(Hiland)`, `KL: DEA Mio` | `SERIAL` → `BUTTON` → `COUNTER` → `DISC.` (hop discriminator, stored in the `Seed` field) |
 | FAAC SLH, Genius | `SERIAL` → `BUTTON` → `COUNTER` (32 bit) → `SEED` |
 | CAME Atomo, V2 Phoenix | `SERIAL` → `COUNTER` |
-| Alutech AT4N, Somfy Telis/Keytis, KingGates, Beninca ARC, Jarolift, Ditec GOL4, Prastel, BelKorn, Security+2.0 | `SERIAL` → `BUTTON` → `COUNTER` |
+| Alutech AT4N / AT4L, Somfy Telis/Keytis, KingGates, Beninca ARC, Jarolift, Ditec GOL4, Prastel, BelKorn, Security+2.0 | `SERIAL` → `BUTTON` → `COUNTER` |
 | Nice FloR-S, Nice One | `SERIAL` → `BUTTON` → `COUNTER` |
 | Nice O-Code, Nice O-Code One | `SERIAL` → `BUTTON` → `COUNTER` → `IC` (installer code) |
 | Nice O-Code+Crt | `SERIAL` → `BUTTON` → `COUNTER` → `IC` → `CERT` (asked even from plain Add Manually) |
@@ -103,6 +103,7 @@ alternative bands listed right after it.
 | Menu entry | Default | Also | Type |
 |---|---|---|---|
 | `KL: Allmatic` | 433.92 AM650 | 868.35 AM650 | KeeLoq (Beninca key) |
+| `Alutech AT4L` | 433.92 AM650 | | Dynamic (Alutech AT-4N, `0x1Dxxxxxx` prefix) |
 | `Alutech AT4N` | 433.92 AM650 | | Dynamic (Alutech AT-4N) |
 | `AN-Motors AT4` | 433.92 AM650 | | KeeLoq |
 | `KL: Aprimatic` | 433.92 AM650 | | KeeLoq |

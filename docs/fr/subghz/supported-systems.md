@@ -38,10 +38,10 @@ KeeLoq, et la capacité d'**émettre** les protocoles à code tournant, avec des
 |---|---|---|---|---|---|---|
 | Airforce | 433.92, 868 | AM650 | 18, statique | | | |
 | Allstar Firefly 318ALD31K | 318 | AM650 | 18, statique | `Allstar Firefly` | | |
-| Alutech AT-4N | 433.92 | AM650 | 72, dynamique | `Alutech AT-4N` | `Alutech AT4N` | boutons personnalisés, [modes de compteur](/fr/subghz/counter-mode) |
+| Alutech AT-4N | 433.92 | AM650 | 72, dynamique | `Alutech AT-4N` | `Alutech AT4N`, `Alutech AT4L` | boutons personnalisés, [modes de compteur](/fr/subghz/counter-mode) |
 | AN-Motors (Alutech) AT4 | 433.92 | AM650 | 64, pseudo-dynamique | `KeeLoq` | `AN-Motors AT4` | basé sur KeeLoq |
 | Ansonic | 433 | FM | 12, statique | `Ansonic` | | |
-| BelKorn (Korn, BelGate, Furniteh…) | 433.92 | AM650 | 118, dynamique | `BelKorn` | `BelKorn` | non chiffré : numéro de série de 36 bits + compteur en clair ; pas de champ constructeur, toutes les télécommandes apparaissent comme BelKorn |
+| BelKorn (Korn, BelGate, Furniteh, Euro5…) | 433.92 | AM650 | 118, dynamique | `BelKorn` | `BelKorn` | non chiffré : numéro de série de 36 bits + compteur en clair ; pas de champ constructeur, toutes les télécommandes apparaissent comme BelKorn |
 | Beninca ARC (TO.GO 2VA) | 433.92 | AM650 | 128, dynamique AES-128 | `Beninca ARC` | `Beninca ARC` | bouton `0` = bouton caché |
 | BETT | 433.92 | AM650 | 18, statique | `BETT` | `BETT` | |
 | BFT Mitto | 433.92 | AM650 | 64, KeeLoq + seed | `KeeLoq` | `BFT Mitto` | les télécommandes récentes dérivent le seed du numéro de série (décodage dans Read) ; les plus anciennes ont besoin du seed — mode programmation ou [Seed Capturer](/fr/subghz/seed-capturer) ; bouton `0xF` = mode programmation |

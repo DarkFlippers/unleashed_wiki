@@ -58,7 +58,7 @@ con i link alle pagine della wiki che trattano ogni funzione in dettaglio.
 | Nice O-Code | Recupera il codice installatore di un telecomando Nice O-Code | [Nice O-Code](/it/subghz/nice-o-code) |
 | Security+ PIN | Trova il PIN della tastiera a partire da un segnale Security+ 2.0 | [Security+ PIN](/it/subghz/secplus-pin) |
 | Seed Capturer | Raccoglie coppie Fix + Hop (FAAC SLH, Genius, Erreka, BFT Mitto) per recuperare il seed | [Seed Capturer](/it/subghz/seed-capturer) |
-| Sub-GHz RAW Edit | Taglia, unisce e decodifica le acquisizioni RAW | [Editor RAW](/it/subghz/raw-editor) |
+| Sub-GHz RAW Edit | Editor RAW su scheda SD: taglia, taglia/copia/incolla, cronologia annullamenti, unisce e decodifica | [Editor RAW](/it/subghz/raw-editor) |
 
 ## NFC, RFID e iButton
 

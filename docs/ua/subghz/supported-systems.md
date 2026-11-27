@@ -35,10 +35,10 @@ Jarolift, Nice O-Code, Telcoma EDGE, Treadmill37, Freezer та інші, 100+ в
 |---|---|---|---|---|---|---|
 | Airforce | 433.92, 868 | AM650 | 18, статичний | | | |
 | Allstar Firefly 318ALD31K | 318 | AM650 | 18, статичний | `Allstar Firefly` | | |
-| Alutech AT-4N | 433.92 | AM650 | 72, динамічний | `Alutech AT-4N` | `Alutech AT4N` | кастомні кнопки, [режими лічильника](/ua/subghz/counter-mode) |
+| Alutech AT-4N | 433.92 | AM650 | 72, динамічний | `Alutech AT-4N` | `Alutech AT4N`, `Alutech AT4L` | кастомні кнопки, [режими лічильника](/ua/subghz/counter-mode) |
 | AN-Motors (Alutech) AT4 | 433.92 | AM650 | 64, псевдодинамічний | `KeeLoq` | `AN-Motors AT4` | на базі KeeLoq |
 | Ansonic | 433 | FM | 12, статичний | `Ansonic` | | |
-| BelKorn (Korn, BelGate, Furniteh…) | 433.92 | AM650 | 118, динамічний | `BelKorn` | `BelKorn` | не зашифрований: 36-бітний серійник + лічильник у відкритому вигляді; поля виробника немає, тому кожний пульт читається як BelKorn |
+| BelKorn (Korn, BelGate, Furniteh, Euro5…) | 433.92 | AM650 | 118, динамічний | `BelKorn` | `BelKorn` | не зашифрований: 36-бітний серійник + лічильник у відкритому вигляді; поля виробника немає, тому кожний пульт читається як BelKorn |
 | Beninca ARC (TO.GO 2VA) | 433.92 | AM650 | 128, динамічний AES-128 | `Beninca ARC` | `Beninca ARC` | кнопка `0` = прихована кнопка |
 | BETT | 433.92 | AM650 | 18, статичний | `BETT` | `BETT` | |
 | BFT Mitto | 433.92 | AM650 | 64, KeeLoq + seed | `KeeLoq` | `BFT Mitto` | новіші пульти виводять seed із серійника (декодуються в Read); старішим потрібен seed — режим програмування або [Seed Capturer](/ua/subghz/seed-capturer); кнопка `0xF` = режим програмування |

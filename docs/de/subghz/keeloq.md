@@ -77,11 +77,12 @@ einem **verschlüsselten** Keystore auf der SD-Karte mit:
 | `/ext/subghz/assets/keeloq_mfcodes_user` | **deine eigenen** Schlüssel, im Klartext (lege sie aus `keeloq_mfcodes_user.example` an) |
 
 Wird ein Signal dekodiert, probiert der Flipper jeden Schlüssel durch; bei Erfolg erscheint der Name als
-`KL: DoorHan`, `KL: Nice_Smilo` usw. Passt kein Schlüssel, zeigt sich das Signal als **`KL: Unknown`**: es lässt
-sich speichern, aber nicht senden und nicht nutzen, um den nächsten Code zu erzeugen. Die `subghz`-CLI-Befehle,
-die Signale dekodieren, geben beim Start `Load_keystore keeloq_mfcodes OK` und
-`Load_keystore keeloq_mfcodes_user OK` / `Absent` aus — ein schneller Weg zu prüfen, ob die Keystores geladen
-werden.
+`KL: DoorHan`, `KL: Nice_Smilo` usw. Auch Half-Rate-KeeLoq-Fernbedienungen zeigen ihren echten Herstellernamen an
+(statt `Crypt Key`), in der Read-Liste als `KL HR` und in der Signalinfo als `66b HR` markiert. Passt kein Schlüssel,
+zeigt sich das Signal als **`KL: Unknown`**: es lässt sich speichern, aber nicht senden und nicht nutzen, um den
+nächsten Code zu erzeugen. Die `subghz`-CLI-Befehle, die Signale dekodieren, geben beim Start
+`Load_keystore keeloq_mfcodes OK` und `Load_keystore keeloq_mfcodes_user OK` / `Absent` aus — ein schneller Weg zu
+prüfen, ob die Keystores geladen werden.
 
 ### Format der eigenen Schlüsseldatei
 

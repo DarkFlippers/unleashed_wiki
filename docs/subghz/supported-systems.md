@@ -34,10 +34,10 @@ to **send** rolling-code protocols, with [custom buttons](/subghz/rolling-codes#
 |---|---|---|---|---|---|---|
 | Airforce | 433.92, 868 | AM650 | 18, static | | | |
 | Allstar Firefly 318ALD31K | 318 | AM650 | 18, static | `Allstar Firefly` | | |
-| Alutech AT-4N | 433.92 | AM650 | 72, dynamic | `Alutech AT-4N` | `Alutech AT4N` | custom buttons, [counter modes](/subghz/counter-mode) |
+| Alutech AT-4N | 433.92 | AM650 | 72, dynamic | `Alutech AT-4N` | `Alutech AT4N`, `Alutech AT4L` | custom buttons, [counter modes](/subghz/counter-mode) |
 | AN-Motors (Alutech) AT4 | 433.92 | AM650 | 64, pseudo-dynamic | `KeeLoq` | `AN-Motors AT4` | KeeLoq based |
 | Ansonic | 433 | FM | 12, static | `Ansonic` | | |
-| BelKorn (Korn, BelGate, Furniteh…) | 433.92 | AM650 | 118, dynamic | `BelKorn` | `BelKorn` | not encrypted: 36-bit serial + plaintext counter; no manufacturer field, every remote reads as BelKorn |
+| BelKorn (Korn, BelGate, Furniteh, Euro5…) | 433.92 | AM650 | 118, dynamic | `BelKorn` | `BelKorn` | not encrypted: 36-bit serial + plaintext counter; no manufacturer field, every remote reads as BelKorn |
 | Beninca ARC (TO.GO 2VA) | 433.92 | AM650 | 128, dynamic AES-128 | `Beninca ARC` | `Beninca ARC` | button `0` = hidden button |
 | BETT | 433.92 | AM650 | 18, static | `BETT` | `BETT` | |
 | BFT Mitto | 433.92 | AM650 | 64, KeeLoq + seed | `KeeLoq` | `BFT Mitto` | newer remotes derive the seed from the serial (decode in Read); older need the seed — programming mode or [Seed Capturer](/subghz/seed-capturer); button `0xF` = programming mode |

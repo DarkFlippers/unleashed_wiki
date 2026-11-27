@@ -48,7 +48,7 @@ stock firmware does still works. Below are the changes and additions compared to
 | Nice O-Code | Recover the installer code of a Nice O-Code remote | [Nice O-Code](/subghz/nice-o-code) |
 | Security+ PIN | Find the keypad PIN of a Security+ 2.0 signal | [Security+ PIN](/subghz/secplus-pin) |
 | Seed Capturer | Collect Fix + Hop pairs (FAAC SLH, Genius, Erreka, BFT Mitto) for seed recovery | [Seed Capturer](/subghz/seed-capturer) |
-| Sub-GHz RAW Edit | Trim, merge and decode RAW captures | [RAW editor](/subghz/raw-editor) |
+| Sub-GHz RAW Edit | SD-backed RAW editor: trim, cut/copy/paste, undo history, merge and decode | [RAW editor](/subghz/raw-editor) |
 
 ## NFC, RFID and iButton
 

@@ -79,8 +79,8 @@ Mode 0 is always the default: behaves like a regular remote, the counter grows b
 | Mode | Counter | Notes |
 |---|---|---|
 | 0 | +multiplier | default |
-| 1 | `0x0000 / 0x0001 / 0xFFFE / 0xFFFF` | receiver **MCSW-3.3M** |
-| 2 | `0x0000 … 0x0005` | other receiver boards |
+| 1 | 3-press cycle: `0x0000` (×4), `0x0001` (×4), then `0xFFFE` (×4) + `0xFFFF` (×4) in one press (~0.85 s) | receiver **MCSW-3.3M** (press 3 resyncs across the wrap boundary) |
+| 2 | single-press resync pack (~1.5 s): `0x0000`–`0x0003` (×2 each) + `0x0004`–`0x0005` (×3 each) | other receiver boards; file counter stays unchanged so every press sends the same pack |
 
 ### KeeLoq
 

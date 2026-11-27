@@ -69,8 +69,8 @@ Način 0 uvijek je zadani: ponaša se kao običan daljinski upravljač, brojač 
 | Način | Brojač | Napomene |
 |---|---|---|
 | 0 | +multiplier | zadano |
-| 1 | `0x0000 / 0x0001 / 0xFFFE / 0xFFFF` | prijemnik **MCSW-3.3M** |
-| 2 | `0x0000 … 0x0005` | druge ploče prijemnika |
+| 1 | ciklus od 3 pritiska: `0x0000` (×4), `0x0001` (×4), zatim `0xFFFE` (×4) + `0xFFFF` (×4) u jednom pritisku (~0,85 s) | prijemnik **MCSW-3.3M** (3. pritisak resinkronizira preko prijelaza brojača) |
+| 2 | paket za resinkronizaciju u jednom pritisku (~1,5 s): `0x0000`–`0x0003` (svaki ×2) + `0x0004`–`0x0005` (svaki ×3) | druge ploče prijemnika; brojač u datoteci ostaje nepromijenjen pa svaki pritisak šalje isti paket |
 
 ### KeeLoq
 

@@ -37,12 +37,12 @@ Der Bildschirm zeigt die Kurve mit einer Übersichtsleiste oben und zwei Zeilen 
 | <kbd>OK</kbd> halten | das Aktionsmenü öffnen |
 | <kbd>Back</kbd> | den Editor schließen |
 
-Das Aktionsmenü (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> zum Ausführen, <kbd>Back</kbd> zum Schließen):
+Das Aktionsmenü (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> zum Ausführen, <kbd>Back</kbd> zum Schließen) sitzt links, daneben zeigt ein schreibgeschütztes Infofeld die Sample-Anzahl von A..B, `TE` und die erkannte Leitungskodierung (`PWM`, `PPM`, `Manchester`, `NRZ` oder `1:1`):
 
 - **Save** — nur den Bereich A..B in eine neue RAW-Datei schreiben. Der Name wird als `<Name>_edit1`, `_edit2`, … vorgeschlagen. Unter einem bestehenden Namen zu speichern fragt `Name exists, overwrite?`; die geöffnete Datei selbst wird nie überschrieben.
-- **Decode** — den Bereich A..B mit den Sub-GHz-Dekodern der Firmware dekodieren, identische Pakete gruppieren (`Decoded: N`) und das ausgewählte als Schlüsseldatei speichern, standardmäßig nach Protokoll und Hersteller benannt (z. B. `KeeLoq_Verex`). `No known protocol` bedeutet, dass nichts dekodiert wurde.
-- **Cut** — den Bereich A..B aus dem Signal entfernen (wird abgelehnt, wenn das Signal dadurch leer würde).
-- **Undo** — den letzten Schnitt rückgängig machen (durchgestrichen, wenn es nichts rückgängig zu machen gibt).
+- **Decode** — den Bereich A..B mit den Sub-GHz-Dekodern der Firmware dekodieren (probiert bei jedem KeeLoq-Frame jeden Hersteller durch; überspringt BinRAW), identische Pakete gruppieren (`Decoded: N`) und das ausgewählte als Schlüsseldatei speichern, standardmäßig nach Protokoll und Hersteller benannt (z. B. `KeeLoq_Verex`). Jeder dekodierte Eintrag hat außerdem eine **Locate**-Taste, die A..B auf seinen Frame einrasten lässt (bei Wiederholungen auf den ersten). `No known protocol` bedeutet, dass nichts dekodiert wurde.
+- **Cut** / **Copy** / **Paste** — drücke auf `Cut` <kbd>←</kbd> / <kbd>→</kbd>, um zwischen **Cut** (A..B entfernen und in die Zwischenablage legen; wird abgelehnt, wenn das Signal dadurch leer würde), **Copy** (A..B in die Zwischenablage-Datei kopieren) und **Paste** (die Zwischenablage an der aktiven Marke einfügen und markieren) zu wechseln.
+- **Undo** — SD-gestützter Verlauf der letzten **32** Schnitte und Einfügungen (belegt keinen RAM). Bei mehr als einer Bearbeitung listet er sie – neueste zuerst – mit Sample-Anzahl und Position auf und setzt auf den Stand vor dem gewählten Eintrag zurück. Durchgestrichen, wenn es nichts rückgängig zu machen gibt.
 
 ## Eine Aufnahme kürzen — Schritt für Schritt
 
@@ -67,9 +67,12 @@ Das Aktionsmenü (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> zum Ausführen,
 | Merge gap | Stille, die zwischen zusammengefügten Dateien eingefügt wird, 0–1000 ms (Standard 100); <kbd>OK</kbd> öffnet eine Zahleneingabe |
 | Repeat | jedes geladene / zusammengefügte Signal 1- bis 64-mal wiederholen |
 
+Eine schreibgeschützte Zeile unten in `Config` zeigt außerdem an, ob eigene Tasten und das Beibehalten des Rolling-Counters im aktuellen Firmware-Build verfügbar sind.
+
 ## Grenzen und Fehlersuche
 
-- Eine Datei fasst bis zu **24 000 Samples**; der freie Arbeitsspeicher kann das senken. `Out of memory` / `Not enough free RAM to load this capture` — starte den Flipper neu und öffne die App zuerst.
+- **Kein Längenlimit (v2.0):** Signale und Zusammenführungen liegen in einer Arbeitsdatei auf der SD-Karte, während der RAM ein gleitendes Fenster der Aufnahme hält (bis zu ~38 000 Samples nach einem frischen Neustart), sodass genug Platz für Decode und Save bleibt. Schiebst du Marke A oder B über den Rand des Fensters hinaus, wandert es um ein Viertel weiter; das Herauszoomen stoppt am Fenster mit `No RAM to zoom out`.
+- **Abfrage `Low RAM`** — erscheint, wenn der freie RAM weniger als 15 000 Samples eines größeren Signals fasst; bietet `Reboot` oder `Continue` an. `Decode` prüft außerdem auf ~8 KB freien RAM und meldet `Low memory`, statt abzustürzen.
 - `Unsupported protocol or file is empty` — die Datei ist kein Signal, das die Firmware kodieren kann.
 - `Nothing in A..B` / `Range too small` — schiebe die Marken weiter auseinander.
 - Lange Lücken behalten in der gespeicherten Datei ihre echte Länge.

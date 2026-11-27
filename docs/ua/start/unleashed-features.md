@@ -57,7 +57,7 @@ Unleashed побудований на офіційній прошивці (OFW) 
 | Nice O-Code | Відновлення коду інсталятора пульта Nice O-Code | [Nice O-Code](/ua/subghz/nice-o-code) |
 | Security+ PIN | Пошук PIN-коду клавіатури за сигналом Security+ 2.0 | [Security+ PIN](/ua/subghz/secplus-pin) |
 | Seed Capturer | Збір пар Fix + Hop (FAAC SLH, Genius, Erreka, BFT Mitto) для відновлення seed | [Seed Capturer](/ua/subghz/seed-capturer) |
-| Sub-GHz RAW Edit | Обрізання, склеювання й декодування RAW-записів | [Редактор RAW](/ua/subghz/raw-editor) |
+| Sub-GHz RAW Edit | Редактор RAW на базі SD-картки: обрізання, вирізання/копіювання/вставка, історія скасувань, склеювання й декодування | [Редактор RAW](/ua/subghz/raw-editor) |
 
 ## NFC, RFID та iButton
 

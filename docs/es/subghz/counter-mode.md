@@ -81,8 +81,8 @@ El modo 0 es siempre el predeterminado: se comporta como un mando normal, el con
 | Modo | Contador | Notas |
 |---|---|---|
 | 0 | +multiplicador | por defecto |
-| 1 | `0x0000 / 0x0001 / 0xFFFE / 0xFFFF` | receptor **MCSW-3.3M** |
-| 2 | `0x0000 … 0x0005` | otras placas receptoras |
+| 1 | ciclo de 3 pulsaciones: `0x0000` (×4), `0x0001` (×4), después `0xFFFE` (×4) + `0xFFFF` (×4) en una pulsación (~0,85 s) | receptor **MCSW-3.3M** (la pulsación 3 resincroniza cruzando el límite de desbordamiento) |
+| 2 | paquete de resincronización en una sola pulsación (~1,5 s): `0x0000`–`0x0003` (×2 cada uno) + `0x0004`–`0x0005` (×3 cada uno) | otras placas receptoras; el contador del fichero no cambia, así que cada pulsación envía el mismo paquete |
 
 ### KeeLoq
 

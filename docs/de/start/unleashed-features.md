@@ -53,7 +53,7 @@ nach Bereichen gruppiert und mit Links zu den jeweiligen Detailseiten.
 | Nice O-Code | Den Installer-Code eines Nice O-Code-Handsenders rekonstruieren | [Nice O-Code](/de/subghz/nice-o-code) |
 | Security+ PIN | Die Tastenfeld-PIN aus einem Security+ 2.0-Signal ermitteln | [Security+ PIN](/de/subghz/secplus-pin) |
 | Seed Capturer | Fix-/Hop-Paare sammeln (FAAC SLH, Genius, Erreka, BFT Mitto), um den Seed zu rekonstruieren | [Seed Capturer](/de/subghz/seed-capturer) |
-| Sub-GHz RAW Edit | RAW-Aufnahmen zuschneiden, zusammenführen und dekodieren | [RAW-Editor](/de/subghz/raw-editor) |
+| Sub-GHz RAW Edit | SD-gestützter RAW-Editor: zuschneiden, ausschneiden/kopieren/einfügen, Rückgängig-Verlauf, zusammenführen und dekodieren | [RAW-Editor](/de/subghz/raw-editor) |
 
 ## NFC, RFID und iButton
 

@@ -35,10 +35,10 @@ KeeLoq-Hersteller und die Fähigkeit, Rolling-Code-Protokolle zu **senden**, mit
 |---|---|---|---|---|---|---|
 | Airforce | 433.92, 868 | AM650 | 18, statisch | | | |
 | Allstar Firefly 318ALD31K | 318 | AM650 | 18, statisch | `Allstar Firefly` | | |
-| Alutech AT-4N | 433.92 | AM650 | 72, dynamisch | `Alutech AT-4N` | `Alutech AT4N` | eigene Tasten, [Zählermodi](/de/subghz/counter-mode) |
+| Alutech AT-4N | 433.92 | AM650 | 72, dynamisch | `Alutech AT-4N` | `Alutech AT4N`, `Alutech AT4L` | eigene Tasten, [Zählermodi](/de/subghz/counter-mode) |
 | AN-Motors (Alutech) AT4 | 433.92 | AM650 | 64, pseudodynamisch | `KeeLoq` | `AN-Motors AT4` | auf KeeLoq-Basis |
 | Ansonic | 433 | FM | 12, statisch | `Ansonic` | | |
-| BelKorn (Korn, BelGate, Furniteh …) | 433.92 | AM650 | 118, dynamisch | `BelKorn` | `BelKorn` | nicht verschlüsselt: 36-Bit-Seriennummer + Zähler im Klartext; kein Herstellerfeld, jede Fernbedienung wird als BelKorn gelesen |
+| BelKorn (Korn, BelGate, Furniteh, Euro5 …) | 433.92 | AM650 | 118, dynamisch | `BelKorn` | `BelKorn` | nicht verschlüsselt: 36-Bit-Seriennummer + Zähler im Klartext; kein Herstellerfeld, jede Fernbedienung wird als BelKorn gelesen |
 | Beninca ARC (TO.GO 2VA) | 433.92 | AM650 | 128, dynamisch AES-128 | `Beninca ARC` | `Beninca ARC` | Taste `0` = versteckte Taste |
 | BETT | 433.92 | AM650 | 18, statisch | `BETT` | `BETT` | |
 | BFT Mitto | 433.92 | AM650 | 64, KeeLoq + Seed | `KeeLoq` | `BFT Mitto` | neuere Fernbedienungen leiten den Seed aus der Seriennummer ab (werden in Read dekodiert); ältere brauchen den Seed — Programmiermodus oder [Seed Capturer](/de/subghz/seed-capturer); Taste `0xF` = Programmiermodus |

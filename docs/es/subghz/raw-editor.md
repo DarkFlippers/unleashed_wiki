@@ -37,12 +37,12 @@ La pantalla muestra la forma de onda con una barra de vista general en la parte 
 | mantener <kbd>OK</kbd> | abrir el menú de acciones |
 | <kbd>Back</kbd> | cerrar el editor |
 
-El menú de acciones (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> para ejecutar, <kbd>Back</kbd> para cerrar):
+El menú de acciones (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> para ejecutar, <kbd>Back</kbd> para cerrar) aparece a la izquierda, con un panel informativo de solo lectura al lado que muestra el número de muestras de A..B, `TE` y la codificación de línea detectada (`PWM`, `PPM`, `Manchester`, `NRZ` o `1:1`):
 
 - **Save**: escribe solo el rango A..B en un fichero RAW nuevo. El nombre se propone como `<nombre>_edit1`, `_edit2`, … Guardar con un nombre existente pregunta `Name exists, overwrite?`; el fichero abierto nunca se sobrescribe.
-- **Decode**: decodifica el rango A..B con los decodificadores Sub-GHz del firmware, agrupa los paquetes idénticos (`Decoded: N`) y guarda la elegida como fichero de clave, nombrado por defecto según el protocolo y el fabricante (por ejemplo `KeeLoq_Verex`). `No known protocol` significa que no se ha decodificado nada.
-- **Cut**: elimina el rango A..B de la señal (se rechaza si eso dejaría la señal vacía).
-- **Undo**: deshace el último corte (aparece tachado cuando no hay nada que deshacer).
+- **Decode**: decodifica el rango A..B con los decodificadores Sub-GHz del firmware (probando cada fabricante en cada trama KeeLoq; omite BinRAW), agrupa las tramas idénticas (`Decoded: N`) y guarda la elegida como fichero de clave, nombrado por defecto según el protocolo y el fabricante (por ejemplo `KeeLoq_Verex`). Cada entrada decodificada tiene también un botón **Locate** que ajusta A..B sobre su trama (la primera si se repite). `No known protocol` significa que no se ha decodificado nada.
+- **Cut** / **Copy** / **Paste**: pulsa <kbd>←</kbd> / <kbd>→</kbd> sobre `Cut` para alternar entre **Cut** (elimina A..B y lo coloca en el portapapeles; se rechaza si dejaría la señal vacía), **Copy** (copia A..B al fichero del portapapeles) y **Paste** (inserta el portapapeles en el marcador activo y lo selecciona).
+- **Undo**: historial respaldado en la SD de los últimos **32** cortes y pegados (no consume RAM). Cuando hay más de una edición, las lista de la más reciente a la más antigua con el número de muestras y las posiciones, y revierte hasta antes de la que elijas. Aparece tachado cuando no hay nada que deshacer.
 
 ## Recortar una captura, paso a paso
 
@@ -67,9 +67,12 @@ El menú de acciones (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> para ejecut
 | Merge gap | silencio insertado entre los ficheros unidos, 0–1000 ms (por defecto 100); <kbd>OK</kbd> abre un campo numérico |
 | Repeat | repite cada señal cargada o unida de 1 a 64 veces |
 
+Una línea de solo lectura al final de `Config` muestra también si los botones personalizados y la conservación del contador rodante están disponibles en la compilación actual del firmware.
+
 ## Límites y resolución de problemas
 
-- Un fichero admite hasta **24 000 muestras**; la RAM libre puede reducir ese número. `Out of memory` / `Not enough free RAM to load this capture`: reinicia el Flipper y abre primero la aplicación.
+- **Sin límite de longitud (v2.0):** las señales y las uniones se mantienen en un fichero de trabajo en la tarjeta SD, mientras que la RAM guarda una ventana deslizante de la captura (hasta ~38 000 muestras tras reiniciar), dejando espacio para Decode y Save. Empujar el marcador A o B más allá del borde de la ventana la desliza un cuarto más allá; alejar el zoom se detiene en el límite de la ventana con `No RAM to zoom out`.
+- **Aviso `Low RAM`**: se muestra cuando en la RAM libre caben menos de 15 000 muestras de una señal más grande; ofrece `Reboot` o `Continue`. `Decode` también comprueba si hay ~8 KB de RAM libre e informa `Low memory` en lugar de colgarse.
 - `Unsupported protocol or file is empty`: el fichero no es una señal que el firmware pueda codificar.
 - `Nothing in A..B` / `Range too small`: separa más los marcadores.
 - Los silencios largos se conservan con su longitud real en el fichero guardado.

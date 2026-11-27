@@ -37,12 +37,12 @@ Zaslon prikazuje valni oblik s trakom pregleda na vrhu i dva retka ispod: `View:
 | držanje <kbd>OK</kbd> | otvaranje izbornika radnji |
 | <kbd>Back</kbd> | zatvaranje uređivača |
 
-Izbornik radnji (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> za pokretanje, <kbd>Back</kbd> za zatvaranje):
+Izbornik radnji (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> za pokretanje, <kbd>Back</kbd> za zatvaranje) nalazi se s lijeve strane, a pokraj njega je ploča s informacijama samo za čitanje koja prikazuje broj uzoraka raspona A..B, `TE` i prepoznato linijsko kodiranje (`PWM`, `PPM`, `Manchester`, `NRZ` ili `1:1`):
 
 - **Save** — zapisuje samo raspon A..B u novu RAW datoteku. Predloženi naziv je `<name>_edit1`, `_edit2`, … Spremanje pod postojećim nazivom pita `Name exists, overwrite?`; sama otvorena datoteka nikada se ne prepisuje.
-- **Decode** — dekodira raspon A..B pomoću Sub-GHz dekodera firmvera, grupira identične okvire signala (`Decoded: N`) i sprema odabrani kao datoteku ključa, zadano nazvanu po protokolu i proizvođaču (npr. `KeeLoq_Verex`). `No known protocol` znači da ništa nije dekodirano.
-- **Cut** — uklanja raspon A..B iz signala (odbija se ako bi signal ostao prazan).
-- **Undo** — poništava posljednje rezanje (precrtano kada nema što za poništiti).
+- **Decode** — dekodira raspon A..B pomoću Sub-GHz dekodera firmvera (isprobavajući svakog proizvođača na svakom KeeLoq okviru; preskače BinRAW), grupira identične okvire signala (`Decoded: N`) i sprema odabrani kao datoteku ključa, zadano nazvanu po protokolu i proizvođaču (npr. `KeeLoq_Verex`). Svaka dekodirana stavka ima i gumb **Locate** koji postavlja A..B točno na njezin okvir (prvi kada se ponavlja). `No known protocol` znači da ništa nije dekodirano.
+- **Cut** / **Copy** / **Paste** — pritisnite <kbd>←</kbd> / <kbd>→</kbd> na stavci `Cut` za prebacivanje između **Cut** (uklanja raspon A..B i stavlja ga u međuspremnik; odbija se ako bi signal ostao prazan), **Copy** (kopira A..B u datoteku međuspremnika) i **Paste** (umeće sadržaj međuspremnika kod aktivnog markera i označava ga).
+- **Undo** — povijest posljednja **32** rezanja i lijepljenja spremljena na SD kartici (ne troši RAM). Kada postoji više od jedne izmjene, prikazuje ih od najnovije s brojem uzoraka i položajima te vraća stanje na ono prije odabrane izmjene. Precrtano kada nema što za poništiti.
 
 ## Skraćivanje snimke — korak po korak
 
@@ -67,9 +67,12 @@ Izbornik radnji (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> za pokretanje, <
 | Merge gap | tišina umetnuta između spojenih datoteka, 0–1000 ms (zadano 100); <kbd>OK</kbd> otvara unos broja |
 | Repeat | ponavljanje svakog učitanog / spojenog signala 1–64 puta |
 
+Redak samo za čitanje na dnu izbornika `Config` također prikazuje jesu li prilagođeni gumbi i očuvanje pomičnog brojača dostupni u trenutačnoj verziji firmvera.
+
 ## Ograničenja i rješavanje problema
 
-- Datoteka može sadržavati do **24 000 uzoraka**; slobodan RAM može taj broj smanjiti. `Out of memory` / `Not enough free RAM to load this capture` — ponovno pokrenite Flipper i najprije otvorite ovu aplikaciju.
+- **Bez ograničenja duljine (v2.0):** signali i spajanja čuvaju se u radnoj datoteci na SD kartici, dok RAM drži klizni prozor snimke (do ~38 000 uzoraka nakon svježeg pokretanja), ostavljajući dovoljno memorije za Decode i Save. Pomicanje markera A ili B preko ruba prozora pomiče ga za četvrtinu dalje; smanjenje prikaza zaustavlja se na rubu prozora uz poruku `No RAM to zoom out`.
+- **Upit `Low RAM`** — prikazuje se kada slobodni RAM može primiti manje od 15 000 uzoraka većeg signala; nudi `Reboot` ili `Continue`. `Decode` također provjerava ima li ~8 KB slobodnog RAM-a i javlja `Low memory` umjesto rušenja aplikacije.
 - `Unsupported protocol or file is empty` — datoteka nije signal koji firmver može kodirati.
 - `Nothing in A..B` / `Range too small` — razmaknite markere dalje jedan od drugoga.
 - Duge pauze u spremljenoj datoteci zadržavaju svoju stvarnu duljinu.

@@ -84,7 +84,7 @@ esadecimale. Quali schermate ottieni dipende dalla famiglia di protocolli:
 | `KL: FAAC FIX`, `KL: Monarch`, `KL:Phantom(Hiland)`, `KL: DEA Mio` | `SERIAL` → `BUTTON` → `COUNTER` → `DISC.` (discriminatore di hop, memorizzato nel campo `Seed`) |
 | FAAC SLH, Genius | `SERIAL` → `BUTTON` → `COUNTER` (32 bit) → `SEED` |
 | CAME Atomo, V2 Phoenix | `SERIAL` → `COUNTER` |
-| Alutech AT4N, Somfy Telis/Keytis, KingGates, Beninca ARC, Jarolift, Ditec GOL4, Prastel, BelKorn, Security+2.0 | `SERIAL` → `BUTTON` → `COUNTER` |
+| Alutech AT4N / AT4L, Somfy Telis/Keytis, KingGates, Beninca ARC, Jarolift, Ditec GOL4, Prastel, BelKorn, Security+2.0 | `SERIAL` → `BUTTON` → `COUNTER` |
 | Nice FloR-S, Nice One | `SERIAL` → `BUTTON` → `COUNTER` |
 | Nice O-Code, Nice O-Code One | `SERIAL` → `BUTTON` → `COUNTER` → `IC` (codice installatore) |
 | Nice O-Code+Crt | `SERIAL` → `BUTTON` → `COUNTER` → `IC` → `CERT` (richiesto anche dal normale Add Manually) |
@@ -106,6 +106,7 @@ le bande alternative del sistema, elencate subito dopo.
 | Voce di menu | Predefinita | Anche | Tipo |
 |---|---|---|---|
 | `KL: Allmatic` | 433.92 AM650 | 868.35 AM650 | KeeLoq (chiave Beninca) |
+| `Alutech AT4L` | 433.92 AM650 | | Dinamico (Alutech AT-4N, prefisso `0x1Dxxxxxx`) |
 | `Alutech AT4N` | 433.92 AM650 | | Dinamico (Alutech AT-4N) |
 | `AN-Motors AT4` | 433.92 AM650 | | KeeLoq |
 | `KL: Aprimatic` | 433.92 AM650 | | KeeLoq |

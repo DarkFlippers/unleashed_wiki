@@ -36,10 +36,10 @@ KeeLoq e la possibilità di **inviare** i protocolli a codice rolling, con
 |---|---|---|---|---|---|---|
 | Airforce | 433.92, 868 | AM650 | 18, statico | | | |
 | Allstar Firefly 318ALD31K | 318 | AM650 | 18, statico | `Allstar Firefly` | | |
-| Alutech AT-4N | 433.92 | AM650 | 72, dinamico | `Alutech AT-4N` | `Alutech AT4N` | tasti personalizzati, [modalità contatore](/it/subghz/counter-mode) |
+| Alutech AT-4N | 433.92 | AM650 | 72, dinamico | `Alutech AT-4N` | `Alutech AT4N`, `Alutech AT4L` | tasti personalizzati, [modalità contatore](/it/subghz/counter-mode) |
 | AN-Motors (Alutech) AT4 | 433.92 | AM650 | 64, pseudo-dinamico | `KeeLoq` | `AN-Motors AT4` | basato su KeeLoq |
 | Ansonic | 433 | FM | 12, statico | `Ansonic` | | |
-| BelKorn (Korn, BelGate, Furniteh…) | 433.92 | AM650 | 118, dinamico | `BelKorn` | `BelKorn` | non cifrato: seriale a 36 bit + contatore in chiaro; nessun campo produttore, ogni telecomando viene letto come BelKorn |
+| BelKorn (Korn, BelGate, Furniteh, Euro5…) | 433.92 | AM650 | 118, dinamico | `BelKorn` | `BelKorn` | non cifrato: seriale a 36 bit + contatore in chiaro; nessun campo produttore, ogni telecomando viene letto come BelKorn |
 | Beninca ARC (TO.GO 2VA) | 433.92 | AM650 | 128, dinamico AES-128 | `Beninca ARC` | `Beninca ARC` | tasto `0` = tasto nascosto |
 | BETT | 433.92 | AM650 | 18, statico | `BETT` | `BETT` | |
 | BFT Mitto | 433.92 | AM650 | 64, KeeLoq + seed | `KeeLoq` | `BFT Mitto` | i telecomandi più recenti derivano il seed dal seriale (decodificano in Read); quelli più vecchi richiedono il seed — modalità di programmazione oppure [Seed Capturer](/it/subghz/seed-capturer); tasto `0xF` = modalità di programmazione |

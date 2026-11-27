@@ -38,7 +38,7 @@ Unleashed se temelji na službenom firmveru (OFW) i ostaje **potpuno kompatibila
 | Nice O-Code | Otkriva instalaterski kôd daljinskog upravljača Nice O-Code | [Nice O-Code](/hr/subghz/nice-o-code) |
 | Security+ PIN | Pronalazi PIN tipkovnice signala Security+ 2.0 | [Security+ PIN](/hr/subghz/secplus-pin) |
 | Seed Capturer | Prikuplja parove Fix + Hop (FAAC SLH, Genius, Erreka, BFT Mitto) za oporavak Seeda | [Seed Capturer](/hr/subghz/seed-capturer) |
-| Sub-GHz RAW Edit | Obrezuje, spaja i dekodira RAW snimke | [RAW uređivač](/hr/subghz/raw-editor) |
+| Sub-GHz RAW Edit | RAW uređivač na SD kartici: obrezivanje, izrezivanje/kopiranje/lijepljenje, povijest poništavanja, spajanje i dekodiranje | [RAW uređivač](/hr/subghz/raw-editor) |
 
 ## NFC, RFID i iButton
 

@@ -38,15 +38,15 @@ La schermata mostra la forma d'onda con una barra panoramica in alto e due righe
 | <kbd>OK</kbd> tenuto premuto | apre il menu delle azioni |
 | <kbd>Back</kbd> | chiude l'editor |
 
-Il menu delle azioni (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> per eseguire, <kbd>Back</kbd> per chiudere):
+Il menu delle azioni (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> per eseguire, <kbd>Back</kbd> per chiudere) sta a sinistra, con accanto un pannello informativo di sola lettura che mostra il numero di campioni di A..B, `TE` e la codifica di linea rilevata (`PWM`, `PPM`, `Manchester`, `NRZ` o `1:1`):
 
 - **Save** — scrive solo l'intervallo A..B in un nuovo file RAW. Il nome proposto è `<nome>_edit1`, `_edit2`, …
   Salvare con un nome esistente chiede `Name exists, overwrite?`; il file aperto non viene mai sovrascritto.
-- **Decode** — decodifica l'intervallo A..B con i decodificatori Sub-GHz del firmware, raggruppa i pacchetti identici
+- **Decode** — decodifica l'intervallo A..B con i decodificatori Sub-GHz del firmware (provando ogni produttore su ciascun frame KeeLoq; salta BinRAW), raggruppa i pacchetti identici
   (`Decoded: N`) e salva quello scelto come file chiave, con nome basato per impostazione predefinita su protocollo e
-  produttore (per esempio `KeeLoq_Verex`). `No known protocol` significa che non è stato decodificato nulla.
-- **Cut** — rimuove l'intervallo A..B dal segnale (rifiutato se lascerebbe il segnale vuoto).
-- **Undo** — annulla l'ultimo taglio (barrato quando non c'è nulla da annullare).
+  produttore (per esempio `KeeLoq_Verex`). Ogni voce decodificata ha anche un pulsante **Locate** che aggancia A..B al relativo frame (il primo quando si ripete). `No known protocol` significa che non è stato decodificato nulla.
+- **Cut** / **Copy** / **Paste** — premi <kbd>←</kbd> / <kbd>→</kbd> su `Cut` per passare tra **Cut** (rimuove A..B e lo mette negli appunti; rifiutato se lascerebbe il segnale vuoto), **Copy** (copia A..B nel file degli appunti) e **Paste** (inserisce gli appunti al marcatore attivo e li seleziona).
+- **Undo** — cronologia su scheda SD degli ultimi **32** tagli e incollaggi (non occupa RAM). Con più di una modifica, le elenca dalla più recente con numero di campioni e posizioni, riportando il segnale allo stato precedente a quella scelta. Barrato quando non c'è nulla da annullare.
 
 ## Tagliare un'acquisizione, passo per passo
 
@@ -73,10 +73,12 @@ Il menu delle azioni (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> per eseguir
 | Merge gap | silenzio inserito tra i file uniti, 0–1000 ms (predefinito 100); <kbd>OK</kbd> apre l'inserimento di un numero |
 | Repeat | ripete ogni segnale caricato / unito da 1 a 64 volte |
 
+Una riga di sola lettura in fondo a `Config` mostra anche se i tasti personalizzati e la conservazione del contatore rolling sono disponibili nella build attuale del firmware.
+
 ## Limiti e risoluzione dei problemi
 
-- Un file contiene fino a **24 000 campioni**; la RAM libera può abbassare questo limite. `Out of memory` /
-  `Not enough free RAM to load this capture` — riavvia il Flipper e apri l'app per prima.
+- **Nessun limite di lunghezza (v2.0):** segnali e unioni sono tenuti in un file di lavoro sulla scheda SD, mentre la RAM mantiene una finestra scorrevole dell'acquisizione (fino a ~38 000 campioni a Flipper appena avviato), lasciando spazio per Decode e Save. Spingendo il marcatore A o B oltre il bordo della finestra, questa scorre avanti di un quarto; lo zoom indietro si ferma al limite della finestra con `No RAM to zoom out`.
+- **Avviso `Low RAM`** — mostrato quando la RAM libera contiene meno di 15 000 campioni di un segnale più grande; propone `Reboot` o `Continue`. Anche `Decode` verifica la presenza di ~8 KB di RAM libera e segnala `Low memory` invece di bloccarsi.
 - `Unsupported protocol or file is empty` — il file non è un segnale che il firmware possa codificare.
 - `Nothing in A..B` / `Range too small` — allontana di più i marcatori.
 - I lunghi intervalli di silenzio vengono mantenuti alla loro lunghezza reale nel file salvato.

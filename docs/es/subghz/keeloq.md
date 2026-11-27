@@ -78,7 +78,9 @@ almacén de claves **cifrado** en la tarjeta SD:
 | `/ext/subghz/assets/keeloq_mfcodes_user` | **tus propias** claves, en texto plano (créalo a partir de `keeloq_mfcodes_user.example`) |
 
 Al decodificar una señal se prueban todas las claves; si alguna encaja, el nombre aparece como `KL: DoorHan`,
-`KL: Nice_Smilo`, etc. Si no encaja ninguna, la señal se muestra como **`KL: Unknown`**: se puede guardar, pero no
+`KL: Nice_Smilo`, etc. Los mandos KeeLoq de media velocidad también muestran el nombre real de su fabricante (en lugar
+de `Crypt Key`), marcados como `KL HR` en la lista de lectura y `66b HR` en la información de la señal. Si no encaja
+ninguna, la señal se muestra como **`KL: Unknown`**: se puede guardar, pero no
 enviar ni usar para generar el código siguiente. Los comandos `subghz` de la CLI que decodifican señales imprimen al
 arrancar `Load_keystore keeloq_mfcodes OK` y `Load_keystore keeloq_mfcodes_user OK` / `Absent`, una forma rápida de
 comprobar que los almacenes se cargan.

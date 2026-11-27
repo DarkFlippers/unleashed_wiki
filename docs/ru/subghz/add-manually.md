@@ -81,7 +81,7 @@ Somfy, Security+ 2.0 и др.), для каждой можно выбрать л
 | `KL: FAAC FIX`, `KL: Monarch`, `KL:Phantom(Hiland)`, `KL: DEA Mio` | `SERIAL` → `BUTTON` → `COUNTER` → `DISC.` (дискриминатор hop, хранится в поле `Seed`) |
 | FAAC SLH, Genius | `SERIAL` → `BUTTON` → `COUNTER` (32 бита) → `SEED` |
 | CAME Atomo, V2 Phoenix | `SERIAL` → `COUNTER` |
-| Alutech AT4N, Somfy Telis/Keytis, KingGates, Beninca ARC, Jarolift, Ditec GOL4, Prastel, BelKorn, Security+2.0 | `SERIAL` → `BUTTON` → `COUNTER` |
+| Alutech AT4N / AT4L, Somfy Telis/Keytis, KingGates, Beninca ARC, Jarolift, Ditec GOL4, Prastel, BelKorn, Security+2.0 | `SERIAL` → `BUTTON` → `COUNTER` |
 | Nice FloR-S, Nice One | `SERIAL` → `BUTTON` → `COUNTER` |
 | Nice O-Code, Nice O-Code One | `SERIAL` → `BUTTON` → `COUNTER` → `IC` (код инсталлятора) |
 | Nice O-Code+Crt | `SERIAL` → `BUTTON` → `COUNTER` → `IC` → `CERT` (спрашивается даже из обычного Add Manually) |
@@ -103,6 +103,7 @@ Somfy, Security+ 2.0 и др.), для каждой можно выбрать л
 | Пункт меню | По умолчанию | Также | Тип |
 |---|---|---|---|
 | `KL: Allmatic` | 433.92 AM650 | 868.35 AM650 | KeeLoq (ключ Beninca) |
+| `Alutech AT4L` | 433.92 AM650 | | Динамический (Alutech AT-4N, префикс `0x1Dxxxxxx`) |
 | `Alutech AT4N` | 433.92 AM650 | | Динамический (Alutech AT-4N) |
 | `AN-Motors AT4` | 433.92 AM650 | | KeeLoq |
 | `KL: Aprimatic` | 433.92 AM650 | | KeeLoq |

@@ -37,12 +37,12 @@ L'écran affiche la forme d'onde avec une barre de vue d'ensemble en haut, et de
 | maintien de <kbd>OK</kbd> | ouvrir le menu d'actions |
 | <kbd>Back</kbd> | fermer l'éditeur |
 
-Le menu d'actions (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> pour exécuter, <kbd>Back</kbd> pour fermer) :
+Le menu d'actions (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> pour exécuter, <kbd>Back</kbd> pour fermer) s'affiche à gauche, accompagné à côté d'un panneau d'information en lecture seule indiquant le nombre d'échantillons de A..B, le `TE` et le codage en ligne détecté (`PWM`, `PPM`, `Manchester`, `NRZ` ou `1:1`) :
 
 - **Save** — écrire uniquement la plage A..B dans un nouveau fichier RAW. Le nom proposé est `<nom>_edit1`, `_edit2`, … Enregistrer sous un nom existant demande `Name exists, overwrite?` ; le fichier ouvert lui-même n'est jamais écrasé.
-- **Decode** — décoder la plage A..B avec les décodeurs Sub-GHz du firmware, regrouper les paquets identiques (`Decoded: N`) et enregistrer celle choisie comme fichier-clé, nommé par défaut d'après le protocole et le constructeur (par exemple `KeeLoq_Verex`). `No known protocol` signifie que rien n'a été décodé.
-- **Cut** — supprimer la plage A..B du signal (refusé si cela laisserait le signal vide).
-- **Undo** — annuler la dernière coupe (barré quand il n'y a rien à annuler).
+- **Decode** — décoder la plage A..B avec les décodeurs Sub-GHz du firmware (en essayant chaque constructeur sur chaque trame KeeLoq ; ignore BinRAW), regrouper les trames identiques (`Decoded: N`) et enregistrer celle choisie comme fichier-clé, nommé par défaut d'après le protocole et le constructeur (par exemple `KeeLoq_Verex`). Chaque entrée décodée dispose aussi d'un bouton **Locate** qui cale A..B sur sa trame (la première en cas de répétition). `No known protocol` signifie que rien n'a été décodé.
+- **Cut** / **Copy** / **Paste** — appuyez sur <kbd>←</kbd> / <kbd>→</kbd> sur `Cut` pour basculer entre **Cut** (supprimer A..B et le placer dans le presse-papiers ; refusé si cela laisserait le signal vide), **Copy** (copier A..B dans le fichier presse-papiers) et **Paste** (insérer le presse-papiers au niveau du marqueur actif et le sélectionner).
+- **Undo** — historique sur carte SD des **32** dernières coupes et collages (ne consomme pas de RAM). S'il y a plus d'une modification, il les liste de la plus récente à la plus ancienne avec le nombre d'échantillons et les positions, puis revient à l'état précédant celle que vous choisissez. Barré quand il n'y a rien à annuler.
 
 ## Rogner une capture — pas à pas
 
@@ -67,9 +67,12 @@ Le menu d'actions (<kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>OK</kbd> pour exécuter
 | Merge gap | silence inséré entre les fichiers fusionnés, 0–1000 ms (100 par défaut) ; <kbd>OK</kbd> ouvre une saisie numérique |
 | Repeat | répéter chaque signal chargé / fusionné 1 à 64 fois |
 
+Une ligne en lecture seule en bas de `Config` indique également si les boutons personnalisés et la conservation du compteur tournant sont disponibles dans la version actuelle du firmware.
+
 ## Limites et dépannage
 
-- Un fichier contient jusqu'à **24 000 échantillons** ; la RAM disponible peut abaisser cette limite. `Out of memory` / `Not enough free RAM to load this capture` — redémarrez le Flipper et ouvrez l'application en premier.
+- **Aucune limite de longueur (v2.0) :** les signaux et les fusions sont conservés dans un fichier de travail sur la carte SD, tandis que la RAM ne garde qu'une fenêtre glissante de la capture (jusqu'à ~38 000 échantillons après un démarrage à froid), laissant de la place pour Decode et Save. Pousser le marqueur A ou B au-delà du bord de la fenêtre la fait glisser d'un quart plus loin ; le dézoom s'arrête à la limite de la fenêtre avec `No RAM to zoom out`.
+- **Invite `Low RAM`** — affichée lorsque la RAM libre peut contenir moins de 15 000 échantillons d'un signal plus grand ; propose `Reboot` ou `Continue`. `Decode` vérifie aussi qu'il reste ~8 Ko de RAM libre et signale `Low memory` au lieu de planter.
 - `Unsupported protocol or file is empty` — le fichier n'est pas un signal que le firmware sait encoder.
 - `Nothing in A..B` / `Range too small` — écartez davantage les marqueurs.
 - Les longues pauses conservent leur durée réelle dans le fichier enregistré.

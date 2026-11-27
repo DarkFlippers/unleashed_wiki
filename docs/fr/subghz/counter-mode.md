@@ -80,8 +80,8 @@ valeur globale [Counter Incr.](/fr/subghz/settings) (+1 par défaut) et repasse 
 | Mode | Compteur | Remarques |
 |---|---|---|
 | 0 | +multiplicateur | par défaut |
-| 1 | `0x0000 / 0x0001 / 0xFFFE / 0xFFFF` | récepteur **MCSW-3.3M** |
-| 2 | `0x0000 … 0x0005` | autres cartes de récepteur |
+| 1 | cycle en 3 appuis : `0x0000` (×4), `0x0001` (×4), puis `0xFFFE` (×4) + `0xFFFF` (×4) en un seul appui (~0,85 s) | récepteur **MCSW-3.3M** (le 3e appui resynchronise à travers le passage à zéro) |
+| 2 | lot de resynchronisation en un appui (~1,5 s) : `0x0000`–`0x0003` (×2 chacun) + `0x0004`–`0x0005` (×3 chacun) | autres cartes de récepteur ; le compteur du fichier reste inchangé, chaque appui envoie donc le même lot |
 
 ### KeeLoq
 

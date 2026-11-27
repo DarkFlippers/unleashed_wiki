@@ -26,10 +26,10 @@ Unleashed je fork, pa dekodira sve što i službeni firmver: 38 od 64 dekodera p
 |---|---|---|---|---|---|---|
 | Airforce | 433.92, 868 | AM650 | 18, statični | | | |
 | Allstar Firefly 318ALD31K | 318 | AM650 | 18, statični | `Allstar Firefly` | | |
-| Alutech AT-4N | 433.92 | AM650 | 72, dinamični | `Alutech AT-4N` | `Alutech AT4N` | prilagođene tipke, [načini brojača](/hr/subghz/counter-mode) |
+| Alutech AT-4N | 433.92 | AM650 | 72, dinamični | `Alutech AT-4N` | `Alutech AT4N`, `Alutech AT4L` | prilagođene tipke, [načini brojača](/hr/subghz/counter-mode) |
 | AN-Motors (Alutech) AT4 | 433.92 | AM650 | 64, pseudo-dinamični | `KeeLoq` | `AN-Motors AT4` | temeljen na KeeLoqu |
 | Ansonic | 433 | FM | 12, statični | `Ansonic` | | |
-| BelKorn (Korn, BelGate, Furniteh…) | 433.92 | AM650 | 118, dinamični | `BelKorn` | `BelKorn` | nije šifriran: 36-bitni serijski broj + brojač u čistom tekstu; bez polja proizvođača, svaki se daljinski upravljač čita kao BelKorn |
+| BelKorn (Korn, BelGate, Furniteh, Euro5…) | 433.92 | AM650 | 118, dinamični | `BelKorn` | `BelKorn` | nije šifriran: 36-bitni serijski broj + brojač u čistom tekstu; bez polja proizvođača, svaki se daljinski upravljač čita kao BelKorn |
 | Beninca ARC (TO.GO 2VA) | 433.92 | AM650 | 128, dinamični AES-128 | `Beninca ARC` | `Beninca ARC` | tipka `0` = skrivena tipka |
 | BETT | 433.92 | AM650 | 18, statični | `BETT` | `BETT` | |
 | BFT Mitto | 433.92 | AM650 | 64, KeeLoq + seed | `KeeLoq` | `BFT Mitto` | noviji daljinski upravljači izvode seed iz serijskog broja (dekodira se u Read); starijima treba seed — način programiranja ili [Seed Capturer](/hr/subghz/seed-capturer); tipka `0xF` = način programiranja |

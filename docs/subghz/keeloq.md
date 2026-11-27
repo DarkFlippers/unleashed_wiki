@@ -74,9 +74,11 @@ To decode a KeeLoq signal the Flipper must know the manufacturer key. Unleashed 
 | `/ext/subghz/assets/keeloq_mfcodes_user` | **your own** keys, plain text (create it from `keeloq_mfcodes_user.example`) |
 
 When a signal is decoded, every key is tried; on success the name appears as `KL: DoorHan`, `KL: Nice_Smilo` etc.
-If no key fits, the signal shows as **`KL: Unknown`**: it can be saved, but not sent or used to generate the next
-code. The `subghz` CLI commands that decode signals print `Load_keystore keeloq_mfcodes OK` and
-`Load_keystore keeloq_mfcodes_user OK` / `Absent` when they start — a quick way to check the keystores load.
+Half-rate KeeLoq remotes also display their real manufacturer name (instead of `Crypt Key`), marked as `KL HR` in the
+read list and `66b HR` in signal info. If no key fits, the signal shows as **`KL: Unknown`**: it can be saved, but
+not sent or used to generate the next code. The `subghz` CLI commands that decode signals print
+`Load_keystore keeloq_mfcodes OK` and `Load_keystore keeloq_mfcodes_user OK` / `Absent` when they start — a quick way
+to check the keystores load.
 
 ### User key file format
 

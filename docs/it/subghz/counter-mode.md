@@ -81,8 +81,8 @@ globale [Counter Incr.](/it/subghz/settings) (predefinito +1) e torna a 0 dopo `
 | Modalità | Contatore | Note |
 |---|---|---|
 | 0 | +moltiplicatore | predefinita |
-| 1 | `0x0000 / 0x0001 / 0xFFFE / 0xFFFF` | ricevitore **MCSW-3.3M** |
-| 2 | `0x0000 … 0x0005` | altre schede ricevitore |
+| 1 | ciclo di 3 pressioni: `0x0000` (×4), `0x0001` (×4), poi `0xFFFE` (×4) + `0xFFFF` (×4) in una sola pressione (~0.85 s) | ricevitore **MCSW-3.3M** (la 3ª pressione risincronizza attraverso il limite di wrap) |
+| 2 | pacchetto di risincronizzazione a pressione singola (~1.5 s): `0x0000`–`0x0003` (×2 ciascuno) + `0x0004`–`0x0005` (×3 ciascuno) | altre schede ricevitore; il contatore nel file resta invariato così ogni pressione invia lo stesso pacchetto |
 
 ### KeeLoq
 
